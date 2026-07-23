@@ -323,13 +323,6 @@
     <div class="subhead">A Wikipedia guessing game</div>
   </header>
 
-  <div class="filecard">
-    <div>Category: <b id="fcCategory">—</b></div>
-    <div>Length: <b id="fcLength">—</b></div>
-    <div>Words: <b id="fcWords">—</b></div>
-    <div>Score: <b id="fcScore">0</b></div>
-  </div>
-
   <div class="stage">
     <div id="loading">fetching a random article from wikipedia…</div>
 
@@ -374,7 +367,6 @@
   let strikes = 0;
   let solved = false;
   let lost = false;
-  let score = 0;
 
   const loadingEl = document.getElementById('loading');
   const gameEl = document.getElementById('game');
@@ -389,10 +381,6 @@
   const fullExtractEl = document.getElementById('fullExtract');
   const wikiLinkEl = document.getElementById('wikiLink');
   const nextBtn = document.getElementById('nextBtn');
-  const fcCategory = document.getElementById('fcCategory');
-  const fcLength = document.getElementById('fcLength');
-  const fcWords = document.getElementById('fcWords');
-  const fcScore = document.getElementById('fcScore');
   const hintRow = document.getElementById('hintRow');
 
   for(let i=0;i<MAX_STRIKES;i++){
@@ -443,11 +431,6 @@
 
       title = data.title;
       extract = data.extract || '';
-      const desc = data.description ? data.description : 'unclassified subject';
-
-      fcCategory.textContent = desc.charAt(0).toUpperCase() + desc.slice(1);
-      fcLength.textContent = title.replace(/[^A-Za-z]/g,'').length + ' letters';
-      fcWords.textContent = title.trim().split(/\s+/).length + (title.trim().split(/\s+/).length === 1 ? ' word' : ' words');
       wikiLinkEl.href = data.content_urls && data.content_urls.desktop ? data.content_urls.desktop.page : ('https://en.wikipedia.org/wiki/' + encodeURIComponent(title.replace(/ /g,'_')));
 
       setupPuzzle();
@@ -545,8 +528,6 @@
     const allRevealed = displayChars.every(c => !c.isLetter || c.revealed);
     if(allRevealed){
       solved = true;
-      score++;
-      fcScore.textContent = score;
       showEnd(true);
     } else if(strikes >= MAX_STRIKES){
       lost = true;
