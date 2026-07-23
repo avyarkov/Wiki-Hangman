@@ -209,15 +209,14 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     padding: 6px 16px;
-    border: 3px solid var(--stamp);
-    color: var(--stamp);
-    transform: rotate(-3deg);
+    border: 3px solid var(--ok);
+    color: var(--ok);
+    transform: rotate(-4deg);
     margin-bottom: 12px;
   }
   .stamp-badge.lose{
-    border-color: var(--ink-soft);
-    color: var(--ink-soft);
-    transform: rotate(2deg);
+    border-color: var(--stamp);
+    color: var(--stamp);
   }
   .end-title{
     font-size: 20px;
@@ -484,7 +483,7 @@
 
   function showEnd(won){
     document.querySelectorAll('.key').forEach(k => k.disabled = true);
-    stampBadgeEl.textContent = won ? 'declassified' : 'sealed';
+    stampBadgeEl.textContent = won ? 'VICTORY' : 'DEFEAT';
     stampBadgeEl.classList.toggle('lose', !won);
     endTitleEl.textContent = title;
     endSummaryEl.textContent = won
