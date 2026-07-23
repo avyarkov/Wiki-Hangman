@@ -15,8 +15,9 @@
     --line: #c9bd9f;
     --stamp: #a4342a;
     --stamp-dark: #7c2620;
+    --stamp-bg: #f6e2dd;
     --ok: #3c5a3c;
-    --ok-bg: #dbe6d4;
+    --ok-bg: #e5f0de;
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
@@ -148,14 +149,6 @@
     border-color: var(--stamp-dark);
   }
 
-  .wrong-letters{
-    font-family:'Courier Prime', monospace;
-    font-size: 13px;
-    color: var(--stamp-dark);
-    min-height: 18px;
-    letter-spacing: 2px;
-  }
-
   .keyboard{
     display:grid;
     grid-template-columns: repeat(9, 1fr);
@@ -193,9 +186,9 @@
     opacity: 1;
   }
   .key.wrong{
-    background: transparent;
-    border-color: var(--line);
-    color: var(--line);
+    background: var(--stamp-bg);
+    border-color: var(--stamp-dark);
+    color: var(--stamp-dark);
     text-decoration: line-through;
     opacity: 1;
   }
@@ -298,7 +291,6 @@
             STRIKES
             <span class="strike-marks" id="strikeMarks"></span>
           </div>
-          <div class="wrong-letters" id="wrongLetters"></div>
         </div>
       </div>
 
@@ -334,7 +326,6 @@
   const gameEl = document.getElementById('game');
   const wordBlockEl = document.getElementById('wordBlock');
   const strikeMarksEl = document.getElementById('strikeMarks');
-  const wrongLettersEl = document.getElementById('wrongLetters');
   const keyboardEl = document.getElementById('keyboard');
   const endstateEl = document.getElementById('endstate');
   const stampBadgeEl = document.getElementById('stampBadge');
@@ -417,7 +408,6 @@
       k.classList.remove('correct','wrong');
     });
     updateStrikeMarks();
-    wrongLettersEl.textContent = '';
     endstateEl.classList.remove('show');
     render();
   }
@@ -478,8 +468,6 @@
       strikes++;
       updateStrikeMarks();
       if(key){ key.classList.add('wrong'); key.disabled = true; }
-      const cur = wrongLettersEl.textContent;
-      wrongLettersEl.textContent = (cur ? cur + ' ' : '') + letter;
     }
 
     checkEnd();
