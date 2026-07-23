@@ -320,7 +320,7 @@
 
   <header>
     <div class="masthead">Redacted<span class="redacted-x">.</span></div>
-    <div class="subhead">A Wikipedia guessing game<br>File status: <span id="statusLabel">retrieving</span></div>
+    <div class="subhead">A Wikipedia guessing game</div>
   </header>
 
   <div class="filecard">
@@ -389,7 +389,6 @@
   const fullExtractEl = document.getElementById('fullExtract');
   const wikiLinkEl = document.getElementById('wikiLink');
   const nextBtn = document.getElementById('nextBtn');
-  const statusLabel = document.getElementById('statusLabel');
   const fcCategory = document.getElementById('fcCategory');
   const fcLength = document.getElementById('fcLength');
   const fcWords = document.getElementById('fcWords');
@@ -422,7 +421,6 @@
     loadingEl.textContent = 'fetching a random article from wikipedia…';
     gameEl.style.display = 'none';
     endstateEl.classList.remove('show');
-    statusLabel.textContent = 'retrieving';
 
     try{
       // Loop until we get an article with a reasonably guessable title
@@ -455,10 +453,8 @@
       setupPuzzle();
       loadingEl.style.display = 'none';
       gameEl.style.display = 'block';
-      statusLabel.textContent = 'active';
     }catch(err){
       loadingEl.textContent = 'could not reach wikipedia — check network settings and try again.';
-      statusLabel.textContent = 'error';
     }
   }
 
@@ -560,7 +556,6 @@
 
   function showEnd(won){
     document.querySelectorAll('.key').forEach(k => k.disabled = true);
-    statusLabel.textContent = won ? 'declassified' : 'redaction failed';
     stampBadgeEl.textContent = won ? 'declassified' : 'sealed';
     stampBadgeEl.classList.toggle('lose', !won);
     endTitleEl.textContent = title;
