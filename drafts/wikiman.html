@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redacted — a Wikipedia guessing game</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap');
+
+  :root{
+    --paper: #f2ecdc;
+    --paper-dark: #e7ddc4;
+    --ink: #23201a;
+    --ink-soft: #5a5346;
+    --line: #c9bd9f;
+    --stamp: #a4342a;
+    --stamp-dark: #7c2620;
+    --ok: #3c5a3c;
+    --ok-bg: #dbe6d4;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background: var(--paper);
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(0,0,0,0.025), transparent 40%),
+      radial-gradient(circle at 80% 80%, rgba(0,0,0,0.03), transparent 45%);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif;
+    min-height: 100vh;
+    display:flex;
+    justify-content:center;
+    padding: 32px 16px 80px;
+  }
+  .sheet{
+    width: 100%;
+    max-width: 720px;
+  }
+
+  header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 10px;
+    margin-bottom: 6px;
+  }
+  .masthead{
+    font-family:'Source Serif 4', serif;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+  }
+  .masthead .redacted-x{
+    color: var(--stamp);
+  }
+  .subhead{
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    text-align:right;
+    line-height:1.5;
+  }
+
+  .filecard{
+    border: 1px solid var(--line);
+    background: var(--paper-dark);
+    padding: 14px 18px;
+    margin: 18px 0 24px;
+    font-family: 'Courier Prime', monospace;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap: 6px 18px;
+  }
+  .filecard b{ color: var(--ink); font-weight:700; }
+
+  .stage{
+    position: relative;
+    min-height: 120px;
+  }
+
+  #loading{
+    font-family:'Courier Prime', monospace;
+    font-size: 13px;
+    color: var(--ink-soft);
+    padding: 40px 0;
+    text-align:center;
+    letter-spacing: 0.5px;
+  }
+  #loading::after{
+    content:'';
+    display:inline-block;
+    width: 6px;
+  }
+
+  .word-block{
+    line-height: 2.5;
+    font-family: 'Courier Prime', monospace;
+    font-size: 20px;
+    word-spacing: 0.4em;
+    margin-bottom: 28px;
+  }
+  .word{
+    display:inline-block;
+    white-space: nowrap;
+    margin-right: 0.6em;
+  }
+  .letter{
+    display:inline-block;
+    min-width: 0.85ch;
+    border-bottom: 2px solid var(--ink);
+    text-align:center;
+    padding: 0 1px;
+  }
+  .letter.punct{
+    border-bottom: none;
+    min-width: auto;
+  }
+  .letter.filled{
+    border-bottom: 2px solid var(--ok);
+    color: var(--ok);
+    font-weight: 700;
+  }
+  .letter.blank-solved{
+    border-bottom: 2px solid var(--ink);
+  }
+
+  .extract{
+    font-family: 'Source Serif 4', serif;
+    font-size: 15.5px;
+    line-height: 1.75;
+    color: var(--ink-soft);
+    border-top: 1px dashed var(--line);
+    padding-top: 16px;
+    margin-top: 4px;
+  }
+
+  .panel{
+    display:flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    margin-top: 8px;
+  }
+
+  .gallows{
+    flex: 0 0 130px;
+  }
+
+  .status-row{
+    flex: 1 1 260px;
+    min-width: 200px;
+  }
+  .strikes{
+    font-family:'Courier Prime', monospace;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: var(--ink-soft);
+  }
+  .strike-marks{
+    display:inline-flex;
+    gap: 4px;
+    vertical-align: middle;
+    margin-left: 8px;
+  }
+  .mark{
+    width: 14px; height: 14px;
+    border: 1.5px solid var(--line);
+    border-radius: 2px;
+  }
+  .mark.hit{
+    background: var(--stamp);
+    border-color: var(--stamp-dark);
+  }
+
+  .wrong-letters{
+    font-family:'Courier Prime', monospace;
+    font-size: 13px;
+    color: var(--stamp-dark);
+    min-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  .keyboard{
+    display:grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 6px;
+    margin-top: 18px;
+    max-width: 480px;
+  }
+  .key{
+    font-family:'Courier Prime', monospace;
+    font-size: 14px;
+    font-weight: 700;
+    background: var(--paper);
+    border: 1px solid var(--ink);
+    color: var(--ink);
+    padding: 8px 0;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: transform 0.05s ease;
+  }
+  .key:hover:not(:disabled){
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .key:active:not(:disabled){
+    transform: scale(0.94);
+  }
+  .key:disabled{
+    cursor: default;
+    opacity: 0.35;
+  }
+  .key.correct{
+    background: var(--ok-bg);
+    border-color: var(--ok);
+    color: var(--ok);
+    opacity: 1;
+  }
+  .key.wrong{
+    background: transparent;
+    border-color: var(--line);
+    color: var(--line);
+    text-decoration: line-through;
+    opacity: 1;
+  }
+
+  .endstate{
+    margin-top: 26px;
+    padding: 18px 20px;
+    border: 1px solid var(--line);
+    background: var(--paper-dark);
+    display:none;
+  }
+  .endstate.show{ display:block; }
+  .stamp-badge{
+    display:inline-block;
+    font-family: 'Courier Prime', monospace;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border: 3px solid var(--stamp);
+    color: var(--stamp);
+    transform: rotate(-3deg);
+    margin-bottom: 12px;
+  }
+  .stamp-badge.lose{
+    border-color: var(--ink-soft);
+    color: var(--ink-soft);
+    transform: rotate(2deg);
+  }
+  .end-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 4px 0 10px;
+  }
+  .end-summary{
+    font-size: 14.5px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin-bottom: 14px;
+  }
+
+  .actions{
+    display:flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+  }
+  button.action{
+    font-family: 'Courier Prime', monospace;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    padding: 10px 18px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  button.action:hover{ background: var(--ink-soft); }
+  button.action.ghost{
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--ink);
+  }
+  button.action.ghost:hover{
+    background: var(--paper-dark);
+  }
+  a.wiki-link{
+    color: var(--stamp-dark);
+    text-decoration: none;
+    border-bottom: 1px solid var(--stamp-dark);
+  }
+
+  .hearts{
+    font-size: 12px;
+    color: var(--ink-soft);
+    margin-top: 10px;
+    font-family: 'Courier Prime', monospace;
+  }
+
+  @media (max-width: 480px){
+    .masthead{ font-size: 22px; }
+    .word-block{ font-size: 17px; }
+    .keyboard{ grid-template-columns: repeat(7, 1fr); }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header>
+    <div class="masthead">Redacted<span class="redacted-x">.</span></div>
+    <div class="subhead">A Wikipedia guessing game<br>File status: <span id="statusLabel">retrieving</span></div>
+  </header>
+
+  <div class="filecard">
+    <div>Category: <b id="fcCategory">—</b></div>
+    <div>Length: <b id="fcLength">—</b></div>
+    <div>Words: <b id="fcWords">—</b></div>
+    <div>Score: <b id="fcScore">0</b></div>
+  </div>
+
+  <div class="stage">
+    <div id="loading">fetching a random article from wikipedia…</div>
+
+    <div id="game" style="display:none;">
+      <div class="word-block" id="wordBlock"></div>
+
+      <div class="panel">
+        <div class="status-row">
+          <div class="strikes">
+            STRIKES
+            <span class="strike-marks" id="strikeMarks"></span>
+          </div>
+          <div class="wrong-letters" id="wrongLetters"></div>
+          <div class="hearts" id="hintRow"></div>
+        </div>
+      </div>
+
+      <div class="keyboard" id="keyboard"></div>
+
+      <div class="endstate" id="endstate">
+        <div class="stamp-badge" id="stampBadge">solved</div>
+        <div class="end-title" id="endTitle"></div>
+        <div class="end-summary" id="endSummary"></div>
+        <div class="extract" id="fullExtract"></div>
+        <div class="actions">
+          <button class="action" id="nextBtn">Pull next file ↗</button>
+          <a class="wiki-link" id="wikiLink" href="#" target="_blank" rel="noopener">Read on Wikipedia</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  const MAX_STRIKES = 6;
+  let title = "";
+  let extract = "";
+  let displayChars = []; // array of {char, isLetter, revealed}
+  let guessed = new Set();
+  let strikes = 0;
+  let solved = false;
+  let lost = false;
+  let score = 0;
+
+  const loadingEl = document.getElementById('loading');
+  const gameEl = document.getElementById('game');
+  const wordBlockEl = document.getElementById('wordBlock');
+  const strikeMarksEl = document.getElementById('strikeMarks');
+  const wrongLettersEl = document.getElementById('wrongLetters');
+  const keyboardEl = document.getElementById('keyboard');
+  const endstateEl = document.getElementById('endstate');
+  const stampBadgeEl = document.getElementById('stampBadge');
+  const endTitleEl = document.getElementById('endTitle');
+  const endSummaryEl = document.getElementById('endSummary');
+  const fullExtractEl = document.getElementById('fullExtract');
+  const wikiLinkEl = document.getElementById('wikiLink');
+  const nextBtn = document.getElementById('nextBtn');
+  const statusLabel = document.getElementById('statusLabel');
+  const fcCategory = document.getElementById('fcCategory');
+  const fcLength = document.getElementById('fcLength');
+  const fcWords = document.getElementById('fcWords');
+  const fcScore = document.getElementById('fcScore');
+  const hintRow = document.getElementById('hintRow');
+
+  for(let i=0;i<MAX_STRIKES;i++){
+    const m = document.createElement('div');
+    m.className = 'mark';
+    m.id = 'mark'+i;
+    strikeMarksEl.appendChild(m);
+  }
+
+  function buildKeyboard(){
+    keyboardEl.innerHTML = '';
+    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+    letters.forEach(l => {
+      const btn = document.createElement('button');
+      btn.className = 'key';
+      btn.textContent = l;
+      btn.dataset.letter = l;
+      btn.addEventListener('click', () => guess(l));
+      keyboardEl.appendChild(btn);
+    });
+  }
+  buildKeyboard();
+
+  async function fetchArticle(){
+    loadingEl.style.display = 'block';
+    loadingEl.textContent = 'fetching a random article from wikipedia…';
+    gameEl.style.display = 'none';
+    endstateEl.classList.remove('show');
+    statusLabel.textContent = 'retrieving';
+
+    try{
+      // Loop until we get an article with a reasonably guessable title
+      let attempt = 0;
+      let data = null;
+      while(attempt < 6){
+        attempt++;
+        const res = await fetch('https://en.wikipedia.org/api/rest_v1/page/random/summary');
+        if(!res.ok) throw new Error('network');
+        const json = await res.json();
+        if(!json.title || !json.extract) continue;
+        // Skip disambiguation pages and overly short/odd titles
+        if(json.type === 'disambiguation') continue;
+        if(json.title.length < 3) continue;
+        if(!/[a-zA-Z]/.test(json.title)) continue;
+        data = json;
+        break;
+      }
+      if(!data) throw new Error('no suitable article found');
+
+      title = data.title;
+      extract = data.extract || '';
+      const desc = data.description ? data.description : 'unclassified subject';
+
+      fcCategory.textContent = desc.charAt(0).toUpperCase() + desc.slice(1);
+      fcLength.textContent = title.replace(/[^A-Za-z]/g,'').length + ' letters';
+      fcWords.textContent = title.trim().split(/\s+/).length + (title.trim().split(/\s+/).length === 1 ? ' word' : ' words');
+      wikiLinkEl.href = data.content_urls && data.content_urls.desktop ? data.content_urls.desktop.page : ('https://en.wikipedia.org/wiki/' + encodeURIComponent(title.replace(/ /g,'_')));
+
+      setupPuzzle();
+      loadingEl.style.display = 'none';
+      gameEl.style.display = 'block';
+      statusLabel.textContent = 'active';
+    }catch(err){
+      loadingEl.textContent = 'could not reach wikipedia — check network settings and try again.';
+      statusLabel.textContent = 'error';
+    }
+  }
+
+  function setupPuzzle(){
+    guessed = new Set();
+    strikes = 0;
+    solved = false;
+    lost = false;
+    displayChars = title.split('').map(ch => ({
+      char: ch,
+      isLetter: /[a-zA-Z]/.test(ch),
+      revealed: false
+    }));
+    document.querySelectorAll('.key').forEach(k => {
+      k.disabled = false;
+      k.classList.remove('correct','wrong');
+    });
+    updateStrikeMarks();
+    wrongLettersEl.textContent = '';
+    hintRow.textContent = '';
+    endstateEl.classList.remove('show');
+    render();
+  }
+
+  function render(){
+    wordBlockEl.innerHTML = '';
+    let currentWord = document.createElement('span');
+    currentWord.className = 'word';
+
+    displayChars.forEach((c, idx) => {
+      if(c.char === ' '){
+        wordBlockEl.appendChild(currentWord);
+        wordBlockEl.appendChild(document.createTextNode(' '));
+        currentWord = document.createElement('span');
+        currentWord.className = 'word';
+        return;
+      }
+      const span = document.createElement('span');
+      if(!c.isLetter){
+        span.className = 'letter punct';
+        span.textContent = c.char;
+      } else if(c.revealed || solved || lost){
+        span.className = 'letter filled';
+        span.textContent = c.char;
+        if(lost && !c.revealed) span.classList.remove('filled');
+      } else {
+        span.className = 'letter';
+        span.textContent = '';
+      }
+      currentWord.appendChild(span);
+    });
+    wordBlockEl.appendChild(currentWord);
+  }
+
+  function updateStrikeMarks(){
+    for(let i=0;i<MAX_STRIKES;i++){
+      document.getElementById('mark'+i).classList.toggle('hit', i < strikes);
+    }
+  }
+
+  function guess(letter){
+    if(solved || lost) return;
+    letter = letter.toUpperCase();
+    if(guessed.has(letter)) return;
+    guessed.add(letter);
+
+    const key = document.querySelector('.key[data-letter="'+letter+'"]');
+    const isInTitle = displayChars.some(c => c.isLetter && c.char.toUpperCase() === letter);
+
+    if(isInTitle){
+      displayChars.forEach(c => {
+        if(c.isLetter && c.char.toUpperCase() === letter) c.revealed = true;
+      });
+      if(key){ key.classList.add('correct'); key.disabled = true; }
+    } else {
+      strikes++;
+      updateStrikeMarks();
+      if(key){ key.classList.add('wrong'); key.disabled = true; }
+      const cur = wrongLettersEl.textContent;
+      wrongLettersEl.textContent = (cur ? cur + ' ' : '') + letter;
+    }
+
+    checkEnd();
+    render();
+  }
+
+  function checkEnd(){
+    const allRevealed = displayChars.every(c => !c.isLetter || c.revealed);
+    if(allRevealed){
+      solved = true;
+      score++;
+      fcScore.textContent = score;
+      showEnd(true);
+    } else if(strikes >= MAX_STRIKES){
+      lost = true;
+      showEnd(false);
+    }
+  }
+
+  function showEnd(won){
+    document.querySelectorAll('.key').forEach(k => k.disabled = true);
+    statusLabel.textContent = won ? 'declassified' : 'redaction failed';
+    stampBadgeEl.textContent = won ? 'declassified' : 'sealed';
+    stampBadgeEl.classList.toggle('lose', !won);
+    endTitleEl.textContent = title;
+    endSummaryEl.textContent = won
+      ? 'File fully declassified. Every letter accounted for.'
+      : 'Out of strikes. The file remains sealed — here is what it held:';
+    fullExtractEl.textContent = extract;
+    endstateEl.classList.add('show');
+    setTimeout(() => endstateEl.scrollIntoView({behavior:'smooth', block:'nearest'}), 100);
+  }
+
+  nextBtn.addEventListener('click', fetchArticle);
+
+  window.addEventListener('keydown', (e) => {
+    if(solved || lost) return;
+    const k = e.key.toUpperCase();
+    if(/^[A-Z]$/.test(k)) guess(k);
+  });
+
+  fetchArticle();
+})();
+</script>
+</body>
+</html>
