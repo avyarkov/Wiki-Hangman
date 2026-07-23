@@ -237,11 +237,13 @@
     flex-wrap: wrap;
     margin-top: 16px;
   }
-  button.action{
+  .action{
+    display:inline-block;
     font-family: 'Courier Prime', monospace;
     font-size: 13px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    text-decoration: none;
     background: var(--ink);
     color: var(--paper);
     border: none;
@@ -249,19 +251,14 @@
     cursor: pointer;
     border-radius: 3px;
   }
-  button.action:hover{ background: var(--ink-soft); }
-  button.action.ghost{
+  .action:hover{ background: var(--ink-soft); }
+  .action.ghost{
     background: transparent;
     color: var(--ink);
     border: 1px solid var(--ink);
   }
-  button.action.ghost:hover{
+  .action.ghost:hover{
     background: var(--paper-dark);
-  }
-  a.wiki-link{
-    color: var(--stamp-dark);
-    text-decoration: none;
-    border-bottom: 1px solid var(--stamp-dark);
   }
 
   @media (max-width: 480px){
@@ -302,8 +299,8 @@
         <div class="end-summary" id="endSummary"></div>
         <div class="extract" id="fullExtract"></div>
         <div class="actions">
-          <button class="action" id="nextBtn">Pull next file ↗</button>
-          <a class="wiki-link" id="wikiLink" href="#" target="_blank" rel="noopener">Read on Wikipedia</a>
+          <button class="action" id="nextBtn">Next game ↗</button>
+          <a class="action" id="wikiLink" href="#" target="_blank" rel="noopener">Read on Wikipedia ↗</a>
         </div>
       </div>
     </div>
