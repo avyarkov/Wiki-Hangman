@@ -112,23 +112,16 @@
   .letter{
     display:inline-block;
     min-width: 0.85ch;
-    border-bottom: 2px solid var(--ink);
     text-align:center;
     padding: 0 1px;
   }
   .letter.punct{
-    border-bottom: none;
     min-width: auto;
   }
   .letter.filled{
-    border-bottom: 2px solid var(--ok);
     color: var(--ok);
     font-weight: 700;
   }
-  .letter.blank-solved{
-    border-bottom: 2px solid var(--ink);
-  }
-
   .extract{
     font-family: 'Source Serif 4', serif;
     font-size: 15.5px;
@@ -479,13 +472,15 @@
       if(!c.isLetter){
         span.className = 'letter punct';
         span.textContent = c.char;
-      } else if(c.revealed || solved || lost){
+      } else if(c.revealed){
         span.className = 'letter filled';
         span.textContent = c.char;
-        if(lost && !c.revealed) span.classList.remove('filled');
+      } else if(solved || lost){
+        span.className = 'letter';
+        span.textContent = c.char;
       } else {
         span.className = 'letter';
-        span.textContent = '';
+        span.textContent = '_';
       }
       currentWord.appendChild(span);
     });
