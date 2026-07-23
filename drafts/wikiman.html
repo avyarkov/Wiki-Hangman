@@ -121,10 +121,6 @@
     margin-top: 8px;
   }
 
-  .gallows{
-    flex: 0 0 130px;
-  }
-
   .status-row{
     flex: 1 1 260px;
     min-width: 200px;
@@ -275,13 +271,6 @@
     border-bottom: 1px solid var(--stamp-dark);
   }
 
-  .hearts{
-    font-size: 12px;
-    color: var(--ink-soft);
-    margin-top: 10px;
-    font-family: 'Courier Prime', monospace;
-  }
-
   @media (max-width: 480px){
     .masthead{ font-size: 22px; }
     .word-block{ font-size: 17px; }
@@ -310,7 +299,6 @@
             <span class="strike-marks" id="strikeMarks"></span>
           </div>
           <div class="wrong-letters" id="wrongLetters"></div>
-          <div class="hearts" id="hintRow"></div>
         </div>
       </div>
 
@@ -355,7 +343,6 @@
   const fullExtractEl = document.getElementById('fullExtract');
   const wikiLinkEl = document.getElementById('wikiLink');
   const nextBtn = document.getElementById('nextBtn');
-  const hintRow = document.getElementById('hintRow');
 
   for(let i=0;i<MAX_STRIKES;i++){
     const m = document.createElement('div');
@@ -431,7 +418,6 @@
     });
     updateStrikeMarks();
     wrongLettersEl.textContent = '';
-    hintRow.textContent = '';
     endstateEl.classList.remove('show');
     render();
   }
@@ -441,7 +427,7 @@
     let currentWord = document.createElement('span');
     currentWord.className = 'word';
 
-    displayChars.forEach((c, idx) => {
+    displayChars.forEach(c => {
       if(c.char === ' '){
         wordBlockEl.appendChild(currentWord);
         wordBlockEl.appendChild(document.createTextNode(' '));
