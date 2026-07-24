@@ -84,7 +84,8 @@
     font-family: 'Courier Prime', monospace;
     font-size: 20px;
     word-spacing: 0.4em;
-    margin-bottom: 28px;
+    margin-top: 28px;
+    margin-bottom: 8px;
   }
   .word{
     display:inline-block;
@@ -111,7 +112,12 @@
     color: var(--ink-soft);
     border-top: 1px dashed var(--line);
     padding-top: 16px;
-    margin-top: 4px;
+    margin-top: 10px;
+    margin-bottom: 28px;
+  }
+  .extract .letter{
+    min-width: 0.6ch;
+    padding: 0;
   }
 
   .panel{
@@ -280,6 +286,7 @@
 
     <div id="game" style="display:none;">
       <div class="word-block" id="wordBlock"></div>
+      <div class="extract" id="extractBlock"></div>
 
       <div class="panel">
         <div class="status-row">
@@ -296,7 +303,6 @@
         <div class="stamp-badge" id="stampBadge">solved</div>
         <div class="end-title" id="endTitle"></div>
         <div class="end-summary" id="endSummary"></div>
-        <div class="extract" id="fullExtract"></div>
         <div class="actions">
           <button class="action" id="nextBtn">Next game ↗</button>
           <a class="action" id="wikiLink" href="#" target="_blank" rel="noopener">Read on Wikipedia ↗</a>
@@ -313,6 +319,7 @@
   let title = "";
   let extract = "";
   let displayChars = []; // array of {char, isLetter, revealed}
+  let extractChars = []; // array of {char, isLetter, revealed}
   let guessed = new Set();
   let strikes = 0;
   let solved = false;
@@ -321,13 +328,13 @@
   const loadingEl = document.getElementById('loading');
   const gameEl = document.getElementById('game');
   const wordBlockEl = document.getElementById('wordBlock');
+  const extractBlockEl = document.getElementById('extractBlock');
   const strikeMarksEl = document.getElementById('strikeMarks');
   const keyboardEl = document.getElementById('keyboard');
   const endstateEl = document.getElementById('endstate');
   const stampBadgeEl = document.getElementById('stampBadge');
   const endTitleEl = document.getElementById('endTitle');
   const endSummaryEl = document.getElementById('endSummary');
-  const fullExtractEl = document.getElementById('fullExtract');
   const wikiLinkEl = document.getElementById('wikiLink');
   const nextBtn = document.getElementById('nextBtn');
 
@@ -389,16 +396,21 @@
     }
   }
 
+  function buildChars(text){
+    return text.split('').map(ch => ({
+      char: ch,
+      isLetter: /[a-zA-Z]/.test(ch),
+      revealed: false
+    }));
+  }
+
   function setupPuzzle(){
     guessed = new Set();
     strikes = 0;
     solved = false;
     lost = false;
-    displayChars = title.split('').map(ch => ({
-      char: ch,
-      isLetter: /[a-zA-Z]/.test(ch),
-      revealed: false
-    }));
+    displayChars = buildChars(title);
+    extractChars = buildChars(extract);
     document.querySelectorAll('.key').forEach(k => {
       k.disabled = false;
       k.classList.remove('correct','wrong');
@@ -408,15 +420,15 @@
     render();
   }
 
-  function render(){
-    wordBlockEl.innerHTML = '';
+  function renderMasked(container, chars){
+    container.innerHTML = '';
     let currentWord = document.createElement('span');
     currentWord.className = 'word';
 
-    displayChars.forEach(c => {
+    chars.forEach(c => {
       if(c.char === ' '){
-        wordBlockEl.appendChild(currentWord);
-        wordBlockEl.appendChild(document.createTextNode(' '));
+        container.appendChild(currentWord);
+        container.appendChild(document.createTextNode(' '));
         currentWord = document.createElement('span');
         currentWord.className = 'word';
         return;
@@ -437,7 +449,12 @@
       }
       currentWord.appendChild(span);
     });
-    wordBlockEl.appendChild(currentWord);
+    container.appendChild(currentWord);
+  }
+
+  function render(){
+    renderMasked(wordBlockEl, displayChars);
+    renderMasked(extractBlockEl, extractChars);
   }
 
   function updateStrikeMarks(){
@@ -457,6 +474,9 @@
 
     if(isInTitle){
       displayChars.forEach(c => {
+        if(c.isLetter && c.char.toUpperCase() === letter) c.revealed = true;
+      });
+      extractChars.forEach(c => {
         if(c.isLetter && c.char.toUpperCase() === letter) c.revealed = true;
       });
       if(key){ key.classList.add('correct'); key.disabled = true; }
@@ -487,9 +507,8 @@
     stampBadgeEl.classList.toggle('lose', !won);
     endTitleEl.textContent = title;
     endSummaryEl.textContent = won
-      ? 'File fully declassified. Every letter accounted for.'
-      : 'Out of strikes. The file remains sealed — here is what it held:';
-    fullExtractEl.textContent = extract;
+      ? 'Title fully revealed. Every letter accounted for.'
+      : 'Out of strikes. The mystery was unsolved.';
     endstateEl.classList.add('show');
     setTimeout(() => endstateEl.scrollIntoView({behavior:'smooth', block:'nearest'}), 100);
   }
