@@ -306,6 +306,38 @@
 <script>
 (function(){
   const MAX_STRIKES = 6;
+  const CURATED_TITLES = [
+    'Albert Einstein','Isaac Newton','Charles Darwin','Galileo Galilei','Marie Curie',
+    'Leonardo da Vinci','William Shakespeare','Wolfgang Amadeus Mozart','Ludwig van Beethoven',
+    'Pablo Picasso','Vincent van Gogh','Napoleon','Julius Caesar','Cleopatra','Alexander the Great',
+    'Genghis Khan','Mahatma Gandhi','Nelson Mandela','Martin Luther King Jr.','Abraham Lincoln',
+    'George Washington','Winston Churchill','Adolf Hitler','Joseph Stalin','Queen Victoria',
+    'Elizabeth II','Christopher Columbus','Ferdinand Magellan','Marco Polo','Neil Armstrong',
+    'Steve Jobs','Bill Gates','Elon Musk','Mark Zuckerberg','Muhammad Ali','Michael Jordan',
+    'Pele','Usain Bolt','Serena Williams','Mother Teresa','Confucius','Plato','Aristotle',
+    'Socrates','Sigmund Freud','Nikola Tesla','Thomas Edison','Benjamin Franklin',
+    'Paris','London','Tokyo','New York City','Rome','Berlin','Moscow','Beijing','Cairo',
+    'Sydney','Venice','Athens','Jerusalem','Mecca','Egypt','China','India','Japan','Brazil',
+    'Australia','Canada','Germany','Russia','France','Italy','Spain','United Kingdom',
+    'United States','Mexico','Greece','Antarctica','Mount Everest','Amazon rainforest',
+    'Sahara','Great Wall of China','Eiffel Tower','Statue of Liberty','Great Barrier Reef',
+    'Niagara Falls','Grand Canyon','Colosseum','Machu Picchu','Stonehenge','Taj Mahal',
+    'Pyramids of Giza','Great Sphinx of Giza',
+    'Photosynthesis','Gravity','Evolution','DNA','Solar System','Black hole','Big Bang',
+    'Human brain','Water cycle','Periodic table','Oxygen','Gold','Diamond','Volcano',
+    'Earthquake','Tsunami','Hurricane','Lightning','Lion','Tiger','Elephant','Blue whale',
+    'Great white shark','Penguin','Panda','Dinosaur','Tyrannosaurus','Dolphin','Octopus',
+    'Honey bee','Mosquito','Butterfly',
+    'World War II','World War I','American Civil War','French Revolution','Cold War',
+    'Industrial Revolution','Renaissance','Ancient Rome','Ancient Egypt','Roman Empire',
+    'Titanic','Apollo 11','Moon landing','September 11 attacks','Berlin Wall',
+    'Internet','Television','Telephone','Automobile','Airplane','Printing press',
+    'Electricity','Vaccine','Olympic Games','Football','Basketball','Tennis','Chess',
+    'Christmas','Halloween','Bible','Quran','Buddhism','Christianity','Islam','Judaism',
+    'Hinduism','Google','Apple Inc.','Microsoft','Amazon (company)','Facebook','Tesla, Inc.',
+    'NASA','United Nations','Coca-Cola','McDonald\'s','Harry Potter','Star Wars',
+    'The Beatles','Walt Disney','Mickey Mouse','Mona Lisa','The Godfather'
+  ];
   let title = "";
   let extract = "";
   let displayChars = []; // array of {char, isLetter, revealed}
@@ -356,19 +388,18 @@
     endstateEl.classList.remove('show');
 
     try{
-      // Loop until we get an article with a reasonably guessable title
-      let attempt = 0;
+      // Draw from a curated pool of well-known articles to avoid obscure or unhelpful ones
+      const pool = CURATED_TITLES.slice();
       let data = null;
-      while(attempt < 6){
+      let attempt = 0;
+      while(attempt < 10 && pool.length > 0){
         attempt++;
-        const res = await fetch('https://en.wikipedia.org/api/rest_v1/page/random/summary');
-        if(!res.ok) throw new Error('network');
+        const idx = Math.floor(Math.random() * pool.length);
+        const pick = pool.splice(idx, 1)[0];
+        const res = await fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(pick.replace(/ /g, '_')));
+        if(!res.ok) continue;
         const json = await res.json();
         if(!json.title || !json.extract) continue;
-        // Skip disambiguation pages and overly short/odd titles
-        if(json.type === 'disambiguation') continue;
-        if(json.title.length < 3) continue;
-        if(!/[a-zA-Z]/.test(json.title)) continue;
         data = json;
         break;
       }
