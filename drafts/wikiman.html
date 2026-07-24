@@ -257,14 +257,6 @@
     border-radius: 3px;
   }
   .action:hover{ background: var(--ink-soft); }
-  .action.ghost{
-    background: transparent;
-    color: var(--ink);
-    border: 1px solid var(--ink);
-  }
-  .action.ghost:hover{
-    background: var(--paper-dark);
-  }
 
   @media (max-width: 480px){
     .masthead{ font-size: 22px; }
@@ -472,20 +464,18 @@
     const key = document.querySelector('.key[data-letter="'+letter+'"]');
     const isInTitle = displayChars.some(c => c.isLetter && c.char.toUpperCase() === letter);
 
+    extractChars.forEach(c => {
+      if(c.isLetter && c.char.toUpperCase() === letter) c.revealed = true;
+    });
+
     if(isInTitle){
       displayChars.forEach(c => {
-        if(c.isLetter && c.char.toUpperCase() === letter) c.revealed = true;
-      });
-      extractChars.forEach(c => {
         if(c.isLetter && c.char.toUpperCase() === letter) c.revealed = true;
       });
       if(key){ key.classList.add('correct'); key.disabled = true; }
     } else {
       strikes++;
       updateStrikeMarks();
-      extractChars.forEach(c => {
-        if(c.isLetter && c.char.toUpperCase() === letter) c.revealed = true;
-      });
       if(key){ key.classList.add('wrong'); key.disabled = true; }
     }
 
