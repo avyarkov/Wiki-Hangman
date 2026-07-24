@@ -483,6 +483,9 @@
     } else {
       strikes++;
       updateStrikeMarks();
+      extractChars.forEach(c => {
+        if(c.isLetter && c.char.toUpperCase() === letter) c.revealed = true;
+      });
       if(key){ key.classList.add('wrong'); key.disabled = true; }
     }
 
