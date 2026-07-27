@@ -198,6 +198,40 @@
     opacity: 1;
   }
 
+  .startscreen{
+    margin-top: 26px;
+    padding: 18px 20px;
+    border: 1px solid var(--line);
+    background: var(--paper-dark);
+  }
+  .difficulty-group{
+    display:flex;
+    flex-direction:column;
+    gap: 10px;
+    margin: 16px 0 20px;
+  }
+  .difficulty-option{
+    display:flex;
+    align-items:baseline;
+    gap: 8px;
+    cursor:pointer;
+  }
+  .difficulty-option input{
+    accent-color: var(--ink);
+    cursor:pointer;
+  }
+  .diff-name{
+    font-family:'Courier New', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .diff-desc{
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+
   .endstate{
     margin-top: 26px;
     padding: 18px 20px;
@@ -273,7 +307,29 @@
   </header>
 
   <div class="stage">
-    <div id="loading">fetching a random article from wikipedia…</div>
+    <div id="startScreen" class="startscreen">
+      <div class="end-title">How to play</div>
+      <div class="end-summary">Guess the hidden Wikipedia article one letter at a time. Each wrong letter costs a strike — six strikes and the article stays hidden. The extract below fills in as you guess, so read closely for clues.</div>
+
+      <div class="difficulty-group" id="difficultyGroup">
+        <label class="difficulty-option">
+          <input type="radio" name="difficulty" value="medium" checked>
+          <span class="diff-name">Medium</span>
+          <span class="diff-desc">curated pool of ~1,000 well-known topics</span>
+        </label>
+        <label class="difficulty-option">
+          <input type="radio" name="difficulty" value="hard">
+          <span class="diff-name">Hard</span>
+          <span class="diff-desc">a much larger pool of ~10,000 more obscure topics</span>
+        </label>
+      </div>
+
+      <div class="actions">
+        <button class="action" id="startBtn">Start game ↗</button>
+      </div>
+    </div>
+
+    <div id="loading" style="display:none;">fetching a random article from wikipedia…</div>
 
     <div id="game" style="display:none;">
       <div class="word-block" id="wordBlock"></div>
@@ -307,7 +363,8 @@
 <script>
 (function(){
   const MAX_STRIKES = 6;
-  const CURATED_TITLES = [
+  const LIST_HARD_URL = 'list-hard.json';
+  const MEDIUM_TITLES = [
     'Abiogenesis', 'Abortion', 'Abraham', 'Abraham Lincoln', 'Abstract algebra', 'Abstract art',
     'Achaemenid Empire', 'Acid', 'Adam Smith', 'Addiction', 'Adi Shankara', 'Adolescence',
     'Adolf Hitler', 'Adult', 'Aesthetics', 'Africa', 'African traditional religions',
@@ -484,7 +541,10 @@
   let strikes = 0;
   let solved = false;
   let lost = false;
+  let hardTitlesCache = null;
 
+  const startScreenEl = document.getElementById('startScreen');
+  const startBtn = document.getElementById('startBtn');
   const loadingEl = document.getElementById('loading');
   const gameEl = document.getElementById('game');
   const wordBlockEl = document.getElementById('wordBlock');
@@ -519,15 +579,48 @@
   }
   buildKeyboard();
 
-  async function fetchArticle(){
+  async function loadHardTitles(){
+    if(hardTitlesCache) return hardTitlesCache;
+    const res = await fetch(LIST_HARD_URL);
+    if(!res.ok) throw new Error('failed to load hard mode title list');
+    hardTitlesCache = await res.json();
+    return hardTitlesCache;
+  }
+
+  async function startGame(){
+    const difficulty = document.querySelector('input[name="difficulty"]:checked').value;
+    startScreenEl.style.display = 'none';
+    loadingEl.style.display = 'block';
+    loadingEl.textContent = 'preparing game…';
+
+    let pool = MEDIUM_TITLES;
+    if(difficulty === 'hard'){
+      try{
+        loadingEl.textContent = 'loading hard mode article list…';
+        pool = await loadHardTitles();
+      }catch(err){
+        loadingEl.textContent = 'could not load the hard mode list — check network settings and try again.';
+        return;
+      }
+    }
+    fetchArticle(pool);
+  }
+
+  function backToStart(){
+    gameEl.style.display = 'none';
+    endstateEl.classList.remove('show');
+    loadingEl.style.display = 'none';
+    startScreenEl.style.display = 'block';
+  }
+
+  async function fetchArticle(basePool){
     loadingEl.style.display = 'block';
     loadingEl.textContent = 'fetching a random article from wikipedia…';
     gameEl.style.display = 'none';
     endstateEl.classList.remove('show');
 
     try{
-      // Draw from a curated pool of well-known articles to avoid obscure or unhelpful ones
-      const pool = CURATED_TITLES.slice();
+      const pool = basePool.slice();
       let data = null;
       let attempt = 0;
       while(attempt < 10 && pool.length > 0){
@@ -673,15 +766,14 @@
     setTimeout(() => endstateEl.scrollIntoView({behavior:'smooth', block:'nearest'}), 100);
   }
 
-  nextBtn.addEventListener('click', fetchArticle);
+  startBtn.addEventListener('click', startGame);
+  nextBtn.addEventListener('click', backToStart);
 
   window.addEventListener('keydown', (e) => {
-    if(solved || lost) return;
+    if(gameEl.style.display === 'none' || solved || lost) return;
     const k = e.key.toUpperCase();
     if(/^[A-Z]$/.test(k)) guess(k);
   });
-
-  fetchArticle();
 })();
 </script>
 </body>
