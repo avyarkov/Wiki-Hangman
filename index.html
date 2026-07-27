@@ -212,13 +212,14 @@
   }
   .difficulty-option{
     display:flex;
-    align-items:baseline;
+    align-items:center;
     gap: 8px;
     cursor:pointer;
   }
   .difficulty-option input{
     accent-color: var(--ink);
     cursor:pointer;
+    margin:0;
   }
   .diff-name{
     font-family:'Courier New', monospace;
@@ -358,6 +359,7 @@
         <div class="actions">
           <button class="action" id="nextBtn">Next game ↗</button>
           <a class="action" id="wikiLink" href="#" target="_blank" rel="noopener">Read on Wikipedia ↗</a>
+          <button class="action" id="menuBtn">Start Menu ↗</button>
         </div>
       </div>
     </div>
@@ -382,6 +384,7 @@
   let solved = false;
   let lost = false;
   let listsCache = {};
+  let currentDifficulty = null;
 
   const startScreenEl = document.getElementById('startScreen');
   const startBtn = document.getElementById('startBtn');
@@ -397,6 +400,7 @@
   const endSummaryEl = document.getElementById('endSummary');
   const wikiLinkEl = document.getElementById('wikiLink');
   const nextBtn = document.getElementById('nextBtn');
+  const menuBtn = document.getElementById('menuBtn');
 
   for(let i=0;i<MAX_STRIKES;i++){
     const m = document.createElement('div');
@@ -427,11 +431,12 @@
     return listsCache[difficulty];
   }
 
-  async function startGame(){
-    const difficulty = document.querySelector('input[name="difficulty"]:checked').value;
-    startScreenEl.style.display = 'none';
+  async function launchGame(difficulty){
+    currentDifficulty = difficulty;
     loadingEl.style.display = 'block';
     loadingEl.textContent = 'loading ' + difficulty + ' mode article list…';
+    endstateEl.classList.remove('show');
+    gameEl.style.display = 'none';
 
     let pool;
     try{
@@ -441,6 +446,16 @@
       return;
     }
     fetchArticle(pool);
+  }
+
+  function startGame(){
+    const difficulty = document.querySelector('input[name="difficulty"]:checked').value;
+    startScreenEl.style.display = 'none';
+    launchGame(difficulty);
+  }
+
+  function playAgain(){
+    launchGame(currentDifficulty);
   }
 
   function backToStart(){
@@ -604,7 +619,8 @@
   }
 
   startBtn.addEventListener('click', startGame);
-  nextBtn.addEventListener('click', backToStart);
+  nextBtn.addEventListener('click', playAgain);
+  menuBtn.addEventListener('click', backToStart);
 
   window.addEventListener('keydown', (e) => {
     if(gameEl.style.display === 'none' || solved || lost) return;
