@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wiki-Hangman-dle — Hung Up On Wikipedia</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%23f2ecdc'/%3E%3Ctext x='50' y='66' font-family='Georgia, serif' font-size='42' font-weight='700' text-anchor='middle' fill='%2323201a'%3EWH%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --paper: #f2ecdc;
+    --paper-dark: #e7ddc4;
+    --ink: #23201a;
+    --ink-soft: #5a5346;
+    --line: #c9bd9f;
+    --stamp: #a4342a;
+    --stamp-dark: #7c2620;
+    --stamp-bg: #f6e2dd;
+    --ok: #3c5a3c;
+    --ok-bg: #e5f0de;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background: var(--paper);
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(0,0,0,0.025), transparent 40%),
+      radial-gradient(circle at 80% 80%, rgba(0,0,0,0.03), transparent 45%);
+    color: var(--ink);
+    font-family: Georgia, serif;
+    min-height: 100vh;
+    display:flex;
+    justify-content:center;
+    padding: 32px 16px 80px;
+  }
+  .sheet{
+    width: 100%;
+    max-width: 720px;
+  }
+
+  header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 10px;
+    margin-bottom: 6px;
+  }
+  .masthead{
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family:Georgia, serif;
+    font-weight: 600;
+  }
+
+  .subhead{
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    text-align:right;
+    line-height:1.5;
+  }
+
+  .stage{
+    position: relative;
+    min-height: 120px;
+  }
+
+  #loading{
+    font-family:'Courier New', monospace;
+    font-size: 13px;
+    color: var(--ink-soft);
+    padding: 40px 0;
+    text-align:center;
+    letter-spacing: 0.5px;
+  }
+  #loading::after{
+    content:'';
+    display:inline-block;
+    width: 6px;
+  }
+
+  .word-block{
+    line-height: 2.5;
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    word-spacing: 0.4em;
+    margin-top: 28px;
+    margin-bottom: 8px;
+  }
+  .word{
+    display:inline-block;
+    white-space: nowrap;
+    margin-right: 0.6em;
+  }
+  .letter{
+    display:inline-block;
+    min-width: 0.85ch;
+    text-align:center;
+    padding: 0 1px;
+  }
+  .letter.punct{
+    min-width: auto;
+  }
+  .letter.filled{
+    color: var(--ok);
+    font-weight: 700;
+  }
+  .extract{
+    font-family: Georgia, serif;
+    font-size: 15.5px;
+    line-height: 1.75;
+    color: var(--ink-soft);
+    border-top: 1px dashed var(--line);
+    padding-top: 16px;
+    margin-top: 10px;
+    margin-bottom: 28px;
+  }
+  .extract .letter{
+    min-width: 0.6ch;
+    padding: 0;
+  }
+
+  .panel{
+    display:flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    margin-top: 8px;
+  }
+
+  .status-row{
+    flex: 1 1 260px;
+    min-width: 200px;
+  }
+  .strikes{
+    font-family:'Courier New', monospace;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: var(--ink-soft);
+  }
+  .strike-marks{
+    display:inline-flex;
+    gap: 4px;
+    vertical-align: middle;
+    margin-left: 8px;
+  }
+  .mark{
+    width: 14px; height: 14px;
+    border: 1.5px solid var(--line);
+    border-radius: 2px;
+  }
+  .mark.hit{
+    background: var(--stamp);
+    border-color: var(--stamp-dark);
+  }
+
+  .keyboard{
+    display:grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 6px;
+    margin-top: 18px;
+    max-width: 480px;
+  }
+  .key{
+    font-family:'Courier New', monospace;
+    font-size: 14px;
+    font-weight: 700;
+    background: var(--paper);
+    border: 1px solid var(--ink);
+    color: var(--ink);
+    padding: 8px 0;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: transform 0.05s ease;
+  }
+  .key:hover:not(:disabled){
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .key:active:not(:disabled){
+    transform: scale(0.94);
+  }
+  .key:disabled{
+    cursor: default;
+    opacity: 0.35;
+  }
+  .key.correct{
+    background: var(--ok-bg);
+    border-color: var(--ok);
+    color: var(--ok);
+    opacity: 1;
+  }
+  .key.wrong{
+    background: var(--stamp-bg);
+    border-color: var(--stamp-dark);
+    color: var(--stamp-dark);
+    text-decoration: line-through;
+    opacity: 1;
+  }
+
+  .endstate{
+    margin-top: 26px;
+    padding: 18px 20px;
+    border: 1px solid var(--line);
+    background: var(--paper-dark);
+    display:none;
+  }
+  .endstate.show{ display:block; }
+  .stamp-badge{
+    display:inline-block;
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border: 3px solid var(--ok);
+    color: var(--ok);
+    transform: rotate(-4deg);
+    margin-bottom: 12px;
+  }
+  .stamp-badge.lose{
+    border-color: var(--stamp);
+    color: var(--stamp);
+  }
+  .end-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 4px 0 10px;
+  }
+  .end-summary{
+    font-size: 14.5px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin-bottom: 14px;
+  }
+
+  .actions{
+    display:flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+  }
+  .action{
+    display:inline-block;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    padding: 10px 18px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  .action:hover{ background: var(--ink-soft); }
+
+  @media (max-width: 480px){
+    .masthead{ font-size: 22px; }
+    .word-block{ font-size: 17px; }
+    .keyboard{ grid-template-columns: repeat(7, 1fr); }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header>
+    <div class="masthead">Wiki-Hangman-dle</div>
+    <div class="subhead">Hung Up On Wikipedia</div>
+  </header>
+
+  <div class="stage">
+    <div id="loading">fetching a random article from wikipedia…</div>
+
+    <div id="game" style="display:none;">
+      <div class="word-block" id="wordBlock"></div>
+      <div class="extract" id="extractBlock"></div>
+
+      <div class="panel">
+        <div class="status-row">
+          <div class="strikes">
+            STRIKES
+            <span class="strike-marks" id="strikeMarks"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="keyboard" id="keyboard"></div>
+
+      <div class="endstate" id="endstate">
+        <div class="stamp-badge" id="stampBadge">solved</div>
+        <div class="end-title" id="endTitle"></div>
+        <div class="end-summary" id="endSummary"></div>
+        <div class="actions">
+          <button class="action" id="nextBtn">Next game ↗</button>
+          <a class="action" id="wikiLink" href="#" target="_blank" rel="noopener">Read on Wikipedia ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  const MAX_STRIKES = 6;
+  const CURATED_TITLES = [
+    'Abiogenesis', 'Abortion', 'Abraham', 'Abraham Lincoln', 'Abstract algebra', 'Abstract art',
+    'Achaemenid Empire', 'Acid', 'Adam Smith', 'Addiction', 'Adi Shankara', 'Adolescence',
+    'Adolf Hitler', 'Adult', 'Aesthetics', 'Africa', 'African traditional religions',
+    'Afterlife', 'Age of Discovery', 'Age of Enlightenment', 'Ageing', 'Agriculture',
+    'Aircraft', 'Akbar', 'Al-Khwarizmi', 'Alan Turing', 'Albert Einstein', 'Alcoholic beverage',
+    'Alexander the Great', 'Algae', 'Algebra', 'Algeria', 'Algorithm', 'Ali', 'Allergy',
+    'Alloy', 'Alphabet', 'Amazon River', 'Amazon rainforest', 'American Revolution',
+    'Amphibian', 'Analytical chemistry', 'Anarchism', 'Anatomy', 'Ancient Egypt',
+    'Ancient Greece', 'Ancient Rome', 'Ancient history', 'Andean civilizations', 'Andes',
+    'Anesthesia', 'Anger', 'Angle', 'Animal', 'Animal husbandry', 'Animation', 'Antarctica',
+    'Anthropology', 'Antibiotic', 'Antoine Lavoisier', 'Arabic', 'Arabic numerals',
+    'Arabic script', 'Archaea', 'Archaeology', 'Archimedes', 'Architecture', 'Arctic',
+    'Arctic Ocean', 'Area', 'Argentina', 'Aristotle', 'Arithmetic', 'Armour', 'Art',
+    'Arthritis', 'Arthropod', 'Artificial intelligence', 'Ashoka', 'Asia',
+    'Association football', 'Asteroid', 'Asthma', 'Astronomy', 'Atheism', 'Atlantic Ocean',
+    'Atlantic slave trade', 'Atmosphere of Earth', 'Atom', 'Augustus', 'Australia',
+    'Authoritarianism', 'Autism', 'Avicenna', 'Aztecs', 'Bacteria', 'Bangkok', 'Bangladesh',
+    'Bank', 'Base (chemistry)', 'Bean', 'Beijing', 'Belief', 'Bengali language',
+    'Bhagavad Gita', 'Bible', 'Bicycle', 'Big Bang', 'Biochemistry', 'Biodiversity',
+    'Biological sex', 'Biology', 'Biotechnology', 'Bird', 'Birth control', 'Black Death',
+    'Black hole', 'Blood', 'Board game', 'Bone', 'Book', 'Botany', 'Brahmic scripts', 'Brain',
+    'Brazil', 'Bread', 'Breathing', 'Bridge', 'British Empire', 'Broadcasting', 'Bronze',
+    'Bronze Age', 'Buddhism', 'Building', 'Business', 'Byzantine Empire', 'Cairo', 'Calculus',
+    'Calendar', 'Camera', 'Canada', 'Canal', 'Cancer', 'Capitalism', 'Car', 'Carbohydrate',
+    'Carbon', 'Carbon dioxide', 'Card game', 'Cardiovascular disease', 'Caribbean',
+    'Carl Friedrich Gauss', 'Caspian Sea', 'Cat', 'Catalysis', 'Catherine the Great',
+    'Catholic Church', 'Cattle', 'Cell (biology)', 'Central America', 'Central Asia', 'Cereal',
+    'Charlemagne', 'Charles Darwin', 'Charlie Chaplin', 'Cheese', 'Chemical bond',
+    'Chemical compound', 'Chemical element', 'Chemical reaction', 'Chemistry', 'Chicken',
+    'Child', 'China', 'Chinese characters', 'Chinese folk religion', 'Chinese language',
+    'Christianity', 'Christopher Columbus', 'Cicero', 'Circle', 'Circulatory system', 'City',
+    'Civil engineering', 'Civilization', 'Classical mechanics', 'Classical music', 'Cleopatra',
+    'Climate', 'Climate change', 'Clock', 'Clothing', 'Cloud', 'Coal', 'Coffee', 'Cold War',
+    'Colombia', 'Colonialism', 'Color', 'Comet', 'Comics', 'Common cold', 'Communication',
+    'Communism', 'Community', 'Compass', 'Complex number', 'Computer', 'Computer science',
+    'Concrete', 'Confucianism', 'Confucius', 'Consciousness', 'Conservatism', 'Constitution',
+    'Construction', 'Contemporary history', 'Continent', 'Cooking', 'Copper', 'Corporation',
+    'Cotton', 'Country', 'Crime', 'Crusades', 'Crustacean', 'Cryptography', 'Culture',
+    'Cyrillic script', 'Cyrus the Great', 'DNA', 'Dam', 'Dance', 'Dante Alighieri', 'Day',
+    'Death', 'Decolonization', 'Deity', 'Delhi', 'Dementia', 'Democracy',
+    'Democratic Republic of the Congo', 'Dentistry', 'Desert', 'Design', 'Diabetes',
+    'Dictatorship', 'Digestion', 'Dinosaur', 'Diplomacy', 'Disability', 'Discrete mathematics',
+    'Discrimination', 'Disease', 'Dmitri Mendeleev', 'Dog', 'Domestication', 'Drawing', 'Dream',
+    'Drink', 'Drinking water', 'Drug', 'E (mathematical constant)', 'Ear',
+    'Early modern period', 'Earth', 'Earth science', 'Earthquake', 'East Asia',
+    'Eastern Orthodox Church', 'Eastern philosophy', 'Ecology', 'Economics', 'Economy',
+    'Ecosystem', 'Education', 'Egg', 'Egypt', 'Electric battery', 'Electric light',
+    'Electric motor', 'Electricity', 'Electromagnetic radiation', 'Electromagnetism',
+    'Electron', 'Electronics', 'Elizabeth I', 'Emotion', 'Energy', 'Engine', 'Engineering',
+    'English language', 'Entertainment', 'Epistemology', 'Equation', 'Erosion', 'Ethics',
+    'Ethiopia', 'Ethnicity', 'Euclid', 'Eukaryote', 'Europe', 'European Union', 'Evolution',
+    'Exercise', 'Explosive', 'Exponentiation', 'Extinction', 'Eye', 'Family', 'Famine',
+    'Fascism', 'Fashion', 'Fear', 'Feminism', 'Fertilizer', 'Festival', 'Fiction', 'Film',
+    'Finance', 'Fire', 'Firearm', 'Fish', 'Fishing', 'Flood', 'Florence Nightingale', 'Flower',
+    'Folk music', 'Folklore', 'Food', 'Food preservation', 'Force', 'Forest', 'Fortification',
+    'Fossil fuel', 'Fraction', 'France', 'Free will', 'French Revolution', 'French language',
+    'Friendship', 'Fruit', 'Function (mathematics)', 'Fungus', 'Furniture', 'Galaxy',
+    'Galileo Galilei', 'Gambling', 'Game', 'Ganges', 'Garden', 'Gas', 'Gastroenteritis',
+    'Gender', 'Gene', 'Genetics', 'Genghis Khan', 'Genocide', 'Geography', 'Geology',
+    'Geometry', 'George Washington', 'German language', 'Germany', 'Glass', 'Globalization',
+    'God', 'Gold', 'Good and evil', 'Government', 'Grammar', 'Grassland', 'Gravity',
+    'Great Depression', 'Greek language', 'Greek mythology', 'Gunpowder', 'Gupta Empire',
+    'HIV/AIDS', 'Hammurabi', 'Han dynasty', 'Happiness', 'Health', 'Heart', 'Henry Ford',
+    'Heredity', 'Himalayas', 'Hinduism', 'Hindustani language', 'Hippocrates', 'History',
+    'History of Africa', 'History of Asia', 'History of Earth', 'History of Europe',
+    'History of North America', 'History of South America', 'History of agriculture',
+    'History of architecture', 'History of art', 'History of life', 'History of literature',
+    'History of mathematics', 'History of medicine', 'History of music',
+    'History of philosophy', 'History of religion', 'History of science',
+    'History of technology', 'Hokusai', 'Holy Roman Empire', 'Home', 'Homer', 'Homicide',
+    'Hong Kong', 'Hormone', 'Horse', 'Hospital', 'Human', 'Human behavior', 'Human body',
+    'Human evolution', 'Human history', 'Human migration', 'Human rights', 'Human settlement',
+    'Human sexuality', 'Humour', 'Hunting', 'Hydrogen', 'Hydropower', 'Hygiene', 'Ibn Khaldun',
+    'Ideology', 'Immanuel Kant', 'Immune system', 'Imperialism', 'Inca Empire', 'India',
+    'Indian Ocean', 'Indigenous peoples', 'Indonesia', 'Indus Valley Civilisation',
+    'Industrial Revolution', 'Infant', 'Infection', 'Infinity', 'Influenza', 'Information',
+    'Information Age', 'Infrastructure', 'Injury', 'Inorganic chemistry', 'Insect', 'Insurance',
+    'Integer', 'Integrated circuit', 'Intellectual disability', 'Intelligence',
+    'Internal combustion engine', 'Internal structure of Earth',
+    'International Red Cross and Red Crescent Movement', 'International System of Units',
+    'Internet', 'Iran', 'Iron', 'Iron Age', 'Irrigation', 'Isaac Newton', 'Islam',
+    'Islamic Golden Age', 'Island', 'Israel', 'Istanbul', 'Italy', 'Jainism', 'Jakarta',
+    'James Clerk Maxwell', 'Japan', 'Japanese language', 'Jazz', 'Jerusalem', 'Jesus',
+    'Jewellery', 'Johann Sebastian Bach', 'Johannes Gutenberg', 'John Locke', 'Joseph Stalin',
+    'Journalism', 'Judaism', 'Julius Caesar', 'Jupiter', 'Justice', 'Karl Marx', 'Kenya',
+    'Knife', 'Knowledge', 'Kurt Gödel', 'Lagos', 'Lake', 'Land', 'Language', 'Laozi', 'Laser',
+    'Latin', 'Latin script', 'Law', 'Learning', 'Lens', 'Leo Tolstoy', 'Leonardo da Vinci',
+    'Leonhard Euler', 'Lever', 'Li Bai', 'Liberalism', 'Liberty', 'Library', 'Life', 'Light',
+    'Lightning', 'Limit (mathematics)', 'Line (geometry)', 'Linear algebra', 'Linguistics',
+    'Lipid', 'Liquid', 'Literacy', 'Literature', 'Liver', 'Logarithm', 'Logic', 'London',
+    'Louis Armstrong', 'Louis Pasteur', 'Love', 'Ludwig van Beethoven', 'Lung', 'Machine',
+    'Macroeconomics', 'Magnetism', 'Mahatma Gandhi', 'Mahayana', 'Mail', 'Maize', 'Malaria',
+    'Malay language', 'Malaysia', 'Mali Empire', 'Mammal', 'Man', 'Management', 'Mansa Musa',
+    'Manufacturing', 'Mao Zedong', 'Map', 'Marie Curie', 'Marketing', 'Marriage', 'Mars',
+    'Martial arts', 'Martin Luther', 'Mary Wollstonecraft', 'Masonry', 'Mass', 'Mass media',
+    'Mathematical analysis', 'Mathematical proof', 'Mathematics', 'Matter', 'Maya civilization',
+    'Measurement', 'Meat', 'Mecca', 'Mechanical engineering', 'Medical imaging', 'Medication',
+    'Medicine', 'Meditation', 'Mediterranean Sea', 'Memory', 'Mental disorder', 'Mental health',
+    'Mercury (planet)', 'Mesoamerica', 'Mesopotamia', 'Metabolism', 'Metal', 'Metallurgy',
+    'Metaphysics', 'Mexico', 'Mexico City', 'Michael Faraday', 'Michael Jackson',
+    'Michelangelo', 'Microeconomics', 'Microscope', 'Middle Ages', 'Middle East', 'Military',
+    'Military history', 'Milk', 'Milky Way', 'Mind', 'Mineral', 'Mining', 'Mississippi River',
+    'Mobile phone', 'Modern era', 'Modernism', 'Molecular biology', 'Molecule', 'Mollusca',
+    'Monarchy', 'Money', 'Mongol Empire', 'Moon', 'Morocco', 'Moscow', 'Moses', 'Motion',
+    'Mountain', 'Mughal Empire', 'Muhammad', 'Mumbai', 'Murasaki Shikibu', 'Muscle', 'Museum',
+    'Music', 'Musical instrument', 'Myanmar', 'Myocardial infarction', 'Myth', 'Napoleon',
+    'Nation', 'Nationalism', 'Natural disaster', 'Natural gas', 'Natural number',
+    'Natural rubber', 'Natural satellite', 'Natural selection', 'Nature', 'Navigation',
+    'Nelson Mandela', 'Neolithic Revolution', 'Neptune', 'Nervous system', 'Neutron',
+    'New York City', 'New religious movement', 'Newton\'s laws of motion',
+    'Niccolò Machiavelli', 'Nicolaus Copernicus', 'Nigeria', 'Nikola Tesla', 'Nile',
+    'Nitrogen', 'Non-fiction', 'North America', 'Novel', 'Nuclear power', 'Number',
+    'Number theory', 'Nursing', 'Nutrition', 'Obesity', 'Ocean', 'Oceania', 'Old age',
+    'Ontology', 'Optics', 'Oral tradition', 'Orchestra', 'Organic chemistry', 'Organism',
+    'Ottoman Empire', 'Outer space', 'Oven', 'Oxygen', 'Pablo Picasso', 'Pacific Ocean',
+    'Painting', 'Pakistan', 'Paleontology', 'Paper', 'Parenting', 'Paris', 'Particle physics',
+    'Peace', 'Performing arts', 'Periodic table', 'Personal name', 'Personality', 'Petroleum',
+    'Philippines', 'Philosophy', 'Phoenicia', 'Photography', 'Photon', 'Photosynthesis',
+    'Physical chemistry', 'Physical cosmology', 'Physical disability', 'Physics', 'Physiology',
+    'Pi', 'Pig', 'Planet', 'Plant', 'Plasma (physics)', 'Plastic', 'Plate tectonics', 'Plato',
+    'Play (activity)', 'Pneumonia', 'Poetry', 'Poland', 'Police', 'Political party',
+    'Political science', 'Politics', 'Pollution', 'Polygon', 'Polynesia', 'Pop music',
+    'Popular culture', 'Portuguese language', 'Post-classical history', 'Potato', 'Pottery',
+    'Poverty', 'Power (social and political)', 'Prayer', 'Pre-Columbian era', 'Pregnancy',
+    'Prehistory', 'Primate', 'Prime number', 'Printing', 'Privacy', 'Probability', 'Property',
+    'Protein', 'Protestantism', 'Proton', 'Psychology', 'Publishing', 'Qin Shi Huang',
+    'Quantum mechanics', 'Quran', 'RNA', 'Rabindranath Tagore', 'Racism', 'Radar', 'Radio',
+    'Radioactive decay', 'Rain', 'Ramesses II', 'Real number', 'Realism (arts)', 'Reason',
+    'Reformation', 'Refrigeration', 'Religion', 'Rembrandt', 'Renaissance', 'Renewable energy',
+    'René Descartes', 'Reproduction', 'Reptile', 'Research', 'Retail', 'Rhythm', 'Rice',
+    'Ritual', 'River', 'Road', 'Robotics', 'Rock (geology)', 'Rock music', 'Rocket',
+    'Rocky Mountains', 'Rodent', 'Romanticism', 'Rome', 'Rumi', 'Russia', 'Russian language',
+    'Sadness', 'Sahara', 'Salt', 'Sanitation', 'Satellite', 'Saturn', 'Saudi Arabia', 'School',
+    'Science', 'Scientific Revolution', 'Scientific method', 'Scramble for Africa', 'Sculpture',
+    'Sea', 'Season', 'Secularism', 'Seed', 'Semiconductor', 'Sense', 'Series (mathematics)',
+    'Service (economics)', 'Set (mathematics)', 'Sexism', 'Sexual intercourse',
+    'Sexual orientation', 'Sexually transmitted infection', 'Shamanism', 'Sheep', 'Shen Kuo',
+    'Shia Islam', 'Shinto', 'Ship', 'Shoe', 'Short story', 'Sigmund Freud', 'Sikhism',
+    'Silicon', 'Silk Road', 'Silver', 'Simple machine', 'Simón Bolívar', 'Singapore',
+    'Singing', 'Skeleton', 'Skin', 'Slavery', 'Sleep', 'Smallpox', 'Smoking', 'Snow',
+    'Social class', 'Social equality', 'Social science', 'Socialism', 'Society', 'Sociology',
+    'Socrates', 'Soil', 'Solar System', 'Solar energy', 'Solid', 'Soul', 'Sound',
+    'South Africa', 'South America', 'South Korea', 'Southeast Asia', 'Soviet Union', 'Space',
+    'Space exploration', 'Spaceflight', 'Spain', 'Spanish Empire', 'Spanish language',
+    'Species', 'Speech', 'Speed of light', 'Spice', 'Spirituality', 'Sport',
+    'Sport of athletics', 'Standard Model', 'Star', 'State (polity)', 'State of matter',
+    'Statistics', 'Steam engine', 'Steel', 'Stone Age', 'Storm', 'Stroke', 'Strong interaction',
+    'Subatomic particle', 'Substance (chemistry)', 'Sugar', 'Suicide',
+    'Suleiman the Magnificent', 'Sumer', 'Sun', 'Sunni Islam', 'Supernova', 'Supply and demand',
+    'Surgery', 'Swahili', 'Swimming', 'São Paulo', 'Tang dynasty', 'Tanzania', 'Taoism', 'Tax',
+    'Taxonomy (biology)', 'Tea', 'Technology', 'Telecommunications', 'Telephone', 'Telescope',
+    'Television', 'Temperature', 'Terrorism', 'Textile', 'Thailand', 'The Beatles',
+    'The Buddha', 'The arts', 'Theatre', 'Theft', 'Theology', 'Theory of relativity',
+    'Theravada', 'Thermodynamics', 'Thomas Edison', 'Thought', 'Three-dimensional space',
+    'Time', 'Timur', 'Tokyo', 'Tool', 'Topology', 'Tourism', 'Town', 'Toy', 'Trade',
+    'Trade union', 'Train', 'Transport', 'Tree', 'Triangle', 'Trigonometry', 'Tropical cyclone',
+    'Truth', 'Tuberculosis', 'Turkey', 'United Kingdom', 'United Nations', 'United States',
+    'Universe', 'University', 'Uranus', 'Urbanization', 'Vaccine', 'Vacuum',
+    'Variable (mathematics)', 'Vedas', 'Vegetable', 'Vehicle', 'Velocity', 'Venus',
+    'Vertebrate', 'Video', 'Video game', 'Vietnam', 'Viking Age', 'Village', 'Vincent van Gogh',
+    'Violence', 'Virgil', 'Virus', 'Visual arts', 'Vitamin', 'Volcano', 'Voltaire', 'Volume',
+    'Walt Disney', 'War', 'Waste', 'Water', 'Wave', 'Weak interaction', 'Weapon', 'Weather',
+    'Welfare spending', 'Western philosophy', 'Wheat', 'Wheel', 'William Shakespeare', 'Wind',
+    'Wind power', 'Wolfgang Amadeus Mozart', 'Woman', 'Wood', 'Word', 'Work (human activity)',
+    'World War I', 'World War II', 'Writing', 'Wu Zetian', 'Yangtze', 'Year', 'Zoology',
+    'Zoroastrianism'
+  ];
+
+  let title = "";
+  let extract = "";
+  let displayChars = []; // array of {char, isLetter, revealed}
+  let extractChars = []; // array of {char, isLetter, revealed}
+  let guessed = new Set();
+  let strikes = 0;
+  let solved = false;
+  let lost = false;
+
+  const loadingEl = document.getElementById('loading');
+  const gameEl = document.getElementById('game');
+  const wordBlockEl = document.getElementById('wordBlock');
+  const extractBlockEl = document.getElementById('extractBlock');
+  const strikeMarksEl = document.getElementById('strikeMarks');
+  const keyboardEl = document.getElementById('keyboard');
+  const endstateEl = document.getElementById('endstate');
+  const stampBadgeEl = document.getElementById('stampBadge');
+  const endTitleEl = document.getElementById('endTitle');
+  const endSummaryEl = document.getElementById('endSummary');
+  const wikiLinkEl = document.getElementById('wikiLink');
+  const nextBtn = document.getElementById('nextBtn');
+
+  for(let i=0;i<MAX_STRIKES;i++){
+    const m = document.createElement('div');
+    m.className = 'mark';
+    m.id = 'mark'+i;
+    strikeMarksEl.appendChild(m);
+  }
+
+  function buildKeyboard(){
+    keyboardEl.innerHTML = '';
+    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+    letters.forEach(l => {
+      const btn = document.createElement('button');
+      btn.className = 'key';
+      btn.textContent = l;
+      btn.dataset.letter = l;
+      btn.addEventListener('click', () => guess(l));
+      keyboardEl.appendChild(btn);
+    });
+  }
+  buildKeyboard();
+
+  async function fetchArticle(){
+    loadingEl.style.display = 'block';
+    loadingEl.textContent = 'fetching a random article from wikipedia…';
+    gameEl.style.display = 'none';
+    endstateEl.classList.remove('show');
+
+    try{
+      // Draw from a curated pool of well-known articles to avoid obscure or unhelpful ones
+      const pool = CURATED_TITLES.slice();
+      let data = null;
+      let attempt = 0;
+      while(attempt < 10 && pool.length > 0){
+        attempt++;
+        const idx = Math.floor(Math.random() * pool.length);
+        const pick = pool.splice(idx, 1)[0];
+        const res = await fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(pick.replace(/ /g, '_')));
+        if(!res.ok) continue;
+        const json = await res.json();
+        if(!json.title || !json.extract) continue;
+        data = json;
+        break;
+      }
+      if(!data) throw new Error('no suitable article found');
+
+      title = data.title;
+      extract = data.extract || '';
+      wikiLinkEl.href = data.content_urls && data.content_urls.desktop ? data.content_urls.desktop.page : ('https://en.wikipedia.org/wiki/' + encodeURIComponent(title.replace(/ /g,'_')));
+
+      setupPuzzle();
+      loadingEl.style.display = 'none';
+      gameEl.style.display = 'block';
+    }catch(err){
+      loadingEl.textContent = 'could not reach wikipedia — check network settings and try again.';
+    }
+  }
+
+  function buildChars(text){
+    return text.split('').map(ch => ({
+      char: ch,
+      isLetter: /[a-zA-Z]/.test(ch),
+      revealed: false
+    }));
+  }
+
+  function setupPuzzle(){
+    guessed = new Set();
+    strikes = 0;
+    solved = false;
+    lost = false;
+    displayChars = buildChars(title);
+    extractChars = buildChars(extract);
+    document.querySelectorAll('.key').forEach(k => {
+      k.disabled = false;
+      k.classList.remove('correct','wrong');
+    });
+    updateStrikeMarks();
+    endstateEl.classList.remove('show');
+    render();
+  }
+
+  function renderMasked(container, chars){
+    container.innerHTML = '';
+    let currentWord = document.createElement('span');
+    currentWord.className = 'word';
+
+    chars.forEach(c => {
+      if(c.char === ' '){
+        container.appendChild(currentWord);
+        container.appendChild(document.createTextNode(' '));
+        currentWord = document.createElement('span');
+        currentWord.className = 'word';
+        return;
+      }
+      const span = document.createElement('span');
+      if(!c.isLetter){
+        span.className = 'letter punct';
+        span.textContent = c.char;
+      } else if(c.revealed){
+        span.className = 'letter filled';
+        span.textContent = c.char;
+      } else if(solved || lost){
+        span.className = 'letter';
+        span.textContent = c.char;
+      } else {
+        span.className = 'letter';
+        span.textContent = '_';
+      }
+      currentWord.appendChild(span);
+    });
+    container.appendChild(currentWord);
+  }
+
+  function render(){
+    renderMasked(wordBlockEl, displayChars);
+    renderMasked(extractBlockEl, extractChars);
+  }
+
+  function updateStrikeMarks(){
+    for(let i=0;i<MAX_STRIKES;i++){
+      document.getElementById('mark'+i).classList.toggle('hit', i < strikes);
+    }
+  }
+
+  function guess(letter){
+    if(solved || lost) return;
+    letter = letter.toUpperCase();
+    if(guessed.has(letter)) return;
+    guessed.add(letter);
+
+    const key = document.querySelector('.key[data-letter="'+letter+'"]');
+    const isInTitle = displayChars.some(c => c.isLetter && c.char.toUpperCase() === letter);
+
+    extractChars.forEach(c => {
+      if(c.isLetter && c.char.toUpperCase() === letter) c.revealed = true;
+    });
+
+    if(isInTitle){
+      displayChars.forEach(c => {
+        if(c.isLetter && c.char.toUpperCase() === letter) c.revealed = true;
+      });
+      if(key){ key.classList.add('correct'); key.disabled = true; }
+    } else {
+      strikes++;
+      updateStrikeMarks();
+      if(key){ key.classList.add('wrong'); key.disabled = true; }
+    }
+
+    checkEnd();
+    render();
+  }
+
+  function checkEnd(){
+    const allRevealed = displayChars.every(c => !c.isLetter || c.revealed);
+    if(allRevealed){
+      solved = true;
+      showEnd(true);
+    } else if(strikes >= MAX_STRIKES){
+      lost = true;
+      showEnd(false);
+    }
+  }
+
+  function showEnd(won){
+    document.querySelectorAll('.key').forEach(k => k.disabled = true);
+    stampBadgeEl.textContent = won ? 'VICTORY' : 'DEFEAT';
+    stampBadgeEl.classList.toggle('lose', !won);
+    endTitleEl.textContent = title;
+    endSummaryEl.textContent = won
+      ? 'Title fully revealed. Every letter accounted for.'
+      : 'Out of strikes. The mystery was unsolved.';
+    endstateEl.classList.add('show');
+    setTimeout(() => endstateEl.scrollIntoView({behavior:'smooth', block:'nearest'}), 100);
+  }
+
+  nextBtn.addEventListener('click', fetchArticle);
+
+  window.addEventListener('keydown', (e) => {
+    if(solved || lost) return;
+    const k = e.key.toUpperCase();
+    if(/^[A-Z]$/.test(k)) guess(k);
+  });
+
+  fetchArticle();
+})();
+</script>
+</body>
+</html>
