@@ -1,7 +1,9 @@
-# WikiGuesser
+# Wiki-Hangman
 
-Guess the wiki page.
+Guess the secret Wikipedia article one letter at a time.
 
-## Notes
+If the letter is not in the title, you get a strike.
 
-This README was added as a brief placeholder to help get the project started.
+Six strikes lead to defeat.
+
+The extract below fills in as you guess, so watch closely for clues.
