@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wiki-Hangman-dle — Hung Up On Wikipedia</title>
+<title>Wiki-Hangman-dle</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%23f2ecdc'/%3E%3Ctext x='50' y='66' font-family='Georgia, serif' font-size='42' font-weight='700' text-anchor='middle' fill='%2323201a'%3EWH%3C/text%3E%3C/svg%3E">
 <style>
   :root{
@@ -309,7 +309,7 @@
   <div class="stage">
     <div id="startScreen" class="startscreen">
       <div class="end-title">How to play</div>
-      <div class="end-summary">Guess the hidden Wikipedia article one letter at a time. Each wrong letter costs a strike — six strikes and the article stays hidden. The extract below fills in as you guess, so read closely for clues.</div>
+      <div class="end-summary">Guess the secret Wikipedia article one letter at a time.<br>If the letter is not in the title, you get a strike.<br>Six strikes lead to defeat.<br>The extract below fills in as you guess, so watch closely for clues.</div>
 
       <div class="difficulty-group" id="difficultyGroup">
         <label class="difficulty-option">
@@ -320,12 +320,12 @@
         <label class="difficulty-option">
           <input type="radio" name="difficulty" value="medium" checked>
           <span class="diff-name">Medium</span>
-          <span class="diff-desc">curated pool of ~1,000 well-known topics</span>
+          <span class="diff-desc">medium pool of ~1,000 well-known topics</span>
         </label>
         <label class="difficulty-option">
           <input type="radio" name="difficulty" value="hard">
           <span class="diff-name">Hard</span>
-          <span class="diff-desc">a much larger pool of ~10,000 more obscure topics</span>
+          <span class="diff-desc">larger pool of ~10,000 topics, some might be obscure</span>
         </label>
       </div>
 
