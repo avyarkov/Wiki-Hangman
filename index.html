@@ -313,6 +313,11 @@
 
       <div class="difficulty-group" id="difficultyGroup">
         <label class="difficulty-option">
+          <input type="radio" name="difficulty" value="easy">
+          <span class="diff-name">Easy</span>
+          <span class="diff-desc">small pool of ~100 of the most universally known topics</span>
+        </label>
+        <label class="difficulty-option">
           <input type="radio" name="difficulty" value="medium" checked>
           <span class="diff-name">Medium</span>
           <span class="diff-desc">curated pool of ~1,000 well-known topics</span>
@@ -364,6 +369,7 @@
 (function(){
   const MAX_STRIKES = 6;
   const LIST_URLS = {
+    easy: 'list-easy.json',
     medium: 'list-medium.json',
     hard: 'list-hard.json'
   };
