@@ -295,6 +295,18 @@
   }
   .action:hover{ background: var(--ink-soft); }
 
+  .credits{
+    margin-top: 18px;
+    font-size: 15px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+  .credits a{
+    color: var(--ink-soft);
+    text-decoration: underline;
+  }
+  .credits a:hover{ color: var(--ink); }
+
   @media (max-width: 480px){
     .masthead{ font-size: 22px; }
     .word-block{ font-size: 17px; }
@@ -336,6 +348,8 @@
       <div class="actions">
         <button class="action" id="startBtn">Start game ↗</button>
       </div>
+
+      <div class="credits">Inspired by <a href="https://pedantle.certitudes.org/" target="_blank" rel="noopener">Pedantle</a> and <a href="https://redactle.net/" target="_blank" rel="noopener">Redactle</a>.</div>
     </div>
 
     <div id="loading" style="display:none;">fetching a random article from wikipedia…</div>
