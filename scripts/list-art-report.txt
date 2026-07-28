@@ -1,0 +1,503 @@
+kept: 5655
+rejected: 119
+
+== REJECTED ==
+Absolutism	disambiguation
+Alienation	disambiguation
+Aqueduct	disambiguation
+Automatic drawing	disambiguation
+Babel fish	disambiguation
+Backstage	disambiguation
+Barbie (doll)	missing
+Blue Planet	disambiguation
+Book club	disambiguation
+Broken mirror	missing
+Censorship of the arts	missing
+Chalk art	disambiguation
+Composition VII (Kandinsky)	missing
+Conservatory	disambiguation
+Cook	disambiguation
+Custom	disambiguation
+Dennis the Menace	disambiguation
+District 12	disambiguation
+Dobby	disambiguation
+Dogtooth	disambiguation
+Donkey Kong (video game)	disambiguation
+Eat, Pray, Love	disambiguation
+Either/Or	disambiguation
+Either/Or (book)	missing
+Enamel	disambiguation
+Enlightenment (spiritual)	disambiguation
+Esmeralda (Notre-Dame de Paris)	missing
+Esmeralda (character)	missing
+Everyman (play)	disambiguation
+Ex libris	disambiguation
+Expo	disambiguation
+Fame	disambiguation
+Fire breathing	disambiguation
+Food and drink	not an article
+Frank Underwood	disambiguation
+Game cheat codes	missing
+Golden Age of Animation	missing
+Golden Age of Arcade Video Games	missing
+Gone Girl	disambiguation
+Gravity (2015 film)	missing
+Gulliver	disambiguation
+Hedwig	disambiguation
+Hel (mythology)	disambiguation
+Hollywood	disambiguation
+Homage	disambiguation
+Icon (idea)	missing
+Illuminated letter	missing
+Impressionist (entertainer)	missing
+Inspiration	disambiguation
+Iron Throne	disambiguation
+Jim Hawkins	disambiguation
+Judith Slaying Holofernes (Artemisia Gentileschi)	disambiguation
+King's Landing	disambiguation
+Knock on wood	disambiguation
+Kung Fu Panda (2008 film)	missing
+Legacy	disambiguation
+Little Prince	disambiguation
+Luigi	disambiguation
+Mamma Mia!	disambiguation
+Maxim	disambiguation
+Media	disambiguation
+Miniature painting	disambiguation
+Moko	disambiguation
+Molas	disambiguation
+Moldau	disambiguation
+Naga	disambiguation
+Nautilus (Nemo's submarine)	missing
+Nighthawks	disambiguation
+Notch (programmer)	missing
+Olympus	disambiguation
+Overwatch (video game)	disambiguation
+Peter Pan	disambiguation
+Photo editing	disambiguation
+Pinocchio (1883 book)	missing
+Plaque	disambiguation
+Prodigy	disambiguation
+Purple Rain	disambiguation
+Rumours	disambiguation
+Sacred cow	disambiguation
+Sand art	disambiguation
+Sarah Connor	disambiguation
+Satisfaction	disambiguation
+Season (TV)	missing
+Second golden age of animation	missing
+Sherlock Holmes (Sherlock)	missing
+Sherlock Holmes (fictional universe)	missing
+Solitaire (video game)	missing
+Something Wicked This Way Comes	disambiguation
+Sorcery	disambiguation
+Still I Rise	disambiguation
+Sulley	disambiguation
+Sun and Steel	disambiguation
+Sun and Steel (book)	missing
+Symbolism	disambiguation
+Syndication	disambiguation
+Tanuki	disambiguation
+Teenage Mutant Ninja Turtles (characters)	missing
+The Absurd	disambiguation
+The Ballet Class	missing
+The Dude	disambiguation
+The Kiss (Rodin)	missing
+The Penguin (character)	missing
+The Phantom of the Opera (character)	missing
+The Rebel	disambiguation
+The White Tiger	disambiguation
+The White Tiger (novel)	missing
+Total War (series)	disambiguation
+Total War (video games)	missing
+Totoro	disambiguation
+Treasure Island (fictional island)	missing
+Trope	disambiguation
+Very Rich Hours of the Duke of Berry	missing
+Vodou	disambiguation
+Walter White	disambiguation
+Where in the World Is Carmen Sandiego?	disambiguation
+Will Wright	disambiguation
+Wizard	disambiguation
+Yves Saint Laurent	disambiguation
+Zhuangzi	disambiguation
+
+== RESOLVED / MERGED ==
+12 Angry Men (1957 film)	->	12 Angry Men	(redirect)
+2001: A Space Odyssey (film)	->	2001: A Space Odyssey	(redirect)
+A Beautiful Mind (film)	->	A Beautiful Mind	(redirect)
+Aboriginal Australian art	->	Indigenous Australian art	(redirect)
+Abu Simbel temples	->	Abu Simbel	(redirect)
+Achilles and the tortoise	->	Zeno's paradoxes	(redirect)
+Africa (Toto song)	->	Africa (song)	(redirect)
+African mythology	->	African traditional religions	(redirect)
+Al-Masjid an-Nabawi	->	Prophet's Mosque	(redirect)
+Alejandro G. Iñárritu	->	Alejandro González Iñárritu	(redirect)
+Alien (creature in Alien franchise)	->	Xenomorph	(redirect)
+Also sprach Zarathustra (Strauss)	->	Also sprach Zarathustra	(redirect)
+Americana (music)	->	Americana music	(redirect)
+Amélie Poulain	->	Amélie	(duplicate of Amélie)
+Analytic cubism	->	Cubism	(redirect)
+Ancient Egyptian art	->	Art of ancient Egypt	(redirect)
+Andy Dufresne	->	The Shawshank Redemption	(duplicate of The Shawshank Redemption)
+Anime convention	->	Anime and manga convention	(redirect)
+Arabesque (ballet)	->	Arabesque (ballet position)	(redirect)
+Arcade stick	->	Arcade controller	(redirect)
+Argument from design	->	Teleological argument	(redirect)
+Art collecting	->	Private collection	(redirect)
+Art conservation and restoration	->	Conservation and restoration of cultural property	(redirect)
+Ashanti mythology	->	Akan religion	(redirect)
+Assemblage art	->	Assemblage (art)	(duplicate of Assemblage (art))
+Aurora (Disney)	->	Aurora (Sleeping Beauty)	(redirect)
+Australian Aboriginal mythology	->	Australian Aboriginal religion and mythology	(redirect)
+Auto-Tune	->	AutoTune	(redirect)
+Award ceremony	->	Awards ceremony	(redirect)
+B.B. King	->	B. B. King	(redirect)
+BAFTA Awards	->	British Academy Film Awards	(redirect)
+Bacchus	->	Dionysus	(duplicate of Dionysus)
+Ballerina	->	Ballet dancer	(redirect)
+Banned books	->	Book censorship by country	(redirect)
+Batman: The Dark Knight Returns	->	The Dark Knight Returns	(redirect)
+Beat poetry	->	Beat Generation	(duplicate of Beat Generation)
+Behistun Inscription	->	Behistun inscription	(redirect)
+Belle (Beauty and the Beast)	->	Belle (given name)	(redirect)
+Bikini Bottom	->	SpongeBob SquarePants	(duplicate of SpongeBob SquarePants)
+Black Square (painting)	->	Black Square	(redirect)
+Bluey (2018 TV series)	->	Bluey (TV series)	(redirect)
+Bollywood	->	Hindi cinema	(redirect)
+Bon Festival	->	Obon	(redirect)
+Bong Joon-ho	->	Bong Joon Ho	(redirect)
+Book musical	->	Musical theatre	(duplicate of Musical theatre)
+Book of Hours	->	Book of hours	(redirect)
+Book of Psalms	->	Psalms	(duplicate of Psalm)
+Borg (Star Trek)	->	Borg	(redirect)
+Brer Rabbit	->	Br'er Rabbit	(redirect)
+Bridget Jones's Diary (film)	->	Bridget Jones's Diary	(duplicate of Bridget Jones's Diary)
+Busking	->	Street performance	(redirect)
+Bust of Nefertiti	->	Nefertiti Bust	(redirect)
+Cadavre exquis	->	Exquisite corpse	(redirect)
+Camille Corot	->	Jean-Baptiste-Camille Corot	(redirect)
+Canon (Pachelbel)	->	Pachelbel's Canon	(redirect)
+Card trick	->	Card manipulation	(redirect)
+Cel animation	->	Traditional animation	(duplicate of Traditional animation)
+Charon (mythology)	->	Charon	(redirect)
+Chicken Little	->	Henny Penny	(redirect)
+Choreographer	->	Choreography	(duplicate of Choreography)
+Christian Grey	->	Fifty Shades (novel series)	(redirect)
+Chucky (character)	->	Chucky (Child's Play)	(redirect)
+Clair de lune (Debussy)	->	Suite bergamasque	(redirect)
+Comic-Con	->	Comic book convention	(redirect)
+Composition (music)	->	Musical composition	(redirect)
+Concert hall	->	List of concert halls	(redirect)
+Conductor (music)	->	Conducting	(redirect)
+Crescendo	->	Dynamics (music)	(redirect)
+Criterion Collection	->	The Criterion Collection	(redirect)
+Cross-hatching	->	Hatching	(redirect)
+Céline Dion	->	Celine Dion	(redirect)
+D'Artagnan	->	Charles de Batz de Castelmore d'Artagnan	(redirect)
+Dancer	->	Dance	(duplicate of Dance)
+Dances with Wolves	->	Dances With Wolves	(redirect)
+Dandyism	->	Dandy	(duplicate of Dandy)
+Data visualization	->	Data and information visualization	(redirect)
+David and Goliath	->	Goliath	(redirect)
+Death (personification)	->	Personifications of death	(redirect)
+Declaration of Independence	->	Declaration of independence	(redirect)
+Deep Thought (The Hitchhiker's Guide to the Galaxy)	->	List of The Hitchhiker's Guide to the Galaxy characters	(redirect)
+Dementor	->	Magical creatures in Harry Potter	(redirect)
+Discotheque	->	Nightclub	(redirect)
+Divan of Hafez	->	The Divân of Hafez	(redirect)
+Dixieland	->	Dixieland jazz	(redirect)
+Djinn	->	Jinn	(redirect)
+Doctor Watson	->	Dr. Watson	(redirect)
+Doctor Who (character)	->	The Doctor	(redirect)
+Documentary	->	Documentary film	(duplicate of Documentary film)
+Don Quixote (character)	->	Alonso Quijano	(redirect)
+Dorian Gray	->	The Picture of Dorian Gray	(duplicate of The Picture of Dorian Gray)
+Dot painting	->	Papunya Tula	(redirect)
+Dr. Jekyll and Mr. Hyde	->	Strange Case of Dr Jekyll and Mr Hyde	(duplicate of The Strange Case of Dr Jekyll and Mr Hyde)
+Dreamtime	->	The Dreaming	(redirect)
+Drop cap	->	Initial	(redirect)
+Duckburg	->	Donald Duck universe	(redirect)
+E-book	->	Ebook	(redirect)
+Eddard Stark	->	Ned Stark	(redirect)
+Electronic Entertainment Expo	->	E3	(redirect)
+Elf (Middle-earth)	->	Elves in Middle-earth	(redirect)
+Elizabethan theatre	->	English Renaissance theatre	(redirect)
+Emmy Award	->	Emmy Awards	(redirect)
+Emperor Palpatine	->	Palpatine	(redirect)
+Enlightenment in Spain	->	Spanish Enlightenment	(redirect)
+Equalization (audio)	->	Audio equalization	(redirect)
+Ethics (Spinoza book)	->	Spinoza's Ethics	(redirect)
+Etude	->	Étude	(redirect)
+Expressionism	->	Expressionism	(duplicate of German expressionism)
+Faberge egg	->	Fabergé egg	(redirect)
+Facade	->	Façade	(redirect)
+Face painting	->	Body painting	(redirect)
+Feast	->	Banquet	(redirect)
+Ferris Bueller	->	Ferris Bueller's Day Off	(duplicate of Ferris Bueller's Day Off)
+Fictional character	->	Character (arts)	(duplicate of Character (arts))
+Film rating system	->	Motion picture content rating system	(redirect)
+Film trailer	->	Trailer (promotion)	(redirect)
+Footloose (1984 film)	->	Footloose	(redirect)
+Forrest Gump (character)	->	Forrest Gump	(duplicate of Forrest Gump)
+Forza Motorsport	->	Forza	(redirect)
+Found footage (film technique)	->	Found footage film	(redirect)
+Frank Miller (comics)	->	Frank Miller	(redirect)
+Fresh Prince of Bel-Air	->	The Fresh Prince of Bel-Air	(redirect)
+Frottage (art)	->	Rubbing (art)	(redirect)
+Furies	->	Erinyes	(redirect)
+Garage band	->	Garage rock	(redirect)
+Gautama Buddha	->	The Buddha	(redirect)
+Genie	->	Jinn	(duplicate of Djinn)
+German expressionism	->	Expressionism	(redirect)
+Get Out (film)	->	Get Out	(redirect)
+Ghostbusters (1984 film)	->	Ghostbusters	(redirect)
+Gizmo (Gremlins)	->	Gremlins	(duplicate of Gremlins)
+Golden Age of Athens	->	Athens in the 5th century BC	(redirect)
+Golden Age of Hollywood	->	Classical Hollywood cinema	(redirect)
+Golden Globe Award	->	Golden Globes	(duplicate of Golden Globe Awards)
+Golden Globe Awards	->	Golden Globes	(redirect)
+GoldenEye 007 (1997 video game)	->	GoldenEye 007	(redirect)
+Gorgon	->	Gorgons	(redirect)
+Grammy Award	->	Grammy Awards	(redirect)
+Grand jeté	->	Glossary of ballet	(redirect)
+Grand piano	->	Piano	(redirect)
+Great Mosque of Mecca	->	Masjid al-Haram	(redirect)
+Grime (music genre)	->	Grime music	(redirect)
+Gru (Despicable Me)	->	Gru	(redirect)
+Grunge fashion	->	Grunge (fashion)	(redirect)
+Guggenheim Museum	->	List of Guggenheim Museums	(redirect)
+Guttenberg Bible	->	Gutenberg Bible	(duplicate of Gutenberg Bible)
+Hades (Disney)	->	List of Disney's Hercules characters	(redirect)
+Hall of fame	->	List of halls and walks of fame	(redirect)
+Hallelujah chorus	->	Hallelujah Chorus	(redirect)
+Hel (being)	->	Hel (mythological being)	(redirect)
+Hieroglyph	->	Egyptian hieroglyphs	(duplicate of Egyptian hieroglyphs)
+Hip hop culture	->	Hip-hop culture	(redirect)
+Hip hop music	->	Hip-hop	(redirect)
+Hippie movement	->	History of the hippie movement	(redirect)
+Hopscotch (Julio Cortázar novel)	->	Hopscotch (Cortázar novel)	(redirect)
+Horcrux	->	Magical objects in Harry Potter	(redirect)
+House Lannister	->	List of A Song of Ice and Fire characters	(redirect)
+Huitzilopochtli	->	Huītzilōpōchtli	(redirect)
+Hyperrealism	->	Hyperreality	(redirect)
+Hyrule	->	Universe of The Legend of Zelda	(redirect)
+Id, ego and super-ego	->	Id, ego and superego	(redirect)
+Idle game	->	Incremental game	(redirect)
+Imagine (John Lennon song)	->	Imagine (song)	(redirect)
+Indian architecture	->	Architecture of India	(redirect)
+Ink wash painting	->	Ink wash painting	(duplicate of Sumi-e)
+Inside Out (2015 film)	->	Inside Out	(redirect)
+Ishtar	->	Inanna	(redirect)
+Jafar	->	Jaʽfar	(redirect)
+Japanese role-playing game	->	History of Eastern role-playing video games	(redirect)
+Jim Hawkins (Treasure Island)	->	Jim Hawkins (character)	(redirect)
+Journey to the Center of the Earth	->	Journey to the Centre of the Earth	(redirect)
+Jumanji (1995 film)	->	Jumanji (film)	(redirect)
+Jupiter (mythology)	->	Jupiter (god)	(redirect)
+Jurassic Park (film)	->	Jurassic Park	(redirect)
+Kalimba	->	Mbira	(redirect)
+Khalil Gibran	->	Kahlil Gibran	(redirect)
+Kinetic sculpture	->	Kinetic art	(duplicate of Kinetic art)
+Kite flying	->	Kite	(duplicate of Kite)
+Koschei	->	Koshchei	(redirect)
+Kung fu	->	Chinese martial arts	(redirect)
+Lantern festival	->	Lantern Festival	(redirect)
+Laurence Olivier Award	->	Laurence Olivier Awards	(redirect)
+Lemonade (Beyoncé album)	->	Lemonade (album)	(redirect)
+Let It Be (Beatles song)	->	Let It Be (song)	(redirect)
+Letters from a Stoic	->	Epistulae Morales ad Lucilium	(redirect)
+Level design	->	Level (video games)	(redirect)
+Life drawing	->	Figure drawing	(redirect)
+Linear perspective	->	Perspective (graphical)	(redirect)
+Linus van Pelt	->	Linus Van Pelt	(redirect)
+Live album	->	Album	(redirect)
+Livestreaming	->	Live streaming	(redirect)
+Logical fallacy	->	Formal fallacy	(redirect)
+Lord Voldemort	->	Voldemort	(redirect)
+Lucy van Pelt	->	Lucy Van Pelt	(redirect)
+Ma'at	->	Maat	(redirect)
+Magic realism	->	Magical realism	(redirect)
+Makeup artist	->	Make-up artist	(redirect)
+Maracas	->	Maraca	(redirect)
+Marbled paper	->	Paper marbling	(redirect)
+Mesoamerican art	->	Pre-Columbian art	(redirect)
+Metal Gear Solid	->	Metal Gear	(redirect)
+Microsoft Gaming	->	Xbox (division)	(redirect)
+Minions (franchise)	->	Minions (film series)	(redirect)
+Ministry of Truth	->	Ministries in Nineteen Eighty-Four	(redirect)
+Moby Dick	->	Moby-Dick	(duplicate of Moby-Dick)
+Monotype	->	Monotyping	(redirect)
+Mont Sainte-Victoire	->	Montagne Sainte-Victoire	(redirect)
+Moral philosophy	->	Ethics	(redirect)
+Moscow Kremlin	->	Kremlin	(redirect)
+Movie poster	->	Film poster	(redirect)
+Mr. Rochester	->	Edward Rochester	(redirect)
+Muralism	->	Mural	(redirect)
+Murano glass	->	Venetian glass	(redirect)
+Muse	->	Muses	(redirect)
+Muses	->	Muses	(duplicate of Muse)
+Mushroom Kingdom	->	Mario (franchise)	(duplicate of Mario (franchise))
+Mythology	->	Myth	(duplicate of Myth)
+NFT	->	Non-fungible token	(redirect)
+Narnia	->	The Chronicles of Narnia	(duplicate of The Chronicles of Narnia)
+Nazca Lines	->	Nazca lines	(redirect)
+Nemo (Finding Nemo)	->	Finding Nemo	(duplicate of Finding Nemo)
+Neon art	->	Neon lighting	(redirect)
+Netiquette	->	Etiquette in technology	(redirect)
+New World Symphony	->	Symphony No. 9 (Dvořák)	(redirect)
+New7Wonders of the World	->	New 7 Wonders of the World	(redirect)
+News broadcasting	->	Broadcast journalism	(redirect)
+Nom de plume	->	Pen name	(duplicate of Pen name)
+Norman Foster, Baron Foster of Thames Bank	->	Norman Foster	(redirect)
+Nouvelle Vague	->	French New Wave	(duplicate of French New Wave)
+Ocean's Eleven (2001 film)	->	Ocean's Eleven	(redirect)
+Oceania (Nineteen Eighty-Four)	->	Political geography of Nineteen Eighty-Four	(redirect)
+Oceanic art	->	Oceanian art	(redirect)
+Packaging and labeling	->	Packaging	(redirect)
+Painter	->	Painting	(duplicate of Painting)
+Panem	->	The Hunger Games	(duplicate of The Hunger Games)
+Patron	->	Patronage	(duplicate of Patronage)
+Pen and ink	->	Pen	(redirect)
+Pennywise (character)	->	Pennywise	(redirect)
+Percy Jackson (character)	->	Percy Jackson	(redirect)
+Peter Pan (play)	->	Peter Pan (play and novel)	(duplicate of Peter and Wendy)
+Peter and Wendy	->	Peter Pan (play and novel)	(redirect)
+Phenomenology of Spirit	->	The Phenomenology of Spirit	(redirect)
+Photomanipulation	->	Photograph manipulation	(redirect)
+Pirouette	->	Turn (dance and gymnastics)	(redirect)
+Placido Domingo	->	Plácido Domingo	(redirect)
+Platform 9¾	->	Places in Harry Potter	(redirect)
+Platform game	->	Platformer	(redirect)
+Point-and-click adventure game	->	Adventure game	(redirect)
+Pokémon Red and Blue	->	Pokémon Red, Blue, and Yellow	(redirect)
+Popeye the Sailor	->	Popeye	(duplicate of Popeye)
+Poster art	->	Poster	(duplicate of Poster)
+Primetime Emmy Award	->	Primetime Emmy Awards	(redirect)
+Production design	->	Production designer	(redirect)
+Psalm	->	Psalms	(redirect)
+Public Enemy (band)	->	Public Enemy	(redirect)
+Public sculpture	->	Public art	(duplicate of Public art)
+Quetzalcoatl	->	Quetzalcōātl	(redirect)
+Rainbow Six Siege	->	Tom Clancy's Rainbow Six Siege	(redirect)
+Rap battle	->	Battle rap	(redirect)
+Rapper	->	Rapping	(duplicate of Rapping)
+Real-time strategy	->	Real-time strategy game	(redirect)
+Remy (Ratatouille)	->	Ratatouille (film)	(duplicate of Ratatouille (film))
+Renaissance in Italy	->	Italian Renaissance	(duplicate of Italian Renaissance)
+Renaissance man	->	Polymath	(redirect)
+Rick Sanchez (Rick and Morty)	->	Rick Sanchez	(redirect)
+Roadie	->	Road crew	(redirect)
+Roman arch	->	Semicircular arch	(redirect)
+Royal Ballet	->	The Royal Ballet	(redirect)
+Rubaʿi	->	Ruba'i	(redirect)
+Rubeus Hagrid	->	Hagrid	(redirect)
+Rune	->	Runes	(duplicate of Runes)
+Running of the Bulls	->	Running of the bulls	(redirect)
+Runway (fashion)	->	Fashion show	(redirect)
+Salvator Mundi (Leonardo)	->	Salvator Mundi (painting)	(redirect)
+Samsara	->	Saṃsāra	(redirect)
+Sand art and play	->	Sand art and play	(duplicate of Sand sculpture)
+Sand sculpture	->	Sand art and play	(redirect)
+Saturation (color)	->	Colorfulness	(redirect)
+Scene (drama)	->	Scene (performing arts)	(redirect)
+Scout Finch	->	List of To Kill a Mockingbird characters	(redirect)
+Sculptor	->	Sculpture	(duplicate of Sculpture)
+Se7en	->	Seven (1995 film)	(redirect)
+Serigraphy	->	Screen printing	(duplicate of Screen printing)
+Shadow puppet	->	Shadow play	(duplicate of Shadow play)
+Sheriff Woody	->	Woody (Toy Story)	(redirect)
+Shodō	->	Japanese calligraphy	(duplicate of Japanese calligraphy)
+Sia (musician)	->	Sia	(redirect)
+Sid Meier's Civilization VI	->	Civilization VI	(redirect)
+Sidhe	->	Aos Sí	(redirect)
+Silent Hill (series)	->	Silent Hill	(redirect)
+Silent era	->	Silent film	(duplicate of Silent film)
+Sim City	->	SimCity	(duplicate of SimCity)
+Singer	->	Singing	(duplicate of Singing)
+Slam poetry	->	Poetry slam	(redirect)
+Songkran	->	Songkran (Thailand)	(redirect)
+Sophism	->	Fallacy	(redirect)
+Sophistry	->	Sophist	(redirect)
+Spell (magic)	->	Incantation	(redirect)
+Spiral staircase	->	Stairs	(redirect)
+Spyro the Dragon (video game)	->	Spyro the Dragon	(redirect)
+St Peter's Basilica	->	St. Peter's Basilica	(redirect)
+St. Basil's Cathedral	->	Saint Basil's Cathedral	(redirect)
+Star Wars: The Phantom Menace	->	Star Wars: Episode I – The Phantom Menace	(redirect)
+Street fashion	->	Street style	(redirect)
+Street performance	->	Street performance	(duplicate of Busking)
+Suit (clothing)	->	Suit	(redirect)
+Sumi-e	->	Ink wash painting	(redirect)
+Susanoo	->	Susanoo-no-Mikoto	(redirect)
+Sylvester (Looney Tunes)	->	Sylvester the Cat	(redirect)
+Symbolism (arts)	->	Artistic symbol	(redirect)
+Symphony orchestra	->	Orchestra	(redirect)
+Synchronized swimming	->	Synchronised swimming	(redirect)
+Talavera pottery	->	Artisanal Talavera of Puebla and Tlaxcala	(redirect)
+Talkie	->	Sound film	(redirect)
+Tea ceremony	->	East Asian tea ceremony	(redirect)
+The Aleph (short story collection)	->	The Aleph and Other Stories	(redirect)
+The Arnolfini Portrait	->	Arnolfini Portrait	(redirect)
+The Avengers (comics)	->	Avengers (comics)	(redirect)
+The Betrothed (Manzoni novel)	->	The Betrothed	(redirect)
+The Calling of St Matthew (Caravaggio)	->	The Calling of Saint Matthew	(redirect)
+The Dance (Matisse)	->	Dance (Matisse)	(redirect)
+The Dance Class	->	The Ballet Class (Degas, Musée d'Orsay)	(redirect)
+The Divine Comedy	->	Divine Comedy	(redirect)
+The Force (Star Wars)	->	The Force	(redirect)
+The Italian Job (1969 film)	->	The Italian Job	(redirect)
+The Naked Maja	->	La maja desnuda	(redirect)
+The Night Before Christmas	->	A Visit from St. Nicholas	(redirect)
+The Odyssey	->	Odyssey	(redirect)
+The Oresteia	->	Oresteia	(redirect)
+The Owl and the Pussycat	->	The Owl and the Pussy-Cat	(redirect)
+The Prestige (film)	->	The Prestige	(redirect)
+The Princess Bride (film)	->	The Princess Bride	(redirect)
+The Ramones	->	Ramones	(redirect)
+The Republic (Plato)	->	Republic (Plato)	(redirect)
+The Song of Roland	->	Song of Roland	(redirect)
+The Strange Case of Dr Jekyll and Mr Hyde	->	Strange Case of Dr Jekyll and Mr Hyde	(redirect)
+The White Album	->	The Beatles (album)	(redirect)
+The Wizard of Oz (1939 film)	->	The Wizard of Oz	(redirect)
+Theatre (structure)	->	Theater (structure)	(redirect)
+Theatre mask	->	Mask	(redirect)
+Theatre of the Absurd	->	Theatre of the absurd	(redirect)
+Theme park	->	Amusement park	(redirect)
+Thesis, antithesis, synthesis	->	Dialectic	(redirect)
+Thunderstruck (song)	->	Thunderstruck	(redirect)
+Tiana (Disney)	->	Tiana (The Princess and the Frog)	(redirect)
+Tirukkuṟaḷ	->	Kural	(redirect)
+Titan (mythology)	->	Titans	(redirect)
+Tongue-twister	->	Tongue twister	(redirect)
+Tony Award	->	Tony Awards	(redirect)
+Tooth Fairy	->	Tooth fairy	(redirect)
+Trade fair	->	Trade show	(redirect)
+Traditional Chinese clothing	->	Hanfu	(redirect)
+Tripiṭaka	->	Buddhist canons	(redirect)
+Trope (literature)	->	Literary device	(redirect)
+Truffle (fungus)	->	Truffle	(redirect)
+Turn-based strategy	->	Strategy video game	(redirect)
+Tuxedo	->	Black tie	(redirect)
+Tyler Durden	->	The Narrator (Fight Club)	(redirect)
+Typecasting (acting)	->	Typecasting	(redirect)
+Valentino Garavani	->	Valentino (fashion designer)	(redirect)
+Van Helsing	->	Abraham Van Helsing	(redirect)
+Vinyl record	->	Phonograph record	(redirect)
+Vltava (Smetana)	->	Má vlast	(redirect)
+Voguing	->	Vogue (dance)	(redirect)
+Westeros	->	World of A Song of Ice and Fire	(redirect)
+What's Going On (Marvin Gaye song)	->	What's Going On (song)	(redirect)
+Winnie-the-Pooh (character)	->	Winnie-the-Pooh	(duplicate of Winnie-the-Pooh)
+Winterfell	->	World of A Song of Ice and Fire	(duplicate of Westeros)
+Witch	->	Witchcraft	(redirect)
+Wizard (character class)	->	Character class	(redirect)
+Wonderwall (song)	->	Wonderwall	(redirect)
+World Cup	->	World cup	(redirect)
+X-wing	->	X-wing fighter	(redirect)
+Y Tu Mamá También	->	Y tu mamá también	(redirect)
+Y.M.C.A.	->	YMCA	(redirect)
+Yellowstone (American TV series)	->	Yellowstone (TV series)	(redirect)
+Yesterday (Beatles song)	->	Yesterday (song)	(redirect)
+Young adult fiction	->	Young adult literature	(redirect)
+Zen garden	->	Japanese dry garden	(redirect)
