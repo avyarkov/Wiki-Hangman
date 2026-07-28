@@ -343,6 +343,11 @@
           <span class="diff-name">Hard</span>
           <span class="diff-desc">larger pool of ~10,000 topics, some might be obscure</span>
         </label>
+        <label class="difficulty-option">
+          <input type="radio" name="difficulty" value="art">
+          <span class="diff-name">Art</span>
+          <span class="diff-desc">pool of ~5,600 topics from art and culture only</span>
+        </label>
       </div>
 
       <div class="actions">
@@ -390,7 +395,8 @@
   const LIST_URLS = {
     easy: 'list-easy.json',
     medium: 'list-medium.json',
-    hard: 'list-hard.json'
+    hard: 'list-hard.json',
+    art: 'list-art.json'
   };
   let title = "";
   let extract = "";
