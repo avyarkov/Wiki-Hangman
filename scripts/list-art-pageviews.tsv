@@ -959,7 +959,7 @@ rank	views_60d	status	title
 958	114585	kept	Blur (band)
 959	114528	kept	Do the Right Thing
 960	114502	kept	The White Stripes
-961	114440	kept	World cup
+961	114440	REMOVED	World cup
 962	114151	kept	Macbeth
 963	114139	kept	24 (TV series)
 964	114082	kept	David (Michelangelo)
@@ -1544,7 +1544,7 @@ rank	views_60d	status	title
 1543	75257	kept	Fantasia (1940 film)
 1544	75187	kept	Leonard Bernstein
 1545	75086	kept	Spartacus (film)
-1546	75068	kept	Sport
+1546	75068	REMOVED	Sport
 1547	74957	kept	Basilisk
 1548	74836	kept	Teotihuacan
 1549	74810	kept	Aragorn
@@ -1555,7 +1555,7 @@ rank	views_60d	status	title
 1554	74566	kept	GameCube
 1555	74563	kept	Big (film)
 1556	74511	kept	Sunset Boulevard (film)
-1557	74490	kept	Judo
+1557	74490	REMOVED	Judo
 1558	74488	kept	Golden Temple
 1559	74472	kept	Sega Genesis
 1560	74435	kept	Led Zeppelin IV
@@ -1656,7 +1656,7 @@ rank	views_60d	status	title
 1655	69747	kept	Chungking Express
 1656	69658	kept	Thomas & Friends
 1657	69626	kept	Art Nouveau
-1658	69596	kept	Taekwondo
+1658	69596	REMOVED	Taekwondo
 1659	69585	kept	The Hobbit: An Unexpected Journey
 1660	69556	kept	Suzanne Collins
 1661	69508	kept	Tower Bridge
@@ -2259,7 +2259,7 @@ rank	views_60d	status	title
 2258	48370	kept	Portal (video game)
 2259	48355	kept	Berserker
 2260	48351	kept	Ziggurat
-2261	48348	kept	Sumo
+2261	48348	REMOVED	Sumo
 2262	48327	kept	Guitar
 2263	48325	kept	Tantalus
 2264	48267	kept	Dialectic
@@ -2388,7 +2388,7 @@ rank	views_60d	status	title
 2387	45362	kept	Jeremy Bentham
 2388	45310	kept	Rainer Maria Rilke
 2389	45276	kept	Kylo Ren
-2390	45263	kept	Aikido
+2390	45263	REMOVED	Aikido
 2391	45211	kept	Godzilla (1954 film)
 2392	45183	kept	Q (James Bond)
 2393	45178	kept	Durga
@@ -2518,7 +2518,7 @@ rank	views_60d	status	title
 2517	41944	kept	Joffrey Baratheon
 2518	41933	kept	Team Fortress 2
 2519	41912	kept	The Nutcracker
-2520	41900	kept	Capoeira
+2520	41900	REMOVED	Capoeira
 2521	41895	kept	Jupiter (god)
 2522	41894	kept	Around the World in Eighty Days
 2523	41873	kept	Epicureanism
@@ -2544,7 +2544,7 @@ rank	views_60d	status	title
 2543	41460	kept	Disc jockey
 2544	41450	kept	The Bluest Eye
 2545	41393	kept	Donkey Kong (1981 video game)
-2546	41377	kept	Running of the bulls
+2546	41377	REMOVED	Running of the bulls
 2547	41375	kept	Simulation hypothesis
 2548	41373	kept	Lemonade (album)
 2549	41373	kept	Temple of Heaven
@@ -2559,7 +2559,7 @@ rank	views_60d	status	title
 2558	41224	kept	Charon
 2559	41212	kept	Abraham Van Helsing
 2560	41175	kept	The Great Dictator
-2561	41165	kept	Bullfighting
+2561	41165	REMOVED	Bullfighting
 2562	41099	kept	The Sandman (comic book)
 2563	41097	kept	A Farewell to Arms
 2564	41096	kept	James T. Kirk
@@ -2703,7 +2703,7 @@ rank	views_60d	status	title
 2702	38327	kept	The Murder of Roger Ackroyd
 2703	38232	kept	Mario Kart
 2704	38226	kept	Mike Wazowski
-2705	38207	kept	Martial arts
+2705	38207	REMOVED	Martial arts
 2706	38203	kept	Dizzy Gillespie
 2707	38196	kept	History of photography
 2708	38158	kept	Topkapı Palace
@@ -2744,13 +2744,13 @@ rank	views_60d	status	title
 2743	37135	kept	Walden
 2744	37134	kept	Camera obscura
 2745	37091	kept	The Sims 4
-2746	37051	kept	Fencing
+2746	37051	REMOVED	Fencing
 2747	37033	kept	Newspaper
 2748	37012	kept	The Legend of Zelda: The Wind Waker
 2749	37003	kept	Mosque–Cathedral of Córdoba
 2750	36998	kept	Edvard Grieg
 2751	36990	kept	Pong
-2752	36986	kept	Ancient Olympic Games
+2752	36986	REMOVED	Ancient Olympic Games
 2753	36985	kept	Hotel California (album)
 2754	36975	kept	Music genre
 2755	36941	kept	Maat
@@ -3068,7 +3068,7 @@ rank	views_60d	status	title
 3067	31317	kept	Rocket League
 3068	31262	kept	Mockumentary
 3069	31254	kept	Shahnameh
-3070	31249	kept	Chinese martial arts
+3070	31249	REMOVED	Chinese martial arts
 3071	31244	kept	Monism
 3072	31243	kept	Puss in Boots
 3073	31199	kept	John Donne
@@ -3094,7 +3094,7 @@ rank	views_60d	status	title
 3093	30946	kept	Frodo Baggins
 3094	30920	kept	Dead Cells
 3095	30920	kept	Yasujirō Ozu
-3096	30889	kept	Parkour
+3096	30889	REMOVED	Parkour
 3097	30888	kept	Graphite
 3098	30864	kept	Public relations
 3099	30855	kept	Sari
@@ -3135,7 +3135,7 @@ rank	views_60d	status	title
 3134	30236	kept	Dirndl
 3135	30215	kept	Alice Munro
 3136	30198	kept	Pastiche
-3137	30169	kept	Equestrianism
+3137	30169	REMOVED	Equestrianism
 3138	30163	kept	Graphic novel
 3139	30159	kept	Pop art
 3140	30152	kept	(I Can't Get No) Satisfaction
@@ -3148,7 +3148,7 @@ rank	views_60d	status	title
 3147	30074	kept	French New Wave
 3148	30015	kept	Theory of forms
 3149	29983	kept	Fountain (Duchamp)
-3150	29976	kept	Sport of athletics
+3150	29976	REMOVED	Sport of athletics
 3151	29963	kept	Gary Larson
 3152	29947	kept	Philip Marlowe
 3153	29926	kept	Primary color
@@ -3631,7 +3631,7 @@ rank	views_60d	status	title
 3630	23452	kept	Tikal
 3631	23450	kept	New Year's Eve
 3632	23430	kept	The Cherry Orchard
-3633	23417	kept	Archery
+3633	23417	REMOVED	Archery
 3634	23388	kept	Carnegie Hall
 3635	23291	kept	Primavera (Botticelli)
 3636	23288	kept	Peter Rabbit
@@ -3737,7 +3737,7 @@ rank	views_60d	status	title
 3736	22001	kept	Design
 3737	21987	kept	Still life
 3738	21980	kept	Geralt of Rivia
-3739	21964	kept	Surfing
+3739	21964	REMOVED	Surfing
 3740	21940	kept	Necktie
 3741	21930	kept	Cipher
 3742	21922	kept	Catharsis
@@ -3908,7 +3908,7 @@ rank	views_60d	status	title
 3907	19785	kept	Ivan Turgenev
 3908	19780	kept	Yo-yo
 3909	19776	kept	Modest Mussorgsky
-3910	19749	kept	The Golden Bough
+3910	19749	REMOVED	The Golden Bough
 3911	19724	kept	Library
 3912	19708	kept	Narrative
 3913	19684	kept	Doge's Palace
@@ -3947,7 +3947,7 @@ rank	views_60d	status	title
 3946	19389	kept	Worldbuilding
 3947	19388	kept	Elizabeth Bennet
 3948	19377	kept	Bedroom in Arles
-3949	19377	kept	Joe Shuster
+3949	19377	REMOVED	Joe Shuster
 3950	19373	kept	Mad Hatter
 3951	19363	kept	Hygge
 3952	19358	kept	The Martian Chronicles
@@ -3965,7 +3965,7 @@ rank	views_60d	status	title
 3964	19221	kept	Wisdom
 3965	19214	kept	Realism (arts)
 3966	19208	kept	Kinkaku-ji
-3967	19206	kept	Yasunari Kawabata
+3967	19206	REMOVED	Yasunari Kawabata
 3968	19201	kept	Bella Swan
 3969	19200	kept	First Folio
 3970	19190	kept	Gamelan
@@ -3985,11 +3985,11 @@ rank	views_60d	status	title
 3984	19043	kept	Chewbacca
 3985	19035	kept	Vexillology
 3986	19030	kept	Performing arts
-3987	19030	kept	The Great Beauty
+3987	19030	REMOVED	The Great Beauty
 3988	19026	kept	Woodstock (Peanuts)
-3989	19006	kept	Paul Verlaine
+3989	19006	REMOVED	Paul Verlaine
 3990	19004	kept	Animated series
-3991	19004	kept	Michael Ondaatje
+3991	19004	REMOVED	Michael Ondaatje
 3992	18995	kept	Funeral
 3993	18965	kept	Open world
 3994	18943	kept	Ballad
@@ -4003,18 +4003,18 @@ rank	views_60d	status	title
 4002	18910	kept	Parody
 4003	18893	kept	Handheld game console
 4004	18868	kept	Valentino (fashion designer)
-4005	18841	kept	Palimpsest
+4005	18841	REMOVED	Palimpsest
 4006	18808	kept	Logo
 4007	18804	kept	System Shock 2
 4008	18802	kept	Thumbelina
-4009	18798	kept	The Misanthrope
+4009	18798	REMOVED	The Misanthrope
 4010	18783	kept	Denis Diderot
 4011	18759	kept	Inductive reasoning
 4012	18754	kept	Scholasticism
 4013	18730	kept	Nothing Else Matters
 4014	18725	kept	Marimba
 4015	18688	kept	Kukulkan
-4016	18684	kept	Isaiah Berlin
+4016	18684	REMOVED	Isaiah Berlin
 4017	18681	kept	Magazine
 4018	18679	kept	Modern Times (film)
 4019	18649	kept	Sin City
@@ -4023,9 +4023,9 @@ rank	views_60d	status	title
 4022	18644	kept	The Oregon Trail (1971 video game)
 4023	18599	kept	Tristan und Isolde
 4024	18597	kept	Toy
-4025	18588	kept	La maja desnuda
+4025	18588	REMOVED	La maja desnuda
 4026	18585	kept	Yodeling
-4027	18578	kept	Caryatid
+4027	18578	REMOVED	Caryatid
 4028	18556	kept	Spice
 4029	18518	kept	Riverdance
 4030	18512	kept	Amphitheatre
@@ -4033,7 +4033,7 @@ rank	views_60d	status	title
 4032	18486	kept	Tom Cat
 4033	18460	kept	Beatlemania
 4034	18446	kept	Scale (music)
-4035	18434	kept	Ammit
+4035	18434	REMOVED	Ammit
 4036	18423	kept	Crossword
 4037	18412	kept	Dance Dance Revolution
 4038	18382	kept	R2-D2
@@ -4043,25 +4043,25 @@ rank	views_60d	status	title
 4042	18355	kept	Mulan (Disney character)
 4043	18351	kept	Oral tradition
 4044	18344	kept	Storytelling
-4045	18333	kept	Constantin Brâncuși
+4045	18333	REMOVED	Constantin Brâncuși
 4046	18325	kept	One-hit wonder
 4047	18316	kept	Ned Flanders
 4048	18309	kept	Abstract art
 4049	18297	kept	Carmina Burana
 4050	18272	kept	Xylophone
 4051	18257	kept	René Goscinny
-4052	18234	kept	Adinkra symbols
+4052	18234	REMOVED	Adinkra symbols
 4053	18231	kept	Top hat
 4054	18218	kept	Songkran (Thailand)
 4055	18179	kept	Leonard McCoy
 4056	18169	kept	Tooth fairy
 4057	18152	kept	The Murders in the Rue Morgue
-4058	18145	kept	Nataraja
-4059	18126	kept	Aubrey Beardsley
+4058	18145	REMOVED	Nataraja
+4059	18126	REMOVED	Aubrey Beardsley
 4060	18107	kept	Henry Purcell
 4061	18079	kept	A Change Is Gonna Come
-4062	18073	kept	Wild Strawberries (film)
-4063	18062	kept	Tadao Ando
+4062	18073	REMOVED	Wild Strawberries (film)
+4063	18062	REMOVED	Tadao Ando
 4064	18025	kept	Manifesto
 4065	18017	kept	Anna (Frozen)
 4066	18010	kept	Minaret
@@ -4074,40 +4074,40 @@ rank	views_60d	status	title
 4073	17875	kept	Alberto Giacometti
 4074	17866	kept	Carrie White
 4075	17866	kept	Petroglyph
-4076	17845	kept	Musique concrète
+4076	17845	REMOVED	Musique concrète
 4077	17817	kept	Counterpoint
 4078	17814	kept	Hyperbole
-4079	17805	kept	Suite bergamasque
-4080	17796	kept	Oath of the Horatii
+4079	17805	REMOVED	Suite bergamasque
+4080	17796	REMOVED	Oath of the Horatii
 4081	17787	kept	Canvas
 4082	17755	kept	Minions (film series)
 4083	17750	kept	Thai cuisine
 4084	17742	kept	Degenerate art
 4085	17738	kept	What's Going On (song)
 4086	17735	kept	Data (Star Trek)
-4087	17729	kept	Louise Bourgeois
+4087	17729	REMOVED	Louise Bourgeois
 4088	17723	kept	Wizard of Oz (character)
 4089	17717	kept	Vatican Museums
 4090	17712	kept	Box office
 4091	17710	kept	Springfield (The Simpsons)
-4092	17694	kept	Li Bai
+4092	17694	REMOVED	Li Bai
 4093	17693	kept	Ganon
-4094	17686	kept	Panchatantra
+4094	17686	REMOVED	Panchatantra
 4095	17645	kept	Greek cuisine
 4096	17641	kept	Sailor Moon (character)
 4097	17641	kept	The Weeping Woman
 4098	17637	kept	Museum
 4099	17633	kept	Embroidery
-4100	17625	kept	Landscape with the Fall of Icarus
+4100	17625	REMOVED	Landscape with the Fall of Icarus
 4101	17625	kept	Memoir
 4102	17620	kept	Downloadable content
-4103	17611	kept	Steve Reich
+4103	17611	REMOVED	Steve Reich
 4104	17589	kept	Nick Fury
 4105	17585	kept	Hey Joe
-4106	17579	kept	Charles Sanders Peirce
+4106	17579	REMOVED	Charles Sanders Peirce
 4107	17559	kept	Font
 4108	17556	kept	Thought experiment
-4109	17556	kept	Tōdai-ji
+4109	17556	REMOVED	Tōdai-ji
 4110	17554	kept	Native Son
 4111	17553	kept	Acrostic
 4112	17552	kept	Mind–body dualism
@@ -4116,7 +4116,7 @@ rank	views_60d	status	title
 4115	17507	kept	Shere Khan
 4116	17487	kept	Suspension bridge
 4117	17454	kept	Ventriloquism
-4118	17439	kept	Mbira
+4118	17439	REMOVED	Mbira
 4119	17435	kept	British Library
 4120	17435	kept	Klingon language
 4121	17410	kept	Walter Gropius
@@ -4135,22 +4135,22 @@ rank	views_60d	status	title
 4134	17300	kept	Modern art
 4135	17269	kept	Counterculture
 4136	17262	kept	Romantic music
-4137	17256	kept	Barbara Hepworth
-4138	17256	kept	Talk to Her
+4137	17256	REMOVED	Barbara Hepworth
+4138	17256	REMOVED	Talk to Her
 4139	17232	kept	Time capsule
 4140	17228	kept	Silver Age of Comic Books
-4141	17228	kept	The Calling of Saint Matthew
-4142	17176	kept	Atelier
+4141	17228	REMOVED	The Calling of Saint Matthew
+4142	17176	REMOVED	Atelier
 4143	17174	kept	Silhouette
 4144	17163	kept	Architect
-4145	17155	kept	Anthony van Dyck
+4145	17155	REMOVED	Anthony van Dyck
 4146	17153	kept	Chord (music)
 4147	17134	kept	Dialect
 4148	17130	kept	Picnic
-4149	17123	kept	Knut Hamsun
+4149	17123	REMOVED	Knut Hamsun
 4150	17108	kept	Sacred geometry
 4151	17105	kept	City Lights
-4152	17100	kept	F. W. Murnau
+4152	17100	REMOVED	F. W. Murnau
 4153	17099	kept	Deductive reasoning
 4154	17095	kept	Vladimir Mayakovsky
 4155	17089	kept	High-heeled shoe
@@ -4160,8 +4160,8 @@ rank	views_60d	status	title
 4159	17042	kept	Sunglasses
 4160	17037	kept	The Frog Prince
 4161	17025	kept	Historical fiction
-4162	17023	kept	Vaslav Nijinsky
-4163	17022	kept	The Glass Bead Game
+4162	17023	REMOVED	Vaslav Nijinsky
+4163	17022	REMOVED	The Glass Bead Game
 4164	17006	kept	Storyboard
 4165	16983	kept	Aerith Gainsborough
 4166	16983	kept	Guild
@@ -4180,7 +4180,7 @@ rank	views_60d	status	title
 4179	16905	kept	Kazimir Malevich
 4180	16903	kept	Sam Spade
 4181	16902	kept	Fast fashion
-4182	16899	kept	Henny Penny
+4182	16899	REMOVED	Henny Penny
 4183	16875	kept	Singing
 4184	16860	kept	Mass Effect 2
 4185	16844	kept	Vulcan (Star Trek)
@@ -4194,12 +4194,12 @@ rank	views_60d	status	title
 4193	16783	kept	Centre Pompidou
 4194	16780	kept	Coffeehouse
 4195	16774	kept	I Wandered Lonely as a Cloud
-4196	16761	kept	Lu Xun
+4196	16761	REMOVED	Lu Xun
 4197	16748	kept	The Firebird
-4198	16733	kept	Regan MacNeil
+4198	16733	REMOVED	Regan MacNeil
 4199	16705	kept	Beard
 4200	16703	kept	Genie (Disney)
-4201	16688	kept	Rhythmic gymnastics
+4201	16688	REMOVED	Rhythmic gymnastics
 4202	16676	kept	Sonnet 18
 4203	16673	kept	Literary device
 4204	16643	kept	Comic strip
@@ -4212,7 +4212,7 @@ rank	views_60d	status	title
 4211	16563	kept	Royal Shakespeare Company
 4212	16562	kept	Balalaika
 4213	16554	kept	Timon and Pumbaa
-4214	16545	kept	Another World (video game)
+4214	16545	REMOVED	Another World (video game)
 4215	16542	kept	National Gallery
 4216	16522	kept	Social alienation
 4217	16520	kept	Zoo
@@ -4231,24 +4231,24 @@ rank	views_60d	status	title
 4230	16393	kept	Stopping by Woods on a Snowy Evening
 4231	16368	kept	World music
 4232	16341	kept	Trench coat
-4233	16340	kept	Oscar Niemeyer
+4233	16340	REMOVED	Oscar Niemeyer
 4234	16322	kept	Subculture
 4235	16319	kept	Morpheus (The Matrix)
-4236	16307	kept	If on a winter's night a traveler
-4237	16305	kept	Nabucco
+4236	16307	REMOVED	If on a winter's night a traveler
+4237	16305	REMOVED	Nabucco
 4238	16297	kept	Complementary colors
 4239	16273	kept	Tapestry
 4240	16273	kept	Wish You Were Here (Pink Floyd song)
 4241	16270	kept	Frogger
 4242	16249	kept	Pluto (Disney)
-4243	16243	kept	Murasaki Shikibu
-4244	16233	kept	Gargantua and Pantagruel
+4243	16243	REMOVED	Murasaki Shikibu
+4244	16233	REMOVED	Gargantua and Pantagruel
 4245	16200	kept	Toad (Mario)
 4246	16196	kept	Mime artist
-4247	16188	kept	The Anatomy Lesson of Dr. Nicolaes Tulp
+4247	16188	REMOVED	The Anatomy Lesson of Dr. Nicolaes Tulp
 4248	16181	kept	Vernacular architecture
 4249	16180	kept	Millennium Falcon
-4250	16168	kept	Giorgio de Chirico
+4250	16168	REMOVED	Giorgio de Chirico
 4251	16148	kept	Bolero
 4252	16144	kept	Aztec mythology
 4253	16129	kept	Tatooine
@@ -4257,27 +4257,27 @@ rank	views_60d	status	title
 4256	16099	kept	Façade
 4257	16081	kept	Autobiography
 4258	16066	kept	White Rabbit
-4259	16060	kept	Tā moko
+4259	16060	REMOVED	Tā moko
 4260	16052	kept	Video game development
 4261	16049	kept	Nude Descending a Staircase, No. 2
 4262	16041	kept	Beret
-4263	16029	kept	Ferdowsi
+4263	16029	REMOVED	Ferdowsi
 4264	16027	kept	Caricature
 4265	16024	kept	Renaissance architecture
 4266	16001	kept	Scarecrow (Oz)
 4267	15993	kept	Sancho Panza
-4268	15987	kept	Erechtheion
+4268	15987	REMOVED	Erechtheion
 4269	15987	kept	Klezmer
 4270	15984	kept	Humour
 4271	15973	kept	Battle royale game
-4272	15956	kept	Contrapposto
+4272	15956	REMOVED	Contrapposto
 4273	15939	kept	Grime music
 4274	15921	kept	Oil painting
 4275	15917	kept	Fall Guys
-4276	15912	kept	Incremental game
+4276	15912	REMOVED	Incremental game
 4277	15911	kept	Swing music
 4278	15889	kept	Weaving
-4279	15878	kept	Ataraxia
+4279	15878	REMOVED	Ataraxia
 4280	15877	kept	Bridge
 4281	15872	kept	Contemporary art
 4282	15841	kept	Interval (music)
@@ -4285,25 +4285,25 @@ rank	views_60d	status	title
 4284	15837	kept	Carnival of Venice
 4285	15832	kept	Victorian architecture
 4286	15822	kept	Marionette
-4287	15821	kept	Ferdinand de Saussure
+4287	15821	REMOVED	Ferdinand de Saussure
 4288	15801	kept	Koan
 4289	15800	kept	Tragicomedy
 4290	15800	kept	With or Without You
 4291	15796	kept	Puss in Boots (Shrek)
 4292	15789	kept	Rocket Raccoon
-4293	15774	kept	Zhuang Zhou
+4293	15774	REMOVED	Zhuang Zhou
 4294	15772	kept	Dynamics (music)
 4295	15759	kept	Golden Age of Comic Books
-4296	15756	kept	Diamond Sutra
-4297	15748	kept	Doonesbury
-4298	15743	kept	Comics Code Authority
-4299	15740	kept	Ivan Aivazovsky
+4296	15756	REMOVED	Diamond Sutra
+4297	15748	REMOVED	Doonesbury
+4298	15743	REMOVED	Comics Code Authority
+4299	15740	REMOVED	Ivan Aivazovsky
 4300	15740	kept	Land of Oz
 4301	15739	kept	Fear and Trembling
 4302	15739	kept	Vibraphone
-4303	15733	kept	Noise music
+4303	15733	REMOVED	Noise music
 4304	15700	kept	Supervillain
-4305	15692	kept	Patanjali
+4305	15692	REMOVED	Patanjali
 4306	15690	kept	Sarcasm
 4307	15684	kept	Justice
 4308	15639	kept	Flying buttress
@@ -4312,42 +4312,42 @@ rank	views_60d	status	title
 4311	15597	kept	The Adventures of Sherlock Holmes
 4312	15583	kept	Translation
 4313	15567	kept	Screenwriter
-4314	15565	kept	Cindy Sherman
+4314	15565	REMOVED	Cindy Sherman
 4315	15554	kept	Cave of Altamira
-4316	15545	kept	Exquisite corpse
+4316	15545	REMOVED	Exquisite corpse
 4317	15521	kept	Fortification
 4318	15521	kept	Philosophy of mind
 4319	15518	kept	Collage
 4320	15507	kept	Surf music
-4321	15485	kept	Enka
+4321	15485	REMOVED	Enka
 4322	15443	kept	Fine art
 4323	15441	kept	Abbey
 4324	15432	kept	The Ant and the Grasshopper
 4325	15428	kept	Adamantium
 4326	15418	kept	Magician (fantasy)
 4327	15416	kept	Dorothea Lange
-4328	15377	kept	Christo and Jeanne-Claude
+4328	15377	REMOVED	Christo and Jeanne-Claude
 4329	15359	kept	Canon (fiction)
 4330	15353	kept	Lace
 4331	15352	kept	Virtue ethics
 4332	15337	kept	The Hay Wain
-4333	15328	kept	Half of a Yellow Sun
-4334	15326	kept	Vittorio De Sica
-4335	15324	kept	George Balanchine
+4333	15328	REMOVED	Half of a Yellow Sun
+4334	15326	REMOVED	Vittorio De Sica
+4335	15324	REMOVED	George Balanchine
 4336	15306	kept	Wig
-4337	15305	kept	Renzo Piano
+4337	15305	REMOVED	Renzo Piano
 4338	15291	kept	Disaster film
 4339	15260	kept	Metronome
 4340	15257	kept	Dubbing
 4341	15256	kept	Naïve art
 4342	15256	kept	Rhythm
 4343	15233	kept	Halo (religious iconography)
-4344	15233	kept	Self-Portrait with Thorn Necklace and Hummingbird
+4344	15233	REMOVED	Self-Portrait with Thorn Necklace and Hummingbird
 4345	15229	kept	Heist film
 4346	15174	kept	Semaphore
 4347	15149	kept	The Maltese Falcon (novel)
 4348	15145	kept	Rite of passage
-4349	15136	kept	Nasreddin
+4349	15136	REMOVED	Nasreddin
 4350	15120	kept	Epigram
 4351	15090	kept	The Milkmaid (Vermeer)
 4352	15084	kept	Constructivism (art)
@@ -4357,18 +4357,18 @@ rank	views_60d	status	title
 4356	15024	kept	Neverland
 4357	15023	kept	Lightsaber
 4358	15014	kept	Timpani
-4359	14995	kept	August Strindberg
+4359	14995	REMOVED	August Strindberg
 4360	14994	kept	The Old Guitarist
 4361	14988	kept	Japanese tea ceremony
 4362	14986	kept	High Renaissance
 4363	14985	kept	Goldberg Variations
-4364	14980	kept	Günter Grass
+4364	14980	REMOVED	Günter Grass
 4365	14946	kept	Postmodern architecture
 4366	14944	kept	Performance art
 4367	14941	kept	Waltz
 4368	14920	kept	Pandora (Avatar)
 4369	14899	kept	Vanitas
-4370	14849	kept	Dulce et Decorum est
+4370	14849	REMOVED	Dulce et Decorum est
 4371	14800	kept	Jerry Seinfeld (character)
 4372	14785	kept	Anna Akhmatova
 4373	14770	kept	Sampling (music)
@@ -4388,44 +4388,44 @@ rank	views_60d	status	title
 4387	14599	kept	Metropolis (comics)
 4388	14595	kept	Palace
 4389	14576	kept	Etiquette
-4390	14566	kept	Women on the Verge of a Nervous Breakdown
+4390	14566	REMOVED	Women on the Verge of a Nervous Breakdown
 4391	14562	kept	Cliffhanger
 4392	14562	kept	Slender: The Eight Pages
 4393	14561	kept	Sombrero
-4394	14547	kept	Lucas Cranach the Elder
+4394	14547	REMOVED	Lucas Cranach the Elder
 4395	14546	kept	Vocoder
 4396	14534	kept	Interior design
 4397	14523	kept	Rudolph the Red-Nosed Reindeer
 4398	14521	kept	Aperture
 4399	14517	kept	Portico
-4400	14497	kept	Koshchei
-4401	14488	kept	Mother Courage and Her Children
+4400	14497	REMOVED	Koshchei
+4401	14488	REMOVED	Mother Courage and Her Children
 4402	14486	kept	Americana music
 4403	14482	kept	Jazz Age
-4404	14479	kept	Casey at the Bat
+4404	14479	REMOVED	Casey at the Bat
 4405	14479	kept	Vogue (dance)
 4406	14474	kept	Drum
 4407	14472	kept	Philosophy of science
 4408	14429	kept	Andrei Rublev
 4409	14429	kept	Writer's block
 4410	14387	kept	Djembe
-4411	14380	kept	Sistine Madonna
+4411	14380	REMOVED	Sistine Madonna
 4412	14361	kept	Bohemian style
 4413	14354	kept	Screen printing
 4414	14349	kept	Asteroids (video game)
-4415	14348	kept	Naguib Mahfouz
+4415	14348	REMOVED	Naguib Mahfouz
 4416	14332	kept	Detective fiction
-4417	14331	kept	Judith Beheading Holofernes (Caravaggio)
+4417	14331	REMOVED	Judith Beheading Holofernes (Caravaggio)
 4418	14330	kept	Tap dance
 4419	14326	kept	Frank Underwood (House of Cards)
-4420	14322	kept	Mencius
-4421	14313	kept	Bedřich Smetana
+4420	14322	REMOVED	Mencius
+4421	14313	REMOVED	Bedřich Smetana
 4422	14311	kept	Urban planning
-4423	14262	kept	Ficciones
+4423	14262	REMOVED	Ficciones
 4424	14260	kept	Being and Nothingness
 4425	14241	kept	Sublime (philosophy)
 4426	14239	kept	Kidnapped (novel)
-4427	14232	kept	Buddenbrooks
+4427	14232	REMOVED	Buddenbrooks
 4428	14223	kept	Aria
 4429	14206	kept	Bender (Futurama)
 4430	14195	kept	Movable type
@@ -4434,14 +4434,14 @@ rank	views_60d	status	title
 4433	14173	kept	Fashion design
 4434	14167	kept	Piglet (Winnie-the-Pooh)
 4435	14140	kept	Slang
-4436	14137	kept	Kural
+4436	14137	REMOVED	Kural
 4437	14113	kept	Cupola
 4438	14083	kept	Symphony
 4439	14070	kept	Breakout (video game)
 4440	14059	kept	Zeno of Elea
 4441	14057	kept	Po (Kung Fu Panda)
 4442	14029	kept	Poetics (Aristotle)
-4443	14028	kept	Tartuffe
+4443	14028	REMOVED	Tartuffe
 4444	14008	kept	Dictionary
 4445	13998	kept	Christmas tree
 4446	13996	kept	Kite
@@ -4450,11 +4450,11 @@ rank	views_60d	status	title
 4449	13948	kept	Soliloquy
 4450	13936	kept	Palmistry
 4451	13911	kept	Crime fiction
-4452	13891	kept	Lord Jim
+4452	13891	REMOVED	Lord Jim
 4453	13858	kept	Screenplay
 4454	13824	kept	Cover version
-4455	13806	kept	Equal temperament
-4456	13800	kept	Dance (Matisse)
+4455	13806	REMOVED	Equal temperament
+4456	13800	REMOVED	Dance (Matisse)
 4457	13797	kept	The Two Fridas
 4458	13792	kept	Analects
 4459	13786	kept	Parable
@@ -4472,14 +4472,14 @@ rank	views_60d	status	title
 4471	13678	kept	Hospitality
 4472	13675	kept	Wendy Darling
 4473	13671	kept	Fado
-4474	13663	kept	Táin Bó Cúailnge
+4474	13663	REMOVED	Táin Bó Cúailnge
 4475	13656	kept	Luncheon of the Boating Party
 4476	13650	kept	Hymn
 4477	13642	kept	Rivendell
 4478	13642	kept	Trinity (The Matrix)
 4479	13634	kept	Doll
 4480	13632	kept	Ancient Greek architecture
-4481	13628	kept	Netsuke
+4481	13628	REMOVED	Netsuke
 4482	13619	kept	Geppetto
 4483	13610	kept	Hearthstone
 4484	13596	kept	Polyphony
@@ -4489,7 +4489,7 @@ rank	views_60d	status	title
 4488	13575	kept	Dance music
 4489	13546	kept	Ethan Hunt
 4490	13541	kept	Artisan
-4491	13539	kept	Kathak
+4491	13539	REMOVED	Kathak
 4492	13517	kept	Game show
 4493	13517	kept	Ontological argument
 4494	13511	kept	Rhett Butler
@@ -4502,46 +4502,46 @@ rank	views_60d	status	title
 4501	13453	kept	The Times They Are a-Changin' (song)
 4502	13439	kept	Olaf (Frozen)
 4503	13434	kept	Webcomic
-4504	13431	kept	Raise the Red Lantern
+4504	13431	REMOVED	Raise the Red Lantern
 4505	13420	kept	Charleston (dance)
-4506	13416	kept	Luís de Camões
-4507	13414	kept	Ngũgĩ wa Thiong'o
+4506	13416	REMOVED	Luís de Camões
+4507	13414	REMOVED	Ngũgĩ wa Thiong'o
 4508	13383	kept	Ancient Roman architecture
 4509	13330	kept	Eine kleine Nachtmusik
 4510	13297	kept	Film studio
-4511	13263	kept	Bake-danuki
+4511	13263	REMOVED	Bake-danuki
 4512	13258	kept	Doublethink
 4513	13247	kept	Veranda
 4514	13246	kept	Baloo
 4515	13244	kept	Hat
 4516	13233	kept	Musical composition
-4517	13219	kept	Sublimation (psychology)
+4517	13219	REMOVED	Sublimation (psychology)
 4518	13210	kept	The Well-Tempered Clavier
 4519	13207	kept	The Social Contract
 4520	13195	kept	Mufasa
 4521	13122	kept	Vitreous enamel
 4522	13118	kept	War film
-4523	13113	kept	Master–slave morality
+4523	13113	REMOVED	Master–slave morality
 4524	13110	kept	Jack-o'-lantern
 4525	13086	kept	Vlog
-4526	13083	kept	Twyla Tharp
-4527	13072	kept	Ostinato
+4526	13083	REMOVED	Twyla Tharp
+4527	13072	REMOVED	Ostinato
 4528	13071	kept	African traditional religions
 4529	13057	kept	Byzantine architecture
 4530	13051	kept	Bachata (music)
-4531	13050	kept	Kathakali
+4531	13050	REMOVED	Kathakali
 4532	13048	kept	Tie-dye
 4533	13047	kept	Mural
 4534	13033	kept	Crown
 4535	13031	kept	Cosette
 4536	13027	kept	Marvin the Paranoid Android
-4537	13026	kept	Claudio Monteverdi
+4537	13026	REMOVED	Claudio Monteverdi
 4538	13020	kept	Little black dress
 4539	13020	kept	Selfie
 4540	13016	kept	Action game
 4541	12977	kept	Pen
 4542	12958	kept	The Phenomenology of Spirit
-4543	12946	kept	Urashima Tarō
+4543	12946	REMOVED	Urashima Tarō
 4544	12942	kept	Folk costume
 4545	12936	kept	La Scala
 4546	12911	kept	Manuscript
@@ -4558,18 +4558,18 @@ rank	views_60d	status	title
 4557	12833	kept	Pigment
 4558	12824	kept	Someone like You (Adele song)
 4559	12820	kept	Melody
-4560	12810	kept	Alvar Aalto
+4560	12810	REMOVED	Alvar Aalto
 4561	12807	kept	A Theory of Justice
 4562	12803	kept	Apprenticeship
 4563	12785	kept	Biography
 4564	12782	kept	Doric order
-4565	12762	kept	Ghazal
-4566	12761	kept	Alvin Ailey
+4565	12762	REMOVED	Ghazal
+4566	12761	REMOVED	Alvin Ailey
 4567	12750	kept	Joseph Brodsky
 4568	12750	kept	Turner Prize
 4569	12747	kept	AutoTune
 4570	12746	kept	Three Sisters (play)
-4571	12742	kept	Kenzaburō Ōe
+4571	12742	REMOVED	Kenzaburō Ōe
 4572	12732	kept	Pixel art
 4573	12720	kept	Woodcut
 4574	12711	kept	Fez (video game)
@@ -4583,20 +4583,20 @@ rank	views_60d	status	title
 4582	12589	kept	Diorama
 4583	12584	kept	Apology (Plato)
 4584	12582	kept	Rainbow Serpent
-4585	12557	kept	Will Eisner
-4586	12547	kept	Selma Lagerlöf
-4587	12546	kept	Philip Johnson
+4585	12557	REMOVED	Will Eisner
+4586	12547	REMOVED	Selma Lagerlöf
+4587	12546	REMOVED	Philip Johnson
 4588	12545	kept	Warp drive
 4589	12536	kept	Discipline and Punish
 4590	12525	kept	Gong
 4591	12524	kept	Hiroshige
 4592	12523	kept	Lindy Hop
-4593	12523	kept	The Conference of the Birds
+4593	12523	REMOVED	The Conference of the Birds
 4594	12520	kept	Matsuo Bashō
-4595	12517	kept	Fra Angelico
-4596	12515	kept	Declaration of independence
+4595	12517	REMOVED	Fra Angelico
+4596	12515	REMOVED	Declaration of independence
 4597	12510	kept	Brazilian cuisine
-4598	12494	kept	Bel canto
+4598	12494	REMOVED	Bel canto
 4599	12481	kept	Chanson
 4600	12474	kept	Dancing with the Stars
 4601	12445	kept	John McClane
@@ -4604,7 +4604,7 @@ rank	views_60d	status	title
 4603	12413	kept	Christopher Robin
 4604	12410	kept	Watercolor painting
 4605	12388	kept	Journalism
-4606	12386	kept	Cloisonné
+4606	12386	REMOVED	Cloisonné
 4607	12379	kept	Music hall
 4608	12375	kept	Tradition
 4609	12368	kept	Plot twist
@@ -4626,7 +4626,7 @@ rank	views_60d	status	title
 4625	12178	kept	Literary criticism
 4626	12169	kept	Jack Torrance
 4627	12160	kept	Ode to a Nightingale
-4628	12155	kept	Rhinoceros (play)
+4628	12155	REMOVED	Rhinoceros (play)
 4629	12154	kept	Phileas Fogg
 4630	12149	kept	Dig Dug
 4631	12148	kept	Respect (song)
@@ -4634,37 +4634,37 @@ rank	views_60d	status	title
 4633	12132	kept	Handicraft
 4634	12128	kept	Scarab (artifact)
 4635	12109	kept	Speedrunning
-4636	12103	kept	Nino Rota
+4636	12103	REMOVED	Nino Rota
 4637	12079	kept	The Kiss (Rodin sculpture)
 4638	12069	kept	Mario Kart 64
 4639	12059	kept	Temple
 4640	12040	kept	Fictional universe
 4641	12036	kept	Knitting
 4642	12035	kept	Instant camera
-4643	12032	kept	Coppélia
+4643	12032	REMOVED	Coppélia
 4644	12021	kept	Visual effects
 4645	12021	kept	Young adult literature
-4646	12013	kept	Jean-Auguste-Dominique Ingres
+4646	12013	REMOVED	Jean-Auguste-Dominique Ingres
 4647	12008	kept	Hindu mythology
 4648	12005	kept	Annabel Lee
 4649	11996	kept	Harmony
-4650	11983	kept	Johann Gottlieb Fichte
+4650	11983	REMOVED	Johann Gottlieb Fichte
 4651	11972	kept	Snare drum
 4652	11968	kept	Pitfall!
 4653	11966	kept	Taiko
 4654	11954	kept	The Notebook (novel)
 4655	11951	kept	Lantern Festival
-4656	11928	kept	Intaglio (printmaking)
+4656	11928	REMOVED	Intaglio (printmaking)
 4657	11923	kept	Brain in a vat
-4658	11918	kept	Melencolia I
+4658	11918	REMOVED	Melencolia I
 4659	11899	kept	Hula
 4660	11887	kept	Inca mythology
 4661	11878	kept	Javert
-4662	11863	kept	Tintoretto
+4662	11863	REMOVED	Tintoretto
 4663	11850	kept	Mask
 4664	11847	kept	Grilling
 4665	11842	kept	Variety show
-4666	11839	kept	Vincenzo Bellini
+4666	11839	REMOVED	Vincenzo Bellini
 4667	11837	kept	White Christmas (song)
 4668	11835	kept	Japanese art
 4669	11824	kept	Stunt performer
@@ -4702,7 +4702,7 @@ rank	views_60d	status	title
 4701	11470	kept	Festival
 4702	11461	kept	Artist
 4703	11461	kept	Prime time
-4704	11455	kept	Book of hours
+4704	11455	REMOVED	Book of hours
 4705	11454	kept	Puppet
 4706	11451	kept	Van Gogh Museum
 4707	11448	kept	High culture
@@ -4713,10 +4713,10 @@ rank	views_60d	status	title
 4712	11376	kept	Molecular gastronomy
 4713	11352	kept	Broadcasting
 4714	11344	kept	Theatre of ancient Greece
-4715	11330	kept	Suprematism
+4715	11330	REMOVED	Suprematism
 4716	11328	kept	Sutra
 4717	11299	kept	Rock Band (video game)
-4718	11296	kept	Bunraku
+4718	11296	REMOVED	Bunraku
 4719	11288	kept	Patronage
 4720	11288	kept	Pinhole camera
 4721	11288	kept	Stereoscopy
@@ -4736,17 +4736,17 @@ rank	views_60d	status	title
 4735	11113	kept	E.T. (character)
 4736	11113	kept	Printmaking
 4737	11101	kept	Auction
-4738	11094	kept	Symphonie fantastique
+4738	11094	REMOVED	Symphonie fantastique
 4739	11080	kept	Fathers and Sons (novel)
-4740	11059	kept	Dance marathon
+4740	11059	REMOVED	Dance marathon
 4741	11051	kept	Flash mob
 4742	11051	kept	Politics (Aristotle)
 4743	11013	kept	Improvisational theatre
 4744	10997	kept	Pocahontas (character)
-4745	10989	kept	Toponymy
+4745	10989	REMOVED	Toponymy
 4746	10988	kept	The Gingerbread Man
 4747	10974	kept	Vibrato
-4748	10955	kept	Théodore Géricault
+4748	10955	REMOVED	Théodore Géricault
 4749	10955	kept	We Shall Overcome
 4750	10950	kept	Black Square
 4751	10944	kept	Bastion (video game)
@@ -4754,7 +4754,7 @@ rank	views_60d	status	title
 4753	10931	kept	Sound recording and reproduction
 4754	10920	kept	Nintendogs
 4755	10896	kept	Moroccan cuisine
-4756	10886	kept	Tintype
+4756	10886	REMOVED	Tintype
 4757	10885	kept	Stairs
 4758	10875	kept	Boss (video games)
 4759	10869	kept	Mikhail Lermontov
@@ -4764,11 +4764,11 @@ rank	views_60d	status	title
 4763	10837	kept	Octavio Paz
 4764	10835	kept	Romeo and Juliet (Prokofiev)
 4765	10821	kept	Lilliput and Blefuscu
-4766	10814	kept	Très Riches Heures du Duc de Berry
+4766	10814	REMOVED	Très Riches Heures du Duc de Berry
 4767	10801	kept	Reductionism
 4768	10793	kept	Italian neorealism
 4769	10792	kept	Peking opera
-4770	10783	kept	Revue
+4770	10783	REMOVED	Revue
 4771	10780	kept	Greatest hits album
 4772	10775	kept	Colonnade
 4773	10764	kept	Punk fashion
@@ -4777,11 +4777,11 @@ rank	views_60d	status	title
 4776	10753	kept	Bookbinding
 4777	10738	kept	Baking
 4778	10690	kept	Ace Ventura
-4779	10652	kept	Popping
-4780	10634	kept	Tenebrism
+4779	10652	REMOVED	Popping
+4780	10634	REMOVED	Tenebrism
 4781	10613	kept	Crossover (fiction)
 4782	10611	kept	Audiobook
-4783	10587	kept	Where Do We Come From? What Are We? Where Are We Going?
+4783	10587	REMOVED	Where Do We Come From? What Are We? Where Are We Going?
 4784	10578	kept	Laugh track
 4785	10569	kept	Two Treatises of Government
 4786	10550	kept	Garden
@@ -4789,22 +4789,22 @@ rank	views_60d	status	title
 4788	10548	kept	Radio broadcasting
 4789	10547	kept	Video game music
 4790	10540	kept	The Birth of Tragedy
-4791	10536	kept	The Hunters in the Snow
+4791	10536	REMOVED	The Hunters in the Snow
 4792	10534	kept	Rhyme
 4793	10521	kept	Conducting
-4794	10508	kept	Scottish Enlightenment
+4794	10508	REMOVED	Scottish Enlightenment
 4795	10492	kept	Racing video game
 4796	10487	kept	Pritzker Architecture Prize
 4797	10445	kept	Intangible cultural heritage
 4798	10442	kept	Loot box
 4799	10440	kept	Cuisine
 4800	10428	kept	Jukebox
-4801	10428	kept	Mozi
+4801	10428	REMOVED	Mozi
 4802	10425	kept	Infinity Gems
 4803	10419	kept	Bugle
 4804	10404	kept	Acoustics
-4805	10388	kept	Spinoza's Ethics
-4806	10383	kept	Molly Pitcher
+4805	10388	REMOVED	Spinoza's Ethics
+4806	10383	REMOVED	Molly Pitcher
 4807	10370	kept	Ballet dancer
 4808	10355	kept	Plot (narrative)
 4809	10316	kept	Video game modding
@@ -4814,20 +4814,20 @@ rank	views_60d	status	title
 4813	10251	kept	Elegy
 4814	10244	kept	Street food
 4815	10221	kept	Bolshoi Theatre
-4816	10211	kept	Netherlandish Proverbs
-4817	10200	kept	Domovoy
+4816	10211	REMOVED	Netherlandish Proverbs
+4817	10200	REMOVED	Domovoy
 4818	10192	kept	Voice acting
 4819	10190	kept	Naturalism (literature)
 4820	10173	kept	Chronicle of a Death Foretold
-4821	10160	kept	Krumping
-4822	10142	kept	Andrea Palladio
+4821	10160	REMOVED	Krumping
+4822	10142	REMOVED	Andrea Palladio
 4823	10141	kept	Body language
 4824	10117	kept	Nollywood
 4825	10115	kept	Dome
 4826	10114	kept	The Interpretation of Dreams
 4827	10112	kept	A Visit from St. Nicholas
 4828	10109	kept	Industrial design
-4829	10096	kept	No. 5, 1948
+4829	10096	REMOVED	No. 5, 1948
 4830	10092	kept	The Blue Planet
 4831	10066	kept	Provenance
 4832	10061	kept	Polynesian mythology
@@ -5461,7 +5461,7 @@ rank	views_60d	status	title
 5460	3640	kept	Comedy (drama)
 5461	3625	kept	Wax museum
 5462	3606	REMOVED	Artist's book
-5463	3593	kept	Synchronised swimming
+5463	3593	REMOVED	Synchronised swimming
 5464	3581	kept	Vintage
 5465	3576	kept	Collecting
 5466	3557	kept	Wonderland (fictional country)
