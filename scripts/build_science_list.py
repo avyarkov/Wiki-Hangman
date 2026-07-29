@@ -13,6 +13,13 @@ Two kinds of removal, kept separate on purpose:
               measurement chooses the candidates, judgement only decides which
               of those weak-signal titles are genuinely specialist. Nothing
               above the tail is cut on taste alone.
+
+  UNGUESSABLE fine as science, bad as a hangman word: the answer can only be
+              reached by recalling its spelling letter by letter, because no
+              amount of partial reveal narrows it down. Both lists here are
+              deliberately short -- the recognisable members are rescued, so
+              Homo erectus survives while Caenorhabditis elegans does not, and
+              NASA survives while EXPTIME does not.
 """
 
 import json
@@ -20,6 +27,34 @@ import re
 import sys
 
 STRUCTURAL_PREFIX = ("List of ", "Glossary of ", "Timeline of ")
+
+# Latin binomials and Latin-form clade names. Common-name biology vocabulary
+# (Arthropod, Cephalopod, Trilobite) and the household dinosaur genera are not
+# here -- they are ordinary English words that happen to descend from Latin.
+LATIN_NAME = """
+Ammonoidea
+Arabidopsis thaliana
+Caenorhabditis elegans
+Cnidaria
+Drosophila melanogaster
+Escherichia coli
+Hominidae
+Machairodontinae
+Mollusca
+Saccharomyces cerevisiae
+""".split("\n")
+
+# Acronyms with no everyday currency. The other 48 acronym titles in the pool
+# (NASA, CERN, DNA, JSON, HTTP, CRISPR, LIGO, MOSFET, ENIAC, ALGOL ...) stay.
+ACRONYM_ONLY = """
+BQP
+DBSCAN
+EXPTIME
+PSPACE
+SCADA
+SQUID
+UNIVAC I
+""".split("\n")
 
 # Famous, but not science: internet-culture aphorisms and pure economics that
 # rode in on the "named laws" block. Kept apart from OBSCURE because these are
@@ -94,7 +129,6 @@ Direct proof
 Displacement current density
 Doubling time
 Dropout (neural networks)
-Edmonds-Karp algorithm
 Effective field theory
 Einstein solid
 Ellipsometry
@@ -154,7 +188,6 @@ Mountain formation
 Nanolithography
 Neutral current
 Neutron activation
-Neutron cross section
 Neutron diffraction
 Neutron flux
 Nodal analysis
@@ -174,7 +207,6 @@ Photoconductivity
 Photodisintegration
 Photoemission spectroscopy
 Photomultiplier
-Poincare map
 Poincaré map
 Polaron
 Polynomial-time reduction
@@ -187,10 +219,8 @@ Program synthesis
 Proof by exhaustion
 Proton-to-electron mass ratio
 Query optimization
-Rabin-Karp algorithm
 Rabin–Karp algorithm
 Rate limiting
-Readers-writers problem
 Readers–writers problem
 Recursive definition
 Reduction (complexity)
@@ -239,7 +269,6 @@ Variational method (quantum mechanics)
 Weak isospin
 Weak supervision
 Well-founded relation
-Wiedemann-Franz law
 Wiedemann–Franz law
 Wind engineering
 Yukawa coupling
@@ -256,6 +285,8 @@ def main():
     titles = json.load(open(src, encoding="utf-8"))
     obscure = {t.strip() for t in OBSCURE if t.strip()}
     offtopic = {t.strip() for t in OFF_TOPIC if t.strip()}
+    latin = {t.strip() for t in LATIN_NAME if t.strip()}
+    acronym = {t.strip() for t in ACRONYM_ONLY if t.strip()}
 
     kept, reasons = [], {}
     for t in titles:
@@ -265,6 +296,10 @@ def main():
             reasons[t] = "under 3 letters"
         elif t in offtopic:
             reasons[t] = "not science"
+        elif t in latin:
+            reasons[t] = "latin name"
+        elif t in acronym:
+            reasons[t] = "acronym only"
         elif t in obscure:
             reasons[t] = "too specialist"
         else:
@@ -276,9 +311,10 @@ def main():
         f.write("\n")
 
     json.dump(reasons, open(sys.argv[3], "w", encoding="utf-8"), ensure_ascii=False)
-    unmatched = (obscure | offtopic) - set(reasons)
+    unmatched = (obscure | offtopic | latin | acronym) - set(reasons)
     print(f"kept {len(kept)} of {len(titles)}; removed {len(reasons)}")
-    for k in ("roundup page", "under 3 letters", "not science", "too specialist"):
+    for k in ("roundup page", "under 3 letters", "not science", "latin name",
+              "acronym only", "too specialist"):
         print(f"  {k}: {sum(1 for v in reasons.values() if v == k)}")
     if unmatched:
         print(f"  WARNING {len(unmatched)} cut entries matched nothing:")

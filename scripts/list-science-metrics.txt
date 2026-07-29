@@ -1,4 +1,4 @@
-5326 candidates, 5096 kept
+5326 candidates, 5079 kept
 
  views/60d  langs  letters  status           title
 ----------  -----  -------  ---------------  ----------------------------------------
@@ -315,7 +315,7 @@
      79973     66       11  kept             Fourier transform
      79476    173        6  kept             Reptile
      79017    119        9  kept             Francis Bacon
-     78938    103        8  kept             Hominidae
+     78938    103        8  latin name       Hominidae
      78911    189        7  kept             Alphabet
      78387    187        9  kept             Carl Linnaeus
      78281     97        7  kept             Polaris
@@ -450,7 +450,7 @@
      62963    121       12  kept             Eris (dwarf planet)
      62929     64        4  kept             HDMI
      62922    132       10  kept             Atmosphere of Earth
-     62861    141        7  kept             Mollusca
+     62861    141        7  latin name       Mollusca
      62782    104        7  kept             Arachnid
      62769     37        7  kept             Yann LeCun
      62747    102        6  kept             Quartz
@@ -638,7 +638,7 @@
      48921     77       14  kept             Mass–energy equivalence
      48914     46       11  kept             Docker (software)
      48898     29       10  kept             Rubber duck debugging
-     48819     91        6  kept             Cnidaria
+     48819     91        6  latin name       Cnidaria
      48817     81       14  kept             Object-oriented programming
      48805     88        3  kept             SQL
      48642     88        9  kept             New Horizons
@@ -661,7 +661,7 @@
      47721     83       15  kept             California Institute of Technology
      47713    124        4  kept             X-ray
      47681     92        9  kept             Pseudoscience
-     47632     90        9  kept             Escherichia coli
+     47632     90        9  latin name       Escherichia coli
      47594    124        6  kept             Compass
      47516     82        4  kept             Vega
      47466     36       13  kept             Principal component analysis
@@ -1110,7 +1110,7 @@
      33216     41        8  kept             TypeScript
      33211     95       10  kept             Alternating current
      33200    110       10  kept             Antoine Lavoisier
-     33163     73        7  kept             Ammonoidea
+     33163     73        7  latin name       Ammonoidea
      33107     92       14  kept             Newton's law of universal gravitation
      33101     88        9  kept             Nuclear reactor
      33019     67       10  kept             Autoimmune disease
@@ -1186,7 +1186,7 @@
      31285     65       11  kept             Reynolds number
      31262     80        9  kept             Donald Knuth
      31235     85        3  kept             Sense
-     31192     64       14  kept             Drosophila melanogaster
+     31192     64       14  latin name       Drosophila melanogaster
      31175     20        9  kept             Bloom filter
      31158    119        5  kept             Screw
      31150     77       12  kept             On the Origin of Species
@@ -1494,7 +1494,7 @@
      25710    121        9  kept             Electric charge
      25667     31        9  kept             Bell's theorem
      25606    106        7  kept             Fertilizer
-     25605     36        4  kept             SCADA
+     25605     36        4  acronym only     SCADA
      25598     36       10  kept             Signal-to-noise ratio
      25559     47       14  kept             Rapid eye movement sleep
      25545     88        8  kept             Redshift
@@ -1872,7 +1872,7 @@
      20730     58        8  kept             Sinkhole
      20719     25        4  kept             Trie
      20701     67       12  kept             Transcendental number
-     20695     67       11  kept             Saccharomyces cerevisiae
+     20695     67       11  latin name       Saccharomyces cerevisiae
      20692     85        9  kept             Solar wind
      20668     38       12  kept             British thermal unit
      20645    140       11  kept             Biochemistry
@@ -2558,7 +2558,7 @@
      14475     33        5  kept             Voxel
      14460     45       12  kept             Virgo Supercluster
      14452     79       11  kept             Philosophy of science
-     14439     49       14  kept             Caenorhabditis elegans
+     14439     49       14  latin name       Caenorhabditis elegans
      14432     41        5  kept             NoSQL
      14428     76        9  kept             Spiral galaxy
      14427     29       14  kept             Wave function collapse
@@ -2594,7 +2594,7 @@
      14275     55        6  kept             Telomere
      14272     38       11  kept             Binary search tree
      14261     29        9  kept             Race condition
-     14250     33       11  kept             Machairodontinae
+     14250     33       11  latin name       Machairodontinae
      14248     40        5  kept             LASIK
      14248     48        8  kept             Robert Noyce
      14236     37        7  kept             Alan Guth
@@ -3030,7 +3030,7 @@
      11457     31       10  kept             Simpson's rule
      11446     34       10  kept             Nernst equation
      11433     39        9  kept             Artificial heart
-     11429     24        5  kept             SQUID
+     11429     24        5  acronym only     SQUID
      11425     19       10  kept             Base rate fallacy
      11418     30        9  kept             Higgs mechanism
      11412     88        7  kept             Organelle
@@ -3411,7 +3411,7 @@
       9327     42       11  kept             Stellar black hole
       9320     48       10  kept             Hypergiant
       9320     45       11  kept             Virtual memory
-      9316     20        6  kept             DBSCAN
+      9316     20        6  acronym only     DBSCAN
       9309     53        9  kept             Gene therapy
       9300     34       12  kept             Software architecture
       9299     37       15  kept             Nuclear magnetic resonance spectroscopy
@@ -3432,7 +3432,7 @@
       9245     24       16  kept             Highly composite number
       9238     71       10  kept             Nicolas Léonard Sadi Carnot
       9234     64        6  kept             Detergent
-      9232     53       12  kept             Arabidopsis thaliana
+      9232     53       12  latin name       Arabidopsis thaliana
       9232     34        9  kept             Assembly line
       9220     38        9  kept             Model theory
       9214     41        9  kept             Kelp forest
@@ -3487,7 +3487,7 @@
       8935     17       12  kept             Training, validation, and test data sets
       8931     44       14  kept             Max Planck Society
       8916     69       12  kept             Douglas Engelbart
-      8912     23        6  kept             UNIVAC I
+      8912     23        6  acronym only     UNIVAC I
       8906     46        8  kept             Synchrotron
       8903     45       10  kept             Erlenmeyer flask
       8900     18        7  kept             Currying
@@ -4865,10 +4865,10 @@
       3449     20       14  kept             Change of variables
       3449     23        7  kept             Sensory neuron
       3448     38        8  kept             Gas exchange
-      3447     21        5  kept             PSPACE
+      3447     21        5  acronym only     PSPACE
       3436     24        7  too specialist   Diagnosis
       3435     25        9  kept             Rate equation
-      3434     13        3  kept             BQP
+      3434     13        3  acronym only     BQP
       3433     40       11  kept             Earthquake engineering
       3432     76        7  kept             Melting
       3431     12        8  too specialist   Poincaré map
@@ -5155,7 +5155,7 @@
       2091     46       13  kept             Faraday's laws of electrolysis
       2090     19        9  kept             Clinical research
       2089     20        7  too specialist   Digit sum
-      2084     16        6  kept             EXPTIME
+      2084     16        6  acronym only     EXPTIME
       2084     13       14  kept             Observer-expectancy effect
       2084     29       11  kept             Second messenger system
       2069     46       10  kept             Calorimetry
