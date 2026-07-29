@@ -56,6 +56,15 @@ SQUID
 UNIVAC I
 """.split("\n")
 
+# Dropped by choice rather than by rule. "Algol" the star (Beta Persei) makes an
+# identical puzzle to "ALGOL" the language -- the board masks letters, not case,
+# so both render as the same five blanks with different answers behind them --
+# and the language was preferred. Note this is a one-off call, not a general
+# rule: "Acid" and "ACID" collide the same way and both are deliberately kept.
+DROPPED = """
+Algol
+""".split("\n")
+
 # Company builders. Household names, but famous for founding a business rather
 # than for any scientific or engineering result. Gordon Moore and Robert Noyce
 # co-founded Intel and so belong here by job description, but are kept: Moore's
@@ -367,6 +376,7 @@ def main():
     acronym = {t.strip() for t in ACRONYM_ONLY if t.strip()}
     minor = {t.strip() for t in MINOR_FIGURE if t.strip()}
     founder = {t.strip() for t in TECH_FOUNDER if t.strip()}
+    dropped = {t.strip() for t in DROPPED if t.strip()}
 
     kept, reasons = [], {}
     for t in titles:
@@ -380,6 +390,8 @@ def main():
             reasons[t] = "latin name"
         elif t in acronym:
             reasons[t] = "acronym only"
+        elif t in dropped:
+            reasons[t] = "case twin"
         elif t in founder:
             reasons[t] = "tech founder"
         elif t in minor:
@@ -395,10 +407,11 @@ def main():
         f.write("\n")
 
     json.dump(reasons, open(sys.argv[3], "w", encoding="utf-8"), ensure_ascii=False)
-    unmatched = (obscure | offtopic | latin | acronym | minor | founder) - set(reasons)
+    unmatched = (obscure | offtopic | latin | acronym | minor | founder | dropped) - set(reasons)
     print(f"kept {len(kept)} of {len(titles)}; removed {len(reasons)}")
     for k in ("roundup page", "under 3 letters", "not science", "latin name",
-              "acronym only", "tech founder", "minor figure", "too specialist"):
+              "acronym only", "case twin", "tech founder", "minor figure",
+              "too specialist"):
         print(f"  {k}: {sum(1 for v in reasons.values() if v == k)}")
     if unmatched:
         print(f"  WARNING {len(unmatched)} cut entries matched nothing:")

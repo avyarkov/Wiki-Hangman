@@ -1,4 +1,4 @@
-5326 candidates, 5017 kept
+5329 candidates, 5019 kept
 
  views/60d  langs  letters  status           title
 ----------  -----  -------  ---------------  ----------------------------------------
@@ -1724,6 +1724,7 @@
      22549     65        5  kept             Vostok 1
      22548     78        6  kept             Mirage
      22539     82        9  kept             Ballpoint pen
+     22515    156        4  kept             Acid
      22504     63       12  kept             Electroencephalography
      22497     37        6  kept             SQLite
      22475     52       10  kept             Space elevator
@@ -2063,6 +2064,7 @@
      18687     43       13  kept             Scanning electron microscope
      18665     31       13  kept             Geomagnetic reversal
      18645    123       11  kept             Chemical reaction
+     18630     37       12  kept             Stack Overflow
      18625     75        9  kept             Polyhedron
      18614     54       11  kept             Operational amplifier
      18609     80        7  kept             Conic section
@@ -3767,6 +3769,7 @@
       7727     44        8  kept             Calvin cycle
       7722     39       12  kept             Semiconductor device
       7712     42       11  kept             Information retrieval
+      7708     61        4  case twin        Algol
       7703     31        9  kept             Beat (acoustics)
       7694     44       11  kept             Gallium arsenide
       7690     29        3  kept             Torr

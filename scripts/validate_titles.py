@@ -109,9 +109,15 @@ def main():
                 line = line.strip()
                 if not line or line.startswith("#"):
                     continue
-                if line.lower() in seen_input:
+                # MediaWiki ignores the case of the first character only, so
+                # normalise just that when deduplicating. Folding the whole
+                # title would collide an acronym with an ordinary word and
+                # silently drop one of two genuinely different articles --
+                # ACID vs Acid, ALGOL vs Algol, Stack overflow vs Stack Overflow.
+                key = line[0].upper() + line[1:]
+                if key in seen_input:
                     continue
-                seen_input.add(line.lower())
+                seen_input.add(key)
                 candidates.append(line)
     print(f"{len(candidates)} unique candidates from {len(inputs)} file(s)", file=sys.stderr)
 
