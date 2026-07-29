@@ -56,6 +56,92 @@ SQUID
 UNIVAC I
 """.split("\n")
 
+# Named results outside a standard syllabus: theorems, laws, rules, paradoxes,
+# conjectures, equations, formulas, and the named-number and named-curve families.
+# Judged on whether a science undergraduate meets the result *by this name*, not
+# on pageviews: Hess's law, the octet rule, Raoult's law, Gay-Lussac's law, the
+# rank-nullity and equipartition theorems all keep their place on far fewer views
+# than several entries cut here, because they are course vocabulary and these are
+# not. Famous-by-name curiosities are also kept -- the hairy ball theorem and the
+# infinite monkey theorem earn their spot on memorability alone.
+#
+# The recreational-number family is the clearest case: happy, palindromic,
+# highly composite, figurate, Bell, Lucas and Stirling numbers are puzzle-book
+# trivia, while perfect, triangular, prime and Catalan numbers stay.
+LESSER_RESULT = """
+Abc conjecture
+Amicable numbers
+Barber paradox
+Bell number
+CAS Registry Number
+Condition number
+Electromagnetic wave equation
+Euler's equations (rigid body dynamics)
+Feigenbaum constants
+Fermat number
+Figurate number
+Happy number
+Highly composite number
+Homogeneous differential equation
+Lucas number
+Magic number (physics)
+Palindromic number
+Pell's equation
+Space-filling curve
+Stirling number
+Surreal number
+Bloch's theorem
+Braess's paradox
+Catalan's conjecture
+Cavalieri's principle
+Cayley's theorem
+Ceva's theorem
+Condorcet paradox
+Cook–Levin theorem
+Franck–Condon principle
+Heine–Borel theorem
+Hund's rule of maximum multiplicity
+Isoperimetric inequality
+Kepler conjecture
+Law of superposition
+Little's law
+Max-flow min-cut theorem
+Menelaus's theorem
+Metcalfe's law
+Moravec's paradox
+No free lunch theorem
+Noisy-channel coding theorem
+Principle of least privilege
+Pythagorean trigonometric identity
+Ramsey's theorem
+Rice's theorem
+Rule 110
+Selection rule
+Shannon's source coding theorem
+Titius–Bode law
+Unexpected hanging paradox
+Well-ordering principle
+Wilson's theorem
+""".split("\n")
+
+# Specific machine models from computing history. Kept are the ones a general
+# science student would place: ENIAC, Babbage's analytical and difference engines,
+# the Antikythera mechanism, the household home computers (Apple II, Commodore 64,
+# IBM Personal Computer) and the two Bletchley machines, Bombe and Colossus. Cut
+# are the entries whose titles are model numbers -- landmarks in CS history, but
+# recognised inside the field rather than outside it, and the concepts they
+# introduced (Microprocessor, Personal computer, Graphical user interface) are
+# already carried by their own articles.
+OLD_COMPUTER = """
+Altair 8800
+Atanasoff–Berry computer
+IBM System/360
+Intel 4004
+Macintosh 128K
+Xerox Alto
+Z3 (computer)
+""".split("\n")
+
 # Dropped by choice rather than by rule. "Algol" the star (Beta Persei) makes an
 # identical puzzle to "ALGOL" the language -- the board masks letters, not case,
 # so both render as the same five blanks with different answers behind them --
@@ -377,6 +463,8 @@ def main():
     minor = {t.strip() for t in MINOR_FIGURE if t.strip()}
     founder = {t.strip() for t in TECH_FOUNDER if t.strip()}
     dropped = {t.strip() for t in DROPPED if t.strip()}
+    lesser = {t.strip() for t in LESSER_RESULT if t.strip()}
+    oldpc = {t.strip() for t in OLD_COMPUTER if t.strip()}
 
     kept, reasons = [], {}
     for t in titles:
@@ -392,6 +480,10 @@ def main():
             reasons[t] = "acronym only"
         elif t in dropped:
             reasons[t] = "case twin"
+        elif t in lesser:
+            reasons[t] = "lesser result"
+        elif t in oldpc:
+            reasons[t] = "old computer"
         elif t in founder:
             reasons[t] = "tech founder"
         elif t in minor:
@@ -407,11 +499,12 @@ def main():
         f.write("\n")
 
     json.dump(reasons, open(sys.argv[3], "w", encoding="utf-8"), ensure_ascii=False)
-    unmatched = (obscure | offtopic | latin | acronym | minor | founder | dropped) - set(reasons)
+    unmatched = (obscure | offtopic | latin | acronym | minor | founder | dropped
+                 | lesser | oldpc) - set(reasons)
     print(f"kept {len(kept)} of {len(titles)}; removed {len(reasons)}")
     for k in ("roundup page", "under 3 letters", "not science", "latin name",
-              "acronym only", "case twin", "tech founder", "minor figure",
-              "too specialist"):
+              "acronym only", "case twin", "tech founder", "lesser result",
+              "old computer", "minor figure", "too specialist"):
         print(f"  {k}: {sum(1 for v in reasons.values() if v == k)}")
     if unmatched:
         print(f"  WARNING {len(unmatched)} cut entries matched nothing:")

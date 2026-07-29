@@ -1,4 +1,4 @@
-5329 candidates, 5019 kept
+5329 candidates, 4959 kept
 
  views/60d  langs  letters  status           title
 ----------  -----  -------  ---------------  ----------------------------------------
@@ -1505,7 +1505,7 @@
      25468     79       13  kept             Fundamental interaction
      25452     84        6  kept             Symbiosis
      25445    168        4  kept             Bone
-     25421     30       10  kept             Macintosh 128K
+     25421     30       10  old computer     Macintosh 128K
      25409    112        7  kept             Fossil fuel
      25408    146        5  kept             Circle
      25406     37       11  kept             Boston Dynamics
@@ -1988,7 +1988,7 @@
      19445     38       12  kept             Terminal velocity
      19437     43       11  kept             Void (astronomy)
      19424     81        4  kept             Osmosis
-     19416     18       14  kept             Principle of least privilege
+     19416     18       14  lesser result    Principle of least privilege
      19407     74        7  kept             Glycolysis
      19396     90       11  kept             Irrational number
      19387     58        8  kept             Surfactant
@@ -2299,11 +2299,11 @@
      16508     28        8  kept             Smelting
      16501     28       11  kept             Continuous integration
      16495     48       11  kept             Active galactic nucleus
-     16469     24       11  kept             Moravec's paradox
+     16469     24       11  lesser result    Moravec's paradox
      16458     76        5  kept             Amine
      16438     89       10  kept             Loudspeaker
      16436     59        8  kept             Space suit
-     16431     47        5  kept             Intel 4004
+     16431     47        5  old computer     Intel 4004
      16423     91        9  kept             Combustion
      16404     29       15  kept             Density functional theory
      16395     42        8  kept             David Bohm
@@ -2553,7 +2553,7 @@
      14521    121        7  kept             Phonology
      14518     30        7  kept             XOR gate
      14506     94        7  kept             Herbivore
-     14505     29       10  kept             Abc conjecture
+     14505     29       10  lesser result    Abc conjecture
      14499     43        6  kept             Aperture
      14488     42       13  kept             Hamiltonian (quantum mechanics)
      14484    104        8  kept             Lanthanide
@@ -2684,7 +2684,7 @@
      13598     74       11  kept             Desertification
      13595     39       12  kept             Bremsstrahlung
      13582     71       12  kept             Composite number
-     13573     15        7  kept             Little's law
+     13573     15        7  lesser result    Little's law
      13572     54       12  kept             Cable-stayed bridge
      13563     98        8  kept             Metalloid
      13555     56        7  kept             Text editor
@@ -2780,7 +2780,7 @@
      12904     37        7  kept             Finite field
      12903     44        9  kept             Medical imaging
      12902     59        9  kept             Carbon nanotube
-     12889     29        9  kept             Braess's paradox
+     12889     29        9  lesser result    Braess's paradox
      12888     61        8  kept             Vapor pressure
      12886     58       14  kept             Fundamental theorem of algebra
      12883     63        7  kept             Cladistics
@@ -2971,7 +2971,7 @@
      11822     61       11  kept             Ferromagnetism
      11820     19       10  kept             Ergodic theory
      11813     87        7  kept             Eugene Wigner
-     11810     33        7  kept             IBM System/360
+     11810     33        7  old computer     IBM System/360
      11809     60        7  kept             Zener diode
      11806     52        9  kept             Interpolation
      11801     38        9  kept             Color depth
@@ -2983,7 +2983,7 @@
      11767     35       12  kept             Bayesian network
      11761     85       11  kept             Applied mathematics
      11760     19       11  kept             Cognitive load
-     11760     33        9  kept             Z3 (computer)
+     11760     33        9  old computer     Z3 (computer)
      11759     65        7  kept             Anemometer
      11757     68        5  kept             Subset
      11753     20       10  kept             Technical debt
@@ -3059,7 +3059,7 @@
      11228    101       12  kept             Mathematical proof
      11228     44        8  kept             Real analysis
      11226     40       10  kept             J. Craig Venter
-     11224     41        5  kept             Altair 8800
+     11224     41        5  old computer     Altair 8800
      11217     72        8  kept             Impact crater
      11214    112        3  kept             Dew
      11213    108       10  kept             Alkaline earth metal
@@ -3082,7 +3082,7 @@
      11120     77        7  kept             Turbine
      11114     21        9  kept             Poisson point process
      11114     21       13  kept             Regression toward the mean
-     11111     26        9  kept             Surreal number
+     11111     26        9  lesser result    Surreal number
      11106     15       13  kept             Bias–variance tradeoff
      11106     17       12  kept             Electrical resistance and conductance
      11088     25       10  kept             Image file format
@@ -3179,7 +3179,7 @@
      10575     46       13  kept             Shell (computing)
      10572     33        6  kept             AVL tree
      10553      8       11  kept             Continued fraction
-     10553     25        7  kept             Xerox Alto
+     10553     25        7  old computer     Xerox Alto
      10551     33        8  kept             Judea Pearl
      10550     45        8  kept             Banach space
      10547     60        9  kept             Ring Nebula
@@ -3228,7 +3228,7 @@
      10277     67       14  kept             Fundamental theorem of arithmetic
      10274     39       10  kept             Diffraction grating
      10267    103        8  kept             Distance
-     10266     20        9  kept             Ramsey's theorem
+     10266     20        9  lesser result    Ramsey's theorem
      10254     93        8  kept             Amedeo Avogadro
      10252     19       12  kept             Atomic force microscopy
      10252     62       12  kept             History of atomic theory
@@ -3293,7 +3293,7 @@
       9900     45       10  kept             Limit of a function
       9900     47       13  kept             Orbital mechanics
       9898     55        9  kept             Somatosensory system
-      9897     62       13  kept             CAS Registry Number
+      9897     62       13  lesser result    CAS Registry Number
       9886     29        9  kept             Penetration test
       9882     34        7  minor figure     Lisa Randall
       9882     53        9  kept             Stratus cloud
@@ -3377,7 +3377,7 @@
       9503     79       10  kept             Stress (biology)
       9486     30       12  kept             Inter-process communication
       9486     25       12  kept             Naive Bayes classifier
-      9480      4        4  kept             Rule 110
+      9480      4        4  lesser result    Rule 110
       9477     24       10  kept             Mechanical watch
       9470     25        8  kept             Submersible
       9468     52        6  kept             Forging
@@ -3424,14 +3424,14 @@
       9273     33       12  kept             Academic journal
       9265     75       10  kept             Glenn T. Seaborg
       9259     36       17  kept             IUPAC nomenclature of organic chemistry
-      9252     35       10  kept             Happy number
+      9252     35       10  lesser result    Happy number
       9248     36       12  kept             Repeating decimal
       9247     43       12  kept             Quark–gluon plasma
       9247     97        7  kept             Vaccination
       9246     49       10  kept             Function composition
       9246      8       10  kept             Pure function
       9246     36       12  kept             Synthetic biology
-      9245     24       16  kept             Highly composite number
+      9245     24       16  lesser result    Highly composite number
       9238     71       10  kept             Nicolas Léonard Sadi Carnot
       9234     64        6  kept             Detergent
       9232     53       12  latin name       Arabidopsis thaliana
@@ -3481,7 +3481,7 @@
       8969     56       11  kept             Network topology
       8968     48        7  kept             Power series
       8963     23       14  kept             High-performance computing
-      8960     17       11  kept             Condition number
+      8960     17       11  lesser result    Condition number
       8958     72        9  kept             Carbon cycle
       8958     68       11  kept             Physical constant
       8955     45        8  kept             Color charge
@@ -3519,7 +3519,7 @@
       8814     50        9  kept             Basis (linear algebra)
       8810     33       12  kept             Euclid's theorem
       8806     24       10  kept             2019 revision of the SI
-      8798     16       10  kept             Bloch's theorem
+      8798     16       10  lesser result    Bloch's theorem
       8797     40        9  kept             Riemann integral
       8796     37       11  kept             Integer factorization
       8786     53        6  kept             Isomer
@@ -3584,7 +3584,7 @@
       8533     46       10  kept             Tidal force
       8532     59       12  kept             Magellanic Clouds
       8526     72       14  kept             System of linear equations
-      8525     36       14  kept             Magic number (physics)
+      8525     36       14  lesser result    Magic number (physics)
       8518     88       10  kept             Niels Henrik Abel
       8513    102       10  kept             Oceanography
       8513     59        6  kept             Signal
@@ -3624,11 +3624,11 @@
       8333     55        9  kept             Ventilator
       8325     35       10  kept             Pendulum clock
       8320     48       11  kept             Le Chatelier's principle
-      8316     26       10  kept             Lucas number
+      8316     26       10  lesser result    Lucas number
       8315      5       11  kept             Caesium standard
       8312     31        9  not science      Network effect
       8309     49       12  kept             De Moivre's formula
-      8301      5       11  kept             No free lunch theorem
+      8301      5       11  lesser result    No free lunch theorem
       8301     29       10  kept             Virial theorem
       8294     26       13  kept             Modified Newtonian dynamics
       8284     56       15  kept             Sterilization (microbiology)
@@ -3680,7 +3680,7 @@
       8068     29       11  kept             Pushdown automaton
       8064     34       12  kept             Adjacency matrix
       8063     63       10  kept             Dispersion (optics)
-      8063     31       13  kept             Palindromic number
+      8063     31       13  lesser result    Palindromic number
       8060    128        8  kept             Equation
       8056     52        9  kept             Gene expression
       8055     39       11  kept             Magnetic levitation
@@ -3740,7 +3740,7 @@
       7841     32       11  kept             DNA methylation
       7834     35       13  kept             Convergent boundary
       7830    114       10  kept             Line (geometry)
-      7830     15        9  kept             Rice's theorem
+      7830     15        9  lesser result    Rice's theorem
       7829     29       16  kept             Completing the square
       7825     20       10  kept             Carnot heat engine
       7820     71       12  kept             Commutative property
@@ -3832,7 +3832,7 @@
       7474     38        9  kept             VSEPR theory
       7471     37        9  kept             Voltage regulator
       7466     22        5  kept             Inode
-      7465     31       11  kept             Pell's equation
+      7465     31       11  lesser result    Pell's equation
       7463     70        9  kept             Rosetta (spacecraft)
       7461     70        9  kept             Right angle
       7458     55       11  kept             Hyades (star cluster)
@@ -3968,7 +3968,7 @@
       6948     32        8  kept             System call
       6947     64        9  kept             Orbital inclination
       6947     24       14  kept             Scheduling (computing)
-      6938     25       14  kept             Unexpected hanging paradox
+      6938     25       14  lesser result    Unexpected hanging paradox
       6932     67       10  kept             Elasticity (physics)
       6925     29       14  kept             Characteristic polynomial
       6924     28       11  kept             Informed consent
@@ -3985,7 +3985,7 @@
       6871     50       13  kept             Huygens–Fresnel principle
       6855     66       10  kept             Galvanometer
       6843     15       11  kept             Chloralkali process
-      6843     17       14  kept             Shannon's source coding theorem
+      6843     17       14  lesser result    Shannon's source coding theorem
       6840     19       15  kept             Extended Euclidean algorithm
       6840     55       10  kept             Thermal energy
       6839     47        8  kept             Rolle's theorem
@@ -4009,7 +4009,7 @@
       6780     22       11  kept             Posterior probability
       6779     62        6  kept             Protostar
       6777     57       10  kept             Osmotic pressure
-      6774     30        9  kept             Metcalfe's law
+      6774     30        9  lesser result    Metcalfe's law
       6772     29       11  kept             Aufbau principle
       6767     32       11  kept             Lossy compression
       6767     21        9  kept             Shell script
@@ -4025,7 +4025,7 @@
       6728     35        8  kept             Spintronics
       6722     58        7  kept             Photodiode
       6718     46        7  kept             Casting
-      6716     23        8  kept             Barber paradox
+      6716     23        8  lesser result    Barber paradox
       6716     39       13  kept             Modern synthesis (20th century)
       6711     22       10  kept             Standard gravity
       6709     12       14  kept             Diffraction-limited system
@@ -4034,7 +4034,7 @@
       6706     18       10  kept             Strain (mechanics)
       6700     49       11  kept             Synchrotron radiation
       6700     81        7  kept             Wind wave
-      6696     43        9  kept             Fermat number
+      6696     43        9  lesser result    Fermat number
       6687     20       10  kept             Endosymbiont
       6684     26       13  kept             Electronic band structure
       6682     33       14  kept             Cauchy–Riemann equations
@@ -4081,7 +4081,7 @@
       6538     68        6  kept             Divisor
       6535     38       10  kept             Evidence-based medicine
       6533     36        6  kept             Polytope
-      6533     15       13  kept             Space-filling curve
+      6533     15       13  lesser result    Space-filling curve
       6530     37        9  kept             Excretory system
       6523     49        5  kept             Cilium
       6514     27       10  kept             Distributed ledger
@@ -4345,7 +4345,7 @@
       5452     36       15  kept             Deadlock (computer science)
       5452     32       11  kept             Multi-core processor
       5451     26       14  kept             Bandwidth (computing)
-      5451     24       10  kept             Heine–Borel theorem
+      5451     24       10  lesser result    Heine–Borel theorem
       5449     46       10  kept             Nanoparticle
       5437     39       15  minor figure     Robert Kahn (computer scientist)
       5433     39        7  kept             Machining
@@ -4381,7 +4381,7 @@
       5311     25       12  kept             Quantum algorithm
       5310     37       14  kept             Fixed point (mathematics)
       5303     27        7  kept             Epitaxy
-      5302     23       13  kept             Feigenbaum constants
+      5302     23       13  lesser result    Feigenbaum constants
       5300     36       16  kept             Divide-and-conquer algorithm
       5300     47       15  kept             Mount Wilson Observatory
       5291     32       13  kept             D'Alembert's principle
@@ -4460,7 +4460,7 @@
       5004     37       10  kept             Instrumentalism
       5003     47        9  kept             Endocytosis
       5001     55       12  kept             Population genetics
-      4998     26       10  kept             Condorcet paradox
+      4998     26       10  lesser result    Condorcet paradox
       4997     43       10  kept             Network packet
       4987     29       13  kept             Multistage rocket
       4974     34       12  kept             Flight simulator
@@ -4470,14 +4470,14 @@
       4967     87       10  kept             Arthur Compton
       4958     70       10  kept             Rudolf Clausius
       4954     31        7  kept             Loudness
-      4947     29        7  kept             Bell number
+      4947     29        7  lesser result    Bell number
       4945     33        9  kept             Magnification
       4943     21        9  kept             Flow network
       4943      8       14  kept             Institutional review board
       4939     11       12  kept             Write-ahead logging
       4928     28       12  kept             Instruction pipelining
       4912     43       10  kept             Structural formula
-      4910     21       15  kept             Isoperimetric inequality
+      4910     21       15  lesser result    Isoperimetric inequality
       4904     43        8  kept             Contradiction
       4903     28       12  kept             Quadratic reciprocity
       4876     40       15  kept             Inheritance (object-oriented programming)
@@ -4499,7 +4499,7 @@
       4789     40        8  kept             Cold front
       4785     73       10  kept             Diophantus
       4782     21       11  kept             Intermediate representation
-      4782     19       15  kept             Max-flow min-cut theorem
+      4782     19       15  lesser result    Max-flow min-cut theorem
       4781     46       12  kept             Process (computing)
       4770     22       11  kept             Horizon problem
       4768     15       12  kept             Two envelopes problem
@@ -4660,18 +4660,18 @@
       4231     32       14  kept             Equilibrium constant
       4227     17       11  too specialist   Stability theory
       4226     58       10  kept             Herd immunity
-      4216     21       11  kept             Kepler conjecture
+      4216     21       11  lesser result    Kepler conjecture
       4212     24        9  kept             Foreign key
       4211     44        5  minor figure     Larry Wall
       4206     42       14  kept             Spherical geometry
       4188     16        9  kept             Factor of safety
       4179      8       10  too specialist   Dennard scaling
-      4178     18       12  kept             Franck–Condon principle
+      4178     18       12  lesser result    Franck–Condon principle
       4178     21       12  kept             Higher-order function
       4177     98        9  kept             Climatology
       4171     37       11  kept             Nuclear isomer
       4170      9       12  kept             Relation (mathematics)
-      4170     40       11  kept             Wilson's theorem
+      4170     40       11  lesser result    Wilson's theorem
       4169     52        7  kept             Octet rule
       4169     31       11  minor figure     Yukihiro Matsumoto
       4166     15       10  kept             Reference counting
@@ -4689,9 +4689,9 @@
       4131     53       11  minor figure     John Clauser
       4130     15        7  too specialist   Inference engine
       4118     21       10  kept             Fault tolerance
-      4110     23       14  kept             Atanasoff–Berry computer
+      4110     23       14  old computer     Atanasoff–Berry computer
       4110     81       11  kept             Electrical network
-      4105     20       12  kept             Cook–Levin theorem
+      4105     20       12  lesser result    Cook–Levin theorem
       4105     45       14  kept             Organometallic chemistry
       4104     42       11  kept             Inscribed angle
       4100     36       10  kept             Ground state
@@ -4734,7 +4734,7 @@
       3945     38        9  kept             Color index
       3941     38       12  kept             Doubling the cube
       3940     23       13  kept             Crystal field theory
-      3936     26       10  kept             Cavalieri's principle
+      3936     26       10  lesser result    Cavalieri's principle
       3934     19       13  kept             Derivative (multivariable calculus)
       3931     11       10  too specialist   Information content
       3930     81        6  kept             Alkyne
@@ -4746,7 +4746,7 @@
       3894     22        8  kept             Reionization
       3890     27       11  kept             Measurement uncertainty
       3889     13        9  too specialist   Mountain formation
-      3884     22       11  kept             Cayley's theorem
+      3884     22       11  lesser result    Cayley's theorem
       3882     38       11  kept             Improper integral
       3874     60       15  kept             Displacement (geometry)
       3871     33        9  kept             Heritability
@@ -4760,7 +4760,7 @@
       3853     17       12  too specialist   Root-finding algorithm
       3849     22        8  too specialist   Rewilding
       3846     77       10  kept             Dynamics (mechanics)
-      3846     16       17  kept             Euler's equations (rigid body dynamics)
+      3846     16       17  lesser result    Euler's equations (rigid body dynamics)
       3832     16        8  too specialist   Failure rate
       3830     42        6  kept             T Tauri star
       3829     28       12  kept             Acoustic impedance
@@ -4788,7 +4788,7 @@
       3748     14       12  kept             Quantum eraser experiment
       3744     24       10  too specialist   Ellipsometry
       3742     31       11  kept             Centrifugation
-      3737     16       10  kept             Selection rule
+      3737     16       10  lesser result    Selection rule
       3733     24       10  kept             Lubrication
       3727     19       12  kept             Microstate (statistical mechanics)
       3723     26       12  kept             Freezing-point depression
@@ -4809,13 +4809,13 @@
       3651     32       11  kept             Frequency response
       3650     43       11  kept             Corpus linguistics
       3646     70        5  kept             Statics
-      3646     48       11  kept             Titius–Bode law
+      3646     48       11  lesser result    Titius–Bode law
       3644     21       13  kept             Active-pixel sensor
       3642     24        9  kept             Superscalar processor
       3641     21       13  kept             Separation of variables
       3640     36        9  kept             Scientific consensus
       3634     23       11  kept             Uranium–lead dating
-      3624     20       15  kept             Electromagnetic wave equation
+      3624     20       15  lesser result    Electromagnetic wave equation
       3623      9       10  too specialist   Coin problem
       3614     39       11  kept             Affine geometry
       3614     29        9  kept             Clock signal
@@ -4834,7 +4834,7 @@
       3569     16        9  too specialist   Feature engineering
       3568     61        8  kept             Peroxisome
       3566     20       11  kept             Operator (physics)
-      3561     41       10  kept             Ceva's theorem
+      3561     41       10  lesser result    Ceva's theorem
       3561     33        9  kept             Group homomorphism
       3558     19        7  kept             Cache coherence
       3558     54       11  kept             Paleoanthropology
@@ -4849,7 +4849,7 @@
       3515     12        9  kept             Packet loss
       3509     25       13  kept             Critical point (mathematics)
       3501     34        6  kept             Corollary
-      3500     16       15  kept             Noisy-channel coding theorem
+      3500     16       15  lesser result    Noisy-channel coding theorem
       3500     20       13  kept             Radius of convergence
       3494     35        5  kept             Ice core
       3491     14        8  too specialist   Fiber laser
@@ -4919,7 +4919,7 @@
       3277     20        9  kept             Memory hierarchy
       3272     28        5  kept             P wave
       3269     33        8  kept             Soil horizon
-      3264     52       11  kept             Amicable numbers
+      3264     52       11  lesser result    Amicable numbers
       3264     51       12  kept             Isothermal process
       3259      9       11  kept             Auction theory
       3259     34        9  kept             Gravimetry
@@ -4972,14 +4972,14 @@
       3046     22       11  kept             Brute-force search
       3045     28        6  kept             Preprint
       3044     24       14  kept             Reproductive isolation
-      3041     41       11  kept             Menelaus's theorem
+      3041     41       11  lesser result    Menelaus's theorem
       3032     50        8  kept             Illuminance
       3030     29       12  kept             Decision problem
-      3021     28       11  kept             Catalan's conjecture
+      3021     28       11  lesser result    Catalan's conjecture
       3017     44       13  kept             Event (probability theory)
       3016     68       12  minor figure     Philip W. Anderson
       3013     47        5  kept             Burette
-      3013     21       11  kept             Stirling number
+      3013     21       11  lesser result    Stirling number
       3012     20       10  too specialist   Present value
       3000     10       10  too specialist   Born approximation
       2996     42       12  kept             Organic synthesis
@@ -4993,7 +4993,7 @@
       2941     11       12  too specialist   Carrier generation and recombination
       2931     35        9  kept             Ray (optics)
       2924     10        8  too specialist   Lattice QCD
-      2914     14       11  kept             Well-ordering principle
+      2914     14       11  lesser result    Well-ordering principle
       2913     40        9  kept             Sigma bond
       2895     80       11  kept             Geochemistry
       2888      9       10  too specialist   Monolithic application
@@ -5050,7 +5050,7 @@
       2608     26       12  kept             Population inversion
       2598     27       13  kept             Population dynamics
       2597     17       15  kept             Edmonds–Karp algorithm
-      2597     17       16  kept             Homogeneous differential equation
+      2597     17       16  lesser result    Homogeneous differential equation
       2593     18        7  kept             Unit cell
       2591     25        9  kept             Sex linkage
       2586     39       12  kept             Competition (biology)
@@ -5081,7 +5081,7 @@
       2466     43       10  kept             Condensation reaction
       2464     59        7  minor figure     Barry Barish
       2462     19       10  kept             Switch statement
-      2460     17       14  kept             Pythagorean trigonometric identity
+      2460     17       14  lesser result    Pythagorean trigonometric identity
       2457     36       17  kept             Reversible process (thermodynamics)
       2451     17        9  kept             Quantum well
       2450     35       13  kept             Dimension (vector space)
@@ -5107,7 +5107,7 @@
       2362     15        9  too specialist   Dark photon
       2360     17       13  too specialist   Replication (computing)
       2359     50       12  kept             Mechanical equilibrium
-      2352     27       11  kept             Figurate number
+      2352     27       11  lesser result    Figurate number
       2349     12        8  too specialist   Learning rate
       2347      8       12  too specialist   Proton-to-electron mass ratio
       2338     25        7  kept             Effusion
@@ -5240,7 +5240,7 @@
       1627     40        9  kept             Electrophile
       1623      8       10  too specialist   Photomultiplier
       1620     35        8  kept             Plasmodesma
-      1619     23       13  kept             Law of superposition
+      1619     23       13  lesser result    Law of superposition
       1619     13        9  too specialist   Loop invariant
       1615     18       12  too specialist   Refining (metallurgy)
       1611     29       12  kept             Counterexample
@@ -5312,7 +5312,7 @@
        942     19       12  too specialist   Direct comparison test
        941     12       10  kept             Reaction quotient
        937      4        8  too specialist   API management
-       918     12       18  kept             Hund's rule of maximum multiplicity
+       918     12       18  lesser result    Hund's rule of maximum multiplicity
        865     46        9  kept             Addition reaction
        842     18       10  kept             Silent mutation
        803     16       13  too specialist   Magnetostratigraphy
