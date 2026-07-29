@@ -1,0 +1,5650 @@
+# Physics - classical mechanics
+Classical mechanics
+Newton's laws of motion
+Newton's law of universal gravitation
+Force
+Mass
+Acceleration
+Velocity
+Speed
+Displacement (geometry)
+Momentum
+Angular momentum
+Impulse (physics)
+Torque
+Work (physics)
+Power (physics)
+Energy
+Kinetic energy
+Potential energy
+Conservation of energy
+Conservation of mass
+Mechanical equilibrium
+Free body diagram
+Inertia
+Moment of inertia
+Center of mass
+Centripetal force
+Centrifugal force
+Coriolis force
+Friction
+Drag (physics)
+Terminal velocity
+Normal force
+Tension (physics)
+Hooke's law
+Spring (device)
+Simple harmonic motion
+Harmonic oscillator
+Pendulum
+Foucault pendulum
+Resonance
+Damping
+Projectile motion
+Free fall
+Escape velocity
+Orbit
+Kepler's laws of planetary motion
+Two-body problem
+Three-body problem
+Gravity
+Gravitational acceleration
+Weightlessness
+Rigid body
+Rotation around a fixed axis
+Precession
+Gyroscope
+Elastic collision
+Inelastic collision
+Collision
+Restitution coefficient
+Lever
+Pulley
+Inclined plane
+Wheel and axle
+Screw
+Wedge
+Simple machine
+Mechanical advantage
+Statics
+Dynamics (mechanics)
+Kinematics
+Reference frame
+Inertial frame of reference
+Non-inertial reference frame
+Galilean invariance
+Lagrangian mechanics
+Hamiltonian mechanics
+Principle of least action
+Noether's theorem
+Degrees of freedom (mechanics)
+Generalized coordinates
+Poisson bracket
+Phase space
+Virial theorem
+D'Alembert's principle
+Euler's equations (rigid body dynamics)
+Coriolis effect
+Tidal force
+Roche limit
+Barycenter
+Angular velocity
+Angular acceleration
+Radian
+Circular motion
+Uniform circular motion
+Vector (mathematics and physics)
+Scalar (physics)
+Dimensional analysis
+Significant figures
+Measurement uncertainty
+Order of magnitude
+
+# Physics - fluids and continuum
+Fluid mechanics
+Fluid dynamics
+Hydrostatics
+Pressure
+Atmospheric pressure
+Pascal's law
+Archimedes' principle
+Buoyancy
+Density
+Specific gravity
+Viscosity
+Surface tension
+Capillary action
+Bernoulli's principle
+Continuity equation
+Navier-Stokes equations
+Reynolds number
+Laminar flow
+Turbulence
+Vortex
+Boundary layer
+Stokes' law
+Poiseuille's law
+Venturi effect
+Magnus effect
+Cavitation
+Shock wave
+Sonic boom
+Supersonic speed
+Mach number
+Aerodynamics
+Lift (force)
+Airfoil
+Wind tunnel
+Hydraulics
+Pneumatics
+Siphon
+Fluid
+Plasma (physics)
+Non-Newtonian fluid
+Rheology
+Elasticity (physics)
+Young's modulus
+Stress (mechanics)
+Strain (mechanics)
+Shear stress
+Bulk modulus
+Poisson's ratio
+Plasticity (physics)
+Ductility
+Brittleness
+Hardness
+Tensile strength
+Fracture
+Fatigue (material)
+Creep (deformation)
+Buckling
+
+# Physics - thermodynamics and statistical mechanics
+Thermodynamics
+Statistical mechanics
+Temperature
+Heat
+Thermal energy
+Internal energy
+Enthalpy
+Entropy
+Gibbs free energy
+Helmholtz free energy
+Laws of thermodynamics
+First law of thermodynamics
+Second law of thermodynamics
+Third law of thermodynamics
+Zeroth law of thermodynamics
+Absolute zero
+Kelvin
+Celsius
+Fahrenheit
+Thermometer
+Thermal expansion
+Heat capacity
+Specific heat capacity
+Latent heat
+Thermal conductivity
+Thermal conduction
+Convection
+Thermal radiation
+Black-body radiation
+Stefan-Boltzmann law
+Wien's displacement law
+Planck's law
+Greenhouse effect
+Heat transfer
+Heat engine
+Carnot cycle
+Carnot heat engine
+Otto cycle
+Diesel cycle
+Rankine cycle
+Refrigeration
+Heat pump
+Thermodynamic efficiency
+Perpetual motion
+Maxwell's demon
+Ideal gas
+Ideal gas law
+Boyle's law
+Charles's law
+Gay-Lussac's law
+Avogadro's law
+Van der Waals equation
+Kinetic theory of gases
+Maxwell-Boltzmann distribution
+Boltzmann constant
+Mean free path
+Brownian motion
+Diffusion
+Osmosis
+Effusion
+Equipartition theorem
+Partition function (statistical mechanics)
+Microstate (statistical mechanics)
+Ensemble (mathematical physics)
+Boltzmann distribution
+Fermi-Dirac statistics
+Bose-Einstein statistics
+Phase transition
+Phase diagram
+Triple point
+Critical point (thermodynamics)
+State of matter
+Solid
+Liquid
+Gas
+Melting
+Freezing
+Boiling
+Evaporation
+Condensation
+Sublimation (phase transition)
+Deposition (phase transition)
+Vapor pressure
+Humidity
+Dew point
+Supercooling
+Superheating
+Latent heat of fusion
+Calorimetry
+Adiabatic process
+Isothermal process
+Isobaric process
+Isochoric process
+Reversible process (thermodynamics)
+Irreversible process
+Thermodynamic cycle
+Thermodynamic system
+Heat death of the universe
+Arrow of time
+
+# Physics - waves, sound and optics
+Wave
+Wavelength
+Frequency
+Amplitude
+Period (physics)
+Phase (waves)
+Wave equation
+Transverse wave
+Longitudinal wave
+Standing wave
+Traveling wave
+Superposition principle
+Wave interference
+Constructive interference
+Diffraction
+Diffraction grating
+Double-slit experiment
+Huygens-Fresnel principle
+Refraction
+Reflection (physics)
+Snell's law
+Total internal reflection
+Refractive index
+Dispersion (optics)
+Prism
+Rainbow
+Lens
+Convex lens
+Concave lens
+Focal length
+Mirror
+Parabolic reflector
+Optical aberration
+Chromatic aberration
+Magnification
+Microscope
+Telescope
+Optical fiber
+Fiber-optic communication
+Polarization (waves)
+Brewster's angle
+Birefringence
+Optics
+Geometrical optics
+Physical optics
+Ray (optics)
+Light
+Visible spectrum
+Color
+Additive color
+Subtractive color
+Spectrum
+Electromagnetic spectrum
+Infrared
+Ultraviolet
+X-ray
+Gamma ray
+Microwave
+Radio wave
+Blackbody
+Luminescence
+Fluorescence
+Phosphorescence
+Bioluminescence
+Incandescence
+Laser
+Maser
+Holography
+Interferometry
+Michelson interferometer
+Michelson-Morley experiment
+Fabry-Perot interferometer
+Doppler effect
+Redshift
+Blueshift
+Sound
+Acoustics
+Speed of sound
+Pitch (music)
+Timbre
+Loudness
+Decibel
+Echo
+Reverberation
+Ultrasound
+Infrasound
+Sonar
+Beat (acoustics)
+Harmonic
+Overtone
+Fundamental frequency
+Resonance (acoustics)
+Helmholtz resonance
+Noise
+White noise
+Sound pressure
+Acoustic impedance
+Rayleigh scattering
+Mie scattering
+Scattering
+Absorption (electromagnetic radiation)
+Transmittance
+Opacity (optics)
+Transparency and translucency
+Mirage
+Optical illusion
+Photometry (optics)
+Radiometry
+Luminous intensity
+Candela
+Lumen (unit)
+Lux
+Illuminance
+Albedo
+# Physics - electromagnetism
+Electromagnetism
+Electric charge
+Elementary charge
+Electrostatics
+Coulomb's law
+Electric field
+Electric potential
+Voltage
+Electric potential energy
+Equipotential
+Gauss's law
+Electric flux
+Electric dipole moment
+Capacitance
+Capacitor
+Dielectric
+Permittivity
+Vacuum permittivity
+Electric current
+Direct current
+Alternating current
+Ampere
+Ohm's law
+Electrical resistance and conductance
+Resistivity
+Resistor
+Electrical conductor
+Insulator (electricity)
+Semiconductor
+Superconductivity
+Meissner effect
+Joule heating
+Electric power
+Electrical network
+Series and parallel circuits
+Kirchhoff's circuit laws
+Wheatstone bridge
+RC circuit
+RLC circuit
+Impedance
+Reactance (electronics)
+Magnetism
+Magnetic field
+Magnet
+Ferromagnetism
+Paramagnetism
+Diamagnetism
+Magnetic moment
+Magnetic flux
+Magnetic monopole
+Permeability (electromagnetism)
+Lorentz force
+Ampere's circuital law
+Biot-Savart law
+Solenoid
+Electromagnet
+Electromagnetic induction
+Faraday's law of induction
+Lenz's law
+Inductance
+Inductor
+Eddy current
+Transformer
+Electric motor
+Electric generator
+Alternator
+Dynamo
+Maxwell's equations
+Electromagnetic radiation
+Electromagnetic wave equation
+Poynting vector
+Displacement current
+Electromagnetic field
+Antenna (radio)
+Radio
+Waveguide
+Skin effect
+Hall effect
+Piezoelectricity
+Thermoelectric effect
+Seebeck effect
+Triboelectric effect
+Lightning
+Static electricity
+Van de Graaff generator
+Leyden jar
+Battery (electricity)
+Electrochemical cell
+Galvanic cell
+Electrolysis
+Faraday's laws of electrolysis
+Electroplating
+Circuit diagram
+Earth's magnetic field
+Aurora
+Magnetosphere
+Geomagnetic reversal
+Magnetic resonance imaging
+Nuclear magnetic resonance
+Cyclotron
+Mass spectrometry
+
+# Physics - relativity
+Theory of relativity
+Special relativity
+General relativity
+Albert Einstein
+Spacetime
+Minkowski space
+Lorentz transformation
+Time dilation
+Length contraction
+Relativity of simultaneity
+Mass-energy equivalence
+Speed of light
+Light-year
+Twin paradox
+Ladder paradox
+Relativistic mass
+Four-vector
+World line
+Light cone
+Causality (physics)
+Equivalence principle
+Geodesic
+Curvature
+Einstein field equations
+Gravitational time dilation
+Gravitational redshift
+Gravitational lens
+Gravitational wave
+LIGO
+Frame-dragging
+Black hole
+Event horizon
+Schwarzschild radius
+Schwarzschild metric
+Gravitational singularity
+Kerr metric
+Hawking radiation
+Wormhole
+White hole
+Time travel
+Closed timelike curve
+Tests of general relativity
+Perihelion precession of Mercury
+Gravitational constant
+Cavendish experiment
+Cosmological constant
+Dark energy
+Dark matter
+Big Bang
+Expansion of the universe
+Metric expansion of space
+Hubble's law
+Observable universe
+Cosmic microwave background
+Cosmological principle
+Inflation (cosmology)
+Shape of the universe
+Multiverse
+Anthropic principle
+Fine-tuned universe
+
+# Physics - quantum mechanics
+Quantum mechanics
+Old quantum theory
+Quantum
+Planck constant
+Photon
+Photoelectric effect
+Compton scattering
+Wave-particle duality
+De Broglie wavelength
+Matter wave
+Schrodinger equation
+Wave function
+Wave function collapse
+Born rule
+Probability amplitude
+Quantum superposition
+Quantum entanglement
+Uncertainty principle
+Observer effect (physics)
+Quantum state
+Hilbert space
+Bra-ket notation
+Operator (physics)
+Hamiltonian (quantum mechanics)
+Eigenvalues and eigenvectors
+Quantum harmonic oscillator
+Particle in a box
+Quantum tunnelling
+Scanning tunneling microscope
+Potential well
+Quantum number
+Spin (physics)
+Spin quantum number
+Pauli exclusion principle
+Stern-Gerlach experiment
+Zeeman effect
+Stark effect
+Fine structure
+Hyperfine structure
+Atomic orbital
+Bohr model
+Rutherford model
+Plum pudding model
+Atomic model
+Energy level
+Ground state
+Excited state
+Spectral line
+Emission spectrum
+Absorption spectrum
+Spectroscopy
+Balmer series
+Rydberg formula
+Rydberg constant
+Bohr radius
+Fine-structure constant
+Selection rule
+Stimulated emission
+Population inversion
+Quantum electrodynamics
+Quantum field theory
+Feynman diagram
+Path integral formulation
+Second quantization
+Virtual particle
+Vacuum energy
+Zero-point energy
+Casimir effect
+Dirac equation
+Antiparticle
+Antimatter
+Positron
+Klein-Gordon equation
+Renormalization
+Gauge theory
+Symmetry breaking
+Spontaneous symmetry breaking
+Higgs mechanism
+Quantum chromodynamics
+Color charge
+Asymptotic freedom
+Color confinement
+Electroweak interaction
+Standard Model
+Beyond the Standard Model
+Supersymmetry
+String theory
+M-theory
+Loop quantum gravity
+Theory of everything
+Grand Unified Theory
+Quantum gravity
+Copenhagen interpretation
+Many-worlds interpretation
+Pilot wave theory
+Hidden-variable theory
+Bell's theorem
+EPR paradox
+Quantum decoherence
+Schrodinger's cat
+Wigner's friend
+Quantum eraser experiment
+Delayed-choice quantum eraser
+Quantum computing
+Qubit
+Quantum logic gate
+Quantum algorithm
+Shor's algorithm
+Grover's algorithm
+Quantum supremacy
+Quantum cryptography
+Quantum key distribution
+Quantum teleportation
+No-cloning theorem
+Bose-Einstein condensate
+Superfluidity
+Josephson effect
+SQUID
+Cooper pair
+BCS theory
+Quantum Hall effect
+Landau levels
+
+# Physics - particle and nuclear
+Particle physics
+Nuclear physics
+Atom
+Atomic nucleus
+Proton
+Neutron
+Electron
+Nucleon
+Neutrino
+Muon
+Tau (particle)
+Lepton
+Quark
+Up quark
+Down quark
+Strange quark
+Charm quark
+Bottom quark
+Top quark
+Gluon
+W and Z bosons
+Higgs boson
+Boson
+Fermion
+Hadron
+Meson
+Baryon
+Pion
+Kaon
+Elementary particle
+List of particles
+Particle accelerator
+Large Hadron Collider
+CERN
+Fermilab
+Synchrotron
+Linear particle accelerator
+Particle detector
+Bubble chamber
+Cloud chamber
+Geiger counter
+Scintillation counter
+Photomultiplier
+Cosmic ray
+Radioactive decay
+Radioactivity
+Alpha decay
+Beta decay
+Gamma ray
+Electron capture
+Half-life
+Decay chain
+Radiometric dating
+Radiocarbon dating
+Isotope
+Radionuclide
+Nuclear binding energy
+Mass defect
+Strong interaction
+Weak interaction
+Fundamental interaction
+Nuclear fission
+Nuclear fusion
+Nuclear chain reaction
+Critical mass
+Nuclear reactor
+Nuclear power
+Pressurized water reactor
+Breeder reactor
+Tokamak
+ITER
+Inertial confinement fusion
+Nuclear weapon
+Manhattan Project
+Trinity (nuclear test)
+Atomic bombings of Hiroshima and Nagasaki
+Chernobyl disaster
+Fukushima nuclear accident
+Nuclear fallout
+Ionizing radiation
+Radiation protection
+Sievert
+Becquerel
+Gray (unit)
+Nuclear medicine
+Positron emission tomography
+Neutron star
+Neutron moderator
+Enriched uranium
+Uranium-235
+Plutonium-239
+Nuclear fuel cycle
+Radioactive waste
+# Physics - physicists
+Isaac Newton
+Galileo Galilei
+Albert Einstein
+Niels Bohr
+Werner Heisenberg
+Erwin Schrodinger
+Paul Dirac
+Max Planck
+Richard Feynman
+Wolfgang Pauli
+Enrico Fermi
+Ernest Rutherford
+Marie Curie
+Pierre Curie
+James Clerk Maxwell
+Michael Faraday
+Nikola Tesla
+Thomas Edison
+Alessandro Volta
+Andre-Marie Ampere
+Georg Ohm
+Charles-Augustin de Coulomb
+Heinrich Hertz
+Christian Doppler
+James Prescott Joule
+Lord Kelvin
+Ludwig Boltzmann
+Josiah Willard Gibbs
+Rudolf Clausius
+Sadi Carnot
+Daniel Bernoulli
+Blaise Pascal
+Robert Hooke
+Christiaan Huygens
+Robert Boyle
+Henry Cavendish
+Pierre-Simon Laplace
+Joseph-Louis Lagrange
+Leonhard Euler
+Hermann von Helmholtz
+Wilhelm Rontgen
+Henri Becquerel
+J. J. Thomson
+Robert Andrews Millikan
+Arthur Compton
+Max Born
+Louis de Broglie
+Satyendra Nath Bose
+Lise Meitner
+Otto Hahn
+J. Robert Oppenheimer
+Edward Teller
+Hans Bethe
+Freeman Dyson
+Murray Gell-Mann
+Steven Weinberg
+Abdus Salam
+Sheldon Lee Glashow
+Peter Higgs
+Chen Ning Yang
+Tsung-Dao Lee
+Chien-Shiung Wu
+Emmy Noether
+Stephen Hawking
+Roger Penrose
+Kip Thorne
+John Archibald Wheeler
+David Bohm
+John Stewart Bell
+Eugene Wigner
+John von Neumann
+Lev Landau
+Pyotr Kapitsa
+Andrei Sakharov
+Igor Kurchatov
+Nikolay Basov
+Alexander Prokhorov
+Zhores Alferov
+Vitaly Ginzburg
+Konstantin Novoselov
+Andre Geim
+Subrahmanyan Chandrasekhar
+C. V. Raman
+Homi J. Bhabha
+William Shockley
+John Bardeen
+Walter Houser Brattain
+Ernest Lawrence
+Luis Walter Alvarez
+Maria Goeppert Mayer
+Julian Schwinger
+Sin-Itiro Tomonaga
+Philip W. Anderson
+Kenneth G. Wilson
+Edward Witten
+Leonard Susskind
+Michio Kaku
+Brian Greene
+Carlo Rovelli
+Lisa Randall
+Alan Guth
+George Gamow
+Fred Hoyle
+Arno Allan Penzias
+Robert Woodrow Wilson
+Rainer Weiss
+Barry Barish
+Donna Strickland
+Gerard Mourou
+Arthur Ashkin
+Anton Zeilinger
+Alain Aspect
+John Clauser
+Nobel Prize in Physics
+
+# Physics - units, constants and metrology
+International System of Units
+SI base unit
+SI derived unit
+Metric system
+Metric prefix
+Metre
+Kilogram
+Second
+Ampere
+Kelvin
+Mole (unit)
+Candela
+Newton (unit)
+Joule
+Watt
+Pascal (unit)
+Hertz
+Coulomb
+Volt
+Ohm
+Farad
+Henry (unit)
+Tesla (unit)
+Weber (unit)
+Siemens (unit)
+Lumen (unit)
+Radian
+Steradian
+Electronvolt
+Angstrom
+Micrometre
+Nanometre
+Litre
+Tonne
+Atomic mass unit
+Astronomical unit
+Parsec
+Light-year
+Calorie
+British thermal unit
+Horsepower
+Knot (unit)
+Bar (unit)
+Torr
+Atmosphere (unit)
+Physical constant
+Speed of light
+Gravitational constant
+Planck constant
+Reduced Planck constant
+Avogadro constant
+Gas constant
+Faraday constant
+Stefan-Boltzmann constant
+Vacuum permeability
+Standard gravity
+Electron rest mass
+Proton-to-electron mass ratio
+Dimensionless quantity
+Planck units
+Natural units
+Metrology
+Calibration
+Accuracy and precision
+Systematic error
+Random error
+Propagation of uncertainty
+Standard deviation
+Error bar
+Least squares
+Curve fitting
+Interpolation
+Extrapolation
+Scientific notation
+Kilogram (redefinition)
+General Conference on Weights and Measures
+Kibble balance
+Atomic clock
+Caesium standard
+Coordinated Universal Time
+Leap second
+Timekeeping
+Stopwatch
+Vernier scale
+Micrometer (device)
+Balance scale
+Spring scale
+Barometer
+Manometer
+Hygrometer
+Anemometer
+Seismometer
+Oscilloscope
+Multimeter
+Galvanometer
+Ammeter
+Voltmeter
+Spectrometer
+Bolometer
+Thermocouple
+Photodiode
+Sensor
+Transducer
+Signal processing
+Fourier analysis
+Noise (signal processing)
+Signal-to-noise ratio
+Sampling (signal processing)
+Nyquist-Shannon sampling theorem
+Analog-to-digital converter
+
+# Physics - condensed matter and materials
+Condensed matter physics
+Solid-state physics
+Materials science
+Crystal
+Crystal structure
+Crystallography
+X-ray crystallography
+Bravais lattice
+Unit cell
+Miller index
+Crystal defect
+Dislocation
+Grain boundary
+Amorphous solid
+Glass
+Polymer
+Ceramic
+Composite material
+Alloy
+Metallurgy
+Annealing (materials science)
+Quenching
+Tempering (metallurgy)
+Corrosion
+Rust
+Galvanization
+Electrical band structure
+Band gap
+Valence band
+Conduction band
+Fermi level
+Fermi energy
+Fermi surface
+Free electron model
+Bloch's theorem
+Phonon
+Exciton
+Polaron
+Doping (semiconductor)
+P-n junction
+Diode
+Light-emitting diode
+Photovoltaic effect
+Solar cell
+Transistor
+Field-effect transistor
+MOSFET
+Integrated circuit
+Silicon
+Gallium arsenide
+Graphene
+Carbon nanotube
+Fullerene
+Diamond
+Graphite
+Allotropes of carbon
+Nanotechnology
+Nanoparticle
+Quantum dot
+Thin film
+Metamaterial
+Liquid crystal
+Ferroelectricity
+Piezoelectric sensor
+Shape-memory alloy
+Aerogel
+Superalloy
+Semiconductor device fabrication
+Photolithography
+Wafer (electronics)
+Clean room
+Moore's law
+Type-I superconductor
+High-temperature superconductivity
+Magnetic levitation
+Spintronics
+Giant magnetoresistance
+# Mathematics - foundations and logic
+Mathematics
+Pure mathematics
+Applied mathematics
+Mathematical logic
+Set theory
+Set (mathematics)
+Empty set
+Subset
+Union (set theory)
+Intersection (set theory)
+Complement (set theory)
+Cartesian product
+Power set
+Venn diagram
+Zermelo-Fraenkel set theory
+Axiom of choice
+Axiom
+Theorem
+Lemma (mathematics)
+Corollary
+Conjecture
+Mathematical proof
+Proof by contradiction
+Mathematical induction
+Direct proof
+Proof by exhaustion
+Counterexample
+Pigeonhole principle
+Well-ordering principle
+Peano axioms
+Godel's incompleteness theorems
+Halting problem
+Russell's paradox
+Cantor's diagonal argument
+Cardinality
+Countable set
+Uncountable set
+Aleph number
+Continuum hypothesis
+Infinity
+Hilbert's paradox of the Grand Hotel
+Ordinal number
+Cardinal number
+Function (mathematics)
+Domain of a function
+Range of a function
+Injective function
+Surjective function
+Bijection
+Inverse function
+Composite function
+Relation (mathematics)
+Equivalence relation
+Partial order
+Binary operation
+Boolean algebra
+Propositional calculus
+First-order logic
+Truth table
+Logical conjunction
+Logical disjunction
+Negation
+Material conditional
+Logical biconditional
+De Morgan's laws
+Tautology (logic)
+Contradiction
+Quantifier (logic)
+Universal quantification
+Existential quantification
+Modus ponens
+Syllogism
+Formal system
+Decidability (logic)
+Model theory
+Proof theory
+Recursion
+Recursive definition
+Fuzzy logic
+Category theory
+Functor
+Morphism
+
+# Mathematics - algebra
+Algebra
+Elementary algebra
+Abstract algebra
+Linear algebra
+Equation
+Linear equation
+Quadratic equation
+Quadratic formula
+Discriminant
+Cubic equation
+Quartic function
+Polynomial
+Degree of a polynomial
+Root of a function
+Factorization
+Completing the square
+Fundamental theorem of algebra
+Rational root theorem
+Vieta's formulas
+Binomial theorem
+Pascal's triangle
+Binomial coefficient
+Factorial
+Exponentiation
+Logarithm
+Natural logarithm
+Common logarithm
+Exponential function
+Power law
+Square root
+Cube root
+Nth root
+Absolute value
+Inequality (mathematics)
+System of linear equations
+Gaussian elimination
+Cramer's rule
+Matrix (mathematics)
+Matrix multiplication
+Identity matrix
+Invertible matrix
+Transpose
+Determinant
+Trace (linear algebra)
+Rank (linear algebra)
+Eigenvalues and eigenvectors
+Characteristic polynomial
+Diagonalizable matrix
+Jordan normal form
+Singular value decomposition
+LU decomposition
+QR decomposition
+Orthogonal matrix
+Symmetric matrix
+Hermitian matrix
+Vector space
+Linear independence
+Basis (linear algebra)
+Dimension (vector space)
+Linear map
+Kernel (linear algebra)
+Row and column spaces
+Rank-nullity theorem
+Dot product
+Cross product
+Inner product space
+Orthogonality
+Orthonormal basis
+Gram-Schmidt process
+Projection (linear algebra)
+Norm (mathematics)
+Tensor
+Group (mathematics)
+Abelian group
+Cyclic group
+Symmetric group
+Permutation group
+Subgroup
+Coset
+Normal subgroup
+Quotient group
+Group homomorphism
+Isomorphism
+Lagrange's theorem (group theory)
+Cayley's theorem
+Group action
+Ring (mathematics)
+Field (mathematics)
+Finite field
+Ideal (ring theory)
+Integral domain
+Module (mathematics)
+Galois theory
+Lie group
+Lie algebra
+Representation theory
+Symmetry group
+Dihedral group
+Quaternion
+Complex number
+Imaginary unit
+Complex plane
+Argand diagram
+Euler's formula
+Euler's identity
+De Moivre's formula
+Complex conjugate
+Modulus and argument
+Real number
+Rational number
+Irrational number
+Integer
+Natural number
+Prime number
+Composite number
+Number line
+Number
+Numeral system
+Decimal
+Binary number
+Hexadecimal
+Octal
+Roman numerals
+Positional notation
+Zero
+Negative number
+Fraction
+Decimal representation
+Repeating decimal
+Percentage
+Ratio
+Proportionality (mathematics)
+Golden ratio
+Pi
+E (mathematical constant)
+Euler-Mascheroni constant
+Square root of 2
+Transcendental number
+Algebraic number
+Surreal number
+Arithmetic
+Addition
+Subtraction
+Multiplication
+Division (mathematics)
+Order of operations
+Distributive property
+Associative property
+Commutative property
+Identity element
+Inverse element
+Modular arithmetic
+Long division
+Rounding
+Estimation
+
+# Mathematics - analysis and calculus
+Calculus
+Mathematical analysis
+Real analysis
+Complex analysis
+Functional analysis
+Limit of a function
+Limit of a sequence
+Continuous function
+Discontinuity (mathematics)
+Intermediate value theorem
+Extreme value theorem
+Mean value theorem
+Rolle's theorem
+Derivative
+Differentiation rules
+Product rule
+Quotient rule
+Chain rule
+Implicit differentiation
+Partial derivative
+Total derivative
+Higher-order derivative
+Critical point (mathematics)
+Inflection point
+Maxima and minima
+Optimization problem
+L'Hopital's rule
+Taylor series
+Maclaurin series
+Taylor's theorem
+Power series
+Radius of convergence
+Integral
+Antiderivative
+Definite integral
+Indefinite integral
+Fundamental theorem of calculus
+Integration by parts
+Integration by substitution
+Partial fraction decomposition
+Improper integral
+Riemann sum
+Riemann integral
+Lebesgue integration
+Measure (mathematics)
+Multiple integral
+Line integral
+Surface integral
+Jacobian matrix and determinant
+Change of variables
+Vector calculus
+Gradient
+Divergence
+Curl (mathematics)
+Laplace operator
+Del
+Green's theorem
+Stokes' theorem
+Divergence theorem
+Conservative vector field
+Potential theory
+Sequence
+Series (mathematics)
+Convergent series
+Divergent series
+Geometric series
+Harmonic series (mathematics)
+Arithmetic progression
+Geometric progression
+Alternating series
+Ratio test
+Comparison test
+Integral test for convergence
+Absolute convergence
+Uniform convergence
+Cauchy sequence
+Completeness (order theory)
+Supremum
+Infimum
+Bolzano-Weierstrass theorem
+Heine-Borel theorem
+Compact space
+Metric space
+Topological space
+Open set
+Closed set
+Banach space
+Hilbert space
+Lp space
+Fourier series
+Fourier transform
+Fast Fourier transform
+Laplace transform
+Z-transform
+Convolution
+Dirac delta function
+Heaviside step function
+Gamma function
+Beta function
+Bessel function
+Legendre polynomials
+Special functions
+Differential equation
+Ordinary differential equation
+Partial differential equation
+Separation of variables
+Linear differential equation
+Homogeneous differential equation
+Initial value problem
+Boundary value problem
+Heat equation
+Wave equation
+Laplace's equation
+Poisson's equation
+Sturm-Liouville theory
+Green's function
+Calculus of variations
+Euler-Lagrange equation
+Analytic function
+Holomorphic function
+Cauchy-Riemann equations
+Contour integration
+Cauchy's integral theorem
+Residue theorem
+Laurent series
+Analytic continuation
+Riemann surface
+Conformal map
+Nonstandard analysis
+Infinitesimal
+# Mathematics - geometry and topology
+Geometry
+Euclidean geometry
+Euclid's Elements
+Euclidean space
+Point (geometry)
+Line (geometry)
+Line segment
+Ray (geometry)
+Plane (geometry)
+Angle
+Right angle
+Acute and obtuse triangles
+Parallel (geometry)
+Perpendicular
+Parallel postulate
+Congruence (geometry)
+Similarity (geometry)
+Triangle
+Equilateral triangle
+Isosceles triangle
+Right triangle
+Pythagorean theorem
+Pythagorean triple
+Law of sines
+Law of cosines
+Heron's formula
+Triangle inequality
+Centroid
+Circumscribed circle
+Incircle and excircles of a triangle
+Orthocenter
+Euler line
+Nine-point circle
+Ceva's theorem
+Menelaus's theorem
+Quadrilateral
+Square
+Rectangle
+Rhombus
+Parallelogram
+Trapezoid
+Kite (geometry)
+Polygon
+Regular polygon
+Pentagon
+Hexagon
+Heptagon
+Octagon
+Tessellation
+Circle
+Radius
+Diameter
+Circumference
+Chord (geometry)
+Tangent
+Secant line
+Arc (geometry)
+Sector (geometry)
+Inscribed angle
+Thales's theorem
+Ellipse
+Parabola
+Hyperbola
+Conic section
+Eccentricity (mathematics)
+Focus (geometry)
+Directrix
+Solid geometry
+Polyhedron
+Platonic solid
+Archimedean solid
+Tetrahedron
+Cube
+Octahedron
+Dodecahedron
+Icosahedron
+Prism (geometry)
+Pyramid (geometry)
+Cylinder
+Cone
+Sphere
+Torus
+Great circle
+Surface area
+Volume
+Perimeter
+Area
+Cavalieri's principle
+Euler characteristic
+Analytic geometry
+Cartesian coordinate system
+Polar coordinate system
+Spherical coordinate system
+Cylindrical coordinate system
+Coordinate system
+Distance
+Midpoint
+Slope
+Trigonometry
+Trigonometric functions
+Sine
+Cosine
+Tangent (trigonometry)
+Unit circle
+Trigonometric identity
+Pythagorean trigonometric identity
+Inverse trigonometric functions
+Hyperbolic functions
+Spherical trigonometry
+Non-Euclidean geometry
+Hyperbolic geometry
+Elliptic geometry
+Spherical geometry
+Riemannian geometry
+Differential geometry
+Manifold
+Curvature
+Gaussian curvature
+Geodesic
+Metric tensor
+Projective geometry
+Affine geometry
+Descriptive geometry
+Symmetry
+Reflection symmetry
+Rotational symmetry
+Translation (geometry)
+Rotation (mathematics)
+Transformation (function)
+Isometry
+Homothety
+Topology
+Homeomorphism
+Homotopy
+Mobius strip
+Klein bottle
+Knot theory
+Trefoil knot
+Four color theorem
+Seven Bridges of Konigsberg
+Jordan curve theorem
+Brouwer fixed-point theorem
+Hairy ball theorem
+Poincare conjecture
+Fundamental group
+Fractal
+Fractal dimension
+Mandelbrot set
+Julia set
+Sierpinski triangle
+Koch snowflake
+Cantor set
+Menger sponge
+Self-similarity
+Chaos theory
+Butterfly effect
+Lorenz system
+Strange attractor
+Bifurcation theory
+Logistic map
+Dynamical system
+Fixed point (mathematics)
+Ergodic theory
+Tiling
+Penrose tiling
+Voronoi diagram
+Delaunay triangulation
+Convex hull
+Convex set
+Polytope
+Tesseract
+Fourth dimension
+Higher-dimensional space
+Kepler conjecture
+Sphere packing
+Squaring the circle
+Doubling the cube
+Angle trisection
+Straightedge and compass construction
+Origami mathematics
+Geometric mean
+Isoperimetric inequality
+
+# Mathematics - number theory and discrete
+Number theory
+Analytic number theory
+Divisor
+Divisibility rule
+Greatest common divisor
+Least common multiple
+Euclidean algorithm
+Prime factorization
+Fundamental theorem of arithmetic
+Sieve of Eratosthenes
+Euclid's theorem
+Prime number theorem
+Riemann hypothesis
+Riemann zeta function
+Twin prime
+Mersenne prime
+Fermat number
+Perfect number
+Amicable numbers
+Highly composite number
+Coprime integers
+Congruence relation
+Fermat's little theorem
+Euler's theorem
+Euler's totient function
+Wilson's theorem
+Chinese remainder theorem
+Quadratic residue
+Quadratic reciprocity
+Diophantine equation
+Pell's equation
+Fermat's Last Theorem
+Catalan's conjecture
+Goldbach's conjecture
+Collatz conjecture
+Abc conjecture
+Continued fraction
+Farey sequence
+Fibonacci sequence
+Lucas number
+Triangular number
+Square number
+Cube (algebra)
+Figurate number
+Happy number
+Digit sum
+Palindromic number
+Number sense
+Cryptography
+Public-key cryptography
+RSA cryptosystem
+Diffie-Hellman key exchange
+Elliptic-curve cryptography
+Elliptic curve
+Discrete logarithm
+One-time pad
+Caesar cipher
+Vigenere cipher
+Enigma machine
+Cryptanalysis
+Substitution cipher
+Frequency analysis
+Advanced Encryption Standard
+Data Encryption Standard
+Cryptographic hash function
+SHA-2
+MD5
+Digital signature
+Zero-knowledge proof
+Steganography
+Discrete mathematics
+Combinatorics
+Permutation
+Combination
+Multiset
+Inclusion-exclusion principle
+Generating function
+Recurrence relation
+Catalan number
+Stirling number
+Bell number
+Partition (number theory)
+Ramsey theory
+Ramsey's theorem
+Graph theory
+Graph (discrete mathematics)
+Vertex (graph theory)
+Edge (graph theory)
+Directed graph
+Weighted graph
+Bipartite graph
+Complete graph
+Planar graph
+Tree (graph theory)
+Spanning tree
+Minimum spanning tree
+Eulerian path
+Hamiltonian path
+Graph coloring
+Adjacency matrix
+Shortest path problem
+Network flow
+Max-flow min-cut theorem
+Matching (graph theory)
+Clique (graph theory)
+Small-world network
+Scale-free network
+Six degrees of separation
+Order theory
+Lattice (order)
+Hasse diagram
+Well-founded relation
+
+# Mathematics - probability and statistics
+Probability
+Probability theory
+Probability space
+Sample space
+Event (probability theory)
+Probability axioms
+Conditional probability
+Independence (probability theory)
+Bayes' theorem
+Law of total probability
+Random variable
+Probability distribution
+Probability density function
+Cumulative distribution function
+Expected value
+Variance
+Standard deviation
+Covariance
+Correlation
+Pearson correlation coefficient
+Moment (mathematics)
+Skewness
+Kurtosis
+Normal distribution
+Standard normal distribution
+Binomial distribution
+Bernoulli distribution
+Poisson distribution
+Geometric distribution
+Uniform distribution (continuous)
+Exponential distribution
+Chi-squared distribution
+Student's t-distribution
+F-distribution
+Log-normal distribution
+Central limit theorem
+Law of large numbers
+Chebyshev's inequality
+Markov's inequality
+Stochastic process
+Markov chain
+Random walk
+Brownian motion
+Wiener process
+Poisson point process
+Queueing theory
+Martingale (probability theory)
+Monte Carlo method
+Statistics
+Descriptive statistics
+Inferential statistics
+Population (statistics)
+Sample (statistics)
+Sampling (statistics)
+Simple random sample
+Sampling bias
+Mean
+Arithmetic mean
+Median
+Mode (statistics)
+Range (statistics)
+Interquartile range
+Quartile
+Percentile
+Histogram
+Box plot
+Scatter plot
+Bar chart
+Pie chart
+Frequency distribution
+Outlier
+Statistical hypothesis testing
+Null hypothesis
+Alternative hypothesis
+P-value
+Statistical significance
+Type I and type II errors
+Statistical power
+Confidence interval
+Z-test
+Student's t-test
+Chi-squared test
+Analysis of variance
+Regression analysis
+Linear regression
+Least squares
+Coefficient of determination
+Logistic regression
+Multivariate statistics
+Principal component analysis
+Cluster analysis
+Bayesian statistics
+Prior probability
+Posterior probability
+Maximum likelihood estimation
+Estimator
+Bias of an estimator
+Standard error
+Bootstrapping (statistics)
+Cross-validation (statistics)
+Design of experiments
+Randomized controlled trial
+Control group
+Blinded experiment
+Placebo
+Confounding
+Simpson's paradox
+Correlation does not imply causation
+Survivorship bias
+Selection bias
+Regression toward the mean
+Base rate fallacy
+Gambler's fallacy
+Birthday problem
+Monty Hall problem
+Buffon's needle
+Benford's law
+Zipf's law
+Pareto principle
+Power law
+Normal curve
+Bell curve
+Statistical model
+Time series
+Autocorrelation
+Moving average
+Forecasting
+Data analysis
+Exploratory data analysis
+Big data
+# Mathematics - mathematicians
+Euclid
+Archimedes
+Pythagoras
+Thales of Miletus
+Eratosthenes
+Apollonius of Perga
+Diophantus
+Hipparchus
+Ptolemy
+Hypatia
+Al-Khwarizmi
+Omar Khayyam
+Alhazen
+Fibonacci
+Gerolamo Cardano
+Rene Descartes
+Pierre de Fermat
+Blaise Pascal
+Isaac Newton
+Gottfried Wilhelm Leibniz
+Jacob Bernoulli
+Johann Bernoulli
+Leonhard Euler
+Joseph-Louis Lagrange
+Pierre-Simon Laplace
+Adrien-Marie Legendre
+Jean-Baptiste Joseph Fourier
+Carl Friedrich Gauss
+Augustin-Louis Cauchy
+Niels Henrik Abel
+Evariste Galois
+Peter Gustav Lejeune Dirichlet
+Carl Gustav Jacob Jacobi
+William Rowan Hamilton
+Arthur Cayley
+James Joseph Sylvester
+Bernhard Riemann
+Karl Weierstrass
+Richard Dedekind
+Georg Cantor
+Sofia Kovalevskaya
+Henri Poincare
+David Hilbert
+Felix Klein
+Sophus Lie
+Emmy Noether
+Bertrand Russell
+Kurt Godel
+Alan Turing
+John von Neumann
+Andrey Kolmogorov
+Pafnuty Chebyshev
+Nikolai Lobachevsky
+Andrey Markov
+Srinivasa Ramanujan
+G. H. Hardy
+Stefan Banach
+Paul Erdos
+Benoit Mandelbrot
+John Forbes Nash Jr.
+Alexander Grothendieck
+Andrew Wiles
+Grigori Perelman
+Terence Tao
+Maryam Mirzakhani
+John Horton Conway
+Ada Lovelace
+Katherine Johnson
+Sophie Germain
+Augusta Ada King
+Fields Medal
+Abel Prize
+Millennium Prize Problems
+Hilbert's problems
+Nobel Prize
+Turing Award
+
+# Mathematics - applied, optimization, game theory
+Mathematical optimization
+Linear programming
+Simplex algorithm
+Integer programming
+Convex optimization
+Gradient descent
+Newton's method
+Lagrange multiplier
+Objective function
+Constraint (mathematics)
+Duality (optimization)
+Dynamic programming
+Knapsack problem
+Travelling salesman problem
+Assignment problem
+Operations research
+Game theory
+Nash equilibrium
+Prisoner's dilemma
+Zero-sum game
+Minimax
+Dominant strategy
+Mixed strategy
+Cooperative game theory
+Shapley value
+Tragedy of the commons
+Auction theory
+Mechanism design
+Evolutionary game theory
+Chicken (game)
+Stag hunt
+Ultimatum game
+Arrow's impossibility theorem
+Social choice theory
+Condorcet paradox
+Voting system
+Numerical analysis
+Numerical integration
+Trapezoidal rule
+Simpson's rule
+Euler method
+Runge-Kutta methods
+Finite difference method
+Finite element method
+Root-finding algorithm
+Bisection method
+Fixed-point iteration
+Floating-point arithmetic
+Round-off error
+Numerical stability
+Condition number
+Computational complexity
+Approximation theory
+Spline (mathematics)
+Bezier curve
+Linear interpolation
+Regression toward the mean
+Control theory
+Feedback
+Negative feedback
+PID controller
+Transfer function
+Stability theory
+Lyapunov stability
+Kalman filter
+Signal
+Systems theory
+Cybernetics
+Information theory
+Claude Shannon
+Entropy (information theory)
+Shannon's source coding theorem
+Noisy-channel coding theorem
+Channel capacity
+Data compression
+Lossless compression
+Lossy compression
+Huffman coding
+Error detection and correction
+Hamming code
+Parity bit
+Checksum
+Reed-Solomon error correction
+Bit
+Byte
+Binary code
+Gray code
+ASCII
+Unicode
+Mathematical model
+Mathematical modelling
+Simulation
+Computer simulation
+Agent-based model
+Cellular automaton
+Conway's Game of Life
+Rule 110
+Emergence
+Complex system
+Network science
+Percolation theory
+Self-organization
+Fractal geometry
+Actuarial science
+Mathematical finance
+Black-Scholes model
+Compound interest
+Present value
+Exponential growth
+Logistic function
+Doubling time
+Half-life
+Malthusian growth model
+Lotka-Volterra equations
+Population dynamics
+Epidemic model
+Basic reproduction number
+SIR model
+Queue (abstract data type)
+Little's law
+Reliability engineering
+Failure rate
+Bathtub curve
+Six Sigma
+Statistical process control
+# Computer science - theory of computation
+Computer science
+Theoretical computer science
+Theory of computation
+Algorithm
+Computability theory
+Computable function
+Turing machine
+Universal Turing machine
+Church-Turing thesis
+Lambda calculus
+Alonzo Church
+Halting problem
+Decision problem
+Undecidable problem
+Rice's theorem
+Busy beaver
+Automata theory
+Finite-state machine
+Deterministic finite automaton
+Nondeterministic finite automaton
+Pushdown automaton
+Regular language
+Regular expression
+Context-free grammar
+Chomsky hierarchy
+Formal language
+Formal grammar
+Backus-Naur form
+Parsing
+Abstract syntax tree
+Computational complexity theory
+Time complexity
+Space complexity
+Big O notation
+Asymptotic analysis
+Complexity class
+P (complexity)
+NP (complexity)
+P versus NP problem
+NP-completeness
+NP-hardness
+Boolean satisfiability problem
+Cook-Levin theorem
+Reduction (complexity)
+Polynomial-time reduction
+PSPACE
+EXPTIME
+BQP
+Randomized algorithm
+Approximation algorithm
+Heuristic (computer science)
+Kolmogorov complexity
+Information content
+Quantum computing
+Qubit
+Cellular automaton
+Conway's Game of Life
+Combinatory logic
+Curry-Howard correspondence
+Type theory
+Type system
+Static typing
+Dynamic typing
+Formal verification
+Model checking
+Program synthesis
+Denotational semantics
+Operational semantics
+Hoare logic
+Loop invariant
+Termination analysis
+
+# Computer science - algorithms
+List of algorithms
+Sorting algorithm
+Quicksort
+Merge sort
+Bubble sort
+Insertion sort
+Selection sort
+Heapsort
+Radix sort
+Counting sort
+Bucket sort
+Timsort
+Shellsort
+Topological sorting
+Search algorithm
+Linear search
+Binary search algorithm
+Interpolation search
+Breadth-first search
+Depth-first search
+Best-first search
+A* search algorithm
+Iterative deepening depth-first search
+Dijkstra's algorithm
+Bellman-Ford algorithm
+Floyd-Warshall algorithm
+Johnson's algorithm
+Kruskal's algorithm
+Prim's algorithm
+Ford-Fulkerson algorithm
+Edmonds-Karp algorithm
+Hungarian algorithm
+Union-find
+Kadane's algorithm
+Knuth-Morris-Pratt algorithm
+Boyer-Moore string-search algorithm
+Rabin-Karp algorithm
+Levenshtein distance
+Longest common subsequence
+Edit distance
+Dynamic programming
+Memoization
+Greedy algorithm
+Divide-and-conquer algorithm
+Backtracking
+Branch and bound
+Recursion (computer science)
+Tail call
+Brute-force search
+Eight queens puzzle
+Knapsack problem
+Coin problem
+Change-making problem
+Matrix multiplication algorithm
+Strassen algorithm
+Karatsuba algorithm
+Fast Fourier transform
+Euclidean algorithm
+Extended Euclidean algorithm
+Modular exponentiation
+Miller-Rabin primality test
+Fermat primality test
+Sieve of Eratosthenes
+Newton's method
+Simulated annealing
+Genetic algorithm
+Evolutionary algorithm
+Ant colony optimization algorithms
+Particle swarm optimization
+Hill climbing
+Local search (optimization)
+PageRank
+MapReduce
+Consensus (computer science)
+Paxos (computer science)
+Raft (algorithm)
+Byzantine fault
+Two-phase commit protocol
+Bloom filter
+Reservoir sampling
+Fisher-Yates shuffle
+Pseudorandom number generator
+Mersenne Twister
+Linear congruential generator
+Random seed
+Hash function
+Cryptographic hash function
+Collision (computer science)
+Perfect hash function
+Consistent hashing
+Rate limiting
+Caching
+Least recently used
+Page replacement algorithm
+Scheduling (computing)
+Round-robin scheduling
+Load balancing (computing)
+
+# Computer science - data structures
+Data structure
+List of data structures
+Array (data structure)
+Dynamic array
+Associative array
+Linked list
+Doubly linked list
+Stack (abstract data type)
+Queue (abstract data type)
+Deque
+Priority queue
+Hash table
+Set (abstract data type)
+Tree (data structure)
+Binary tree
+Binary search tree
+AVL tree
+Red-black tree
+B-tree
+B+ tree
+Trie
+Segment tree
+Fenwick tree
+Heap (data structure)
+Binary heap
+Fibonacci heap
+Graph (abstract data type)
+Adjacency list
+Adjacency matrix
+Matrix (mathematics)
+Sparse matrix
+Bit array
+Circular buffer
+Skip list
+Suffix tree
+Suffix array
+Quadtree
+K-d tree
+Disjoint-set data structure
+Immutable object
+Persistent data structure
+Abstract data type
+Pointer (computer programming)
+Reference (computer science)
+Null pointer
+Memory address
+Garbage collection (computer science)
+Reference counting
+Memory leak
+Buffer overflow
+Stack overflow
+Segmentation fault
+Serialization
+JSON
+XML
+YAML
+CSV
+Protocol Buffers
+# Computer science - architecture and systems
+Computer architecture
+Von Neumann architecture
+Harvard architecture
+Central processing unit
+Arithmetic logic unit
+Control unit
+Processor register
+CPU cache
+Instruction set architecture
+Instruction cycle
+Instruction pipelining
+Superscalar processor
+Out-of-order execution
+Branch predictor
+Speculative execution
+Reduced instruction set computer
+Complex instruction set computer
+X86
+ARM architecture
+RISC-V
+MIPS architecture
+Multi-core processor
+Hyper-threading
+Graphics processing unit
+Field-programmable gate array
+Application-specific integrated circuit
+Microcontroller
+Microprocessor
+Intel 4004
+Motherboard
+Bus (computing)
+Random-access memory
+Read-only memory
+Dynamic random-access memory
+Static random-access memory
+Flash memory
+Solid-state drive
+Hard disk drive
+Magnetic tape data storage
+Optical disc
+Memory hierarchy
+Virtual memory
+Paging
+Page table
+Translation lookaside buffer
+Cache coherence
+Memory management unit
+Direct memory access
+Interrupt
+System call
+Endianness
+Word (computer architecture)
+Binary code
+Machine code
+Assembly language
+Bit
+Byte
+Nibble
+Kilobyte
+Megabyte
+Gigabyte
+Terabyte
+Logic gate
+AND gate
+OR gate
+NOT gate
+NAND gate
+XOR gate
+Flip-flop (electronics)
+Latch (electronics)
+Multiplexer
+Demultiplexer
+Adder (electronics)
+Half adder
+Digital electronics
+Combinational logic
+Sequential logic
+Clock signal
+Clock rate
+Karnaugh map
+Boolean function
+Truth table
+Two's complement
+Floating-point arithmetic
+IEEE 754
+Integer overflow
+Operating system
+Kernel (operating system)
+Monolithic kernel
+Microkernel
+Unix
+Linux
+Linux kernel
+GNU
+Windows NT
+MacOS
+Android (operating system)
+IOS
+MS-DOS
+Unix shell
+Bash (Unix shell)
+Command-line interface
+Graphical user interface
+Shell (computing)
+Process (computing)
+Thread (computing)
+Multithreading (computer architecture)
+Concurrency (computer science)
+Parallel computing
+Amdahl's law
+Race condition
+Deadlock
+Livelock
+Mutual exclusion
+Semaphore (programming)
+Monitor (synchronization)
+Lock (computer science)
+Atomic operation
+Dining philosophers problem
+Producer-consumer problem
+Readers-writers problem
+Context switch
+Scheduling (computing)
+Inter-process communication
+Pipeline (Unix)
+Signal (IPC)
+Daemon (computing)
+File system
+Inode
+Directory (computing)
+Path (computing)
+Symbolic link
+File allocation table
+NTFS
+Ext4
+Journaling file system
+RAID
+Backup
+Booting
+BIOS
+UEFI
+Firmware
+Device driver
+Virtualization
+Hypervisor
+Virtual machine
+Container (virtualization)
+Docker (software)
+Kubernetes
+Cloud computing
+Distributed computing
+Client-server model
+Peer-to-peer
+Supercomputer
+Grid computing
+Embedded system
+Real-time computing
+Internet of things
+
+# Computer science - networks and security
+Computer network
+Internet
+World Wide Web
+ARPANET
+Internet protocol suite
+OSI model
+Transmission Control Protocol
+Internet Protocol
+User Datagram Protocol
+IP address
+IPv4
+IPv6
+Subnetwork
+Router (computing)
+Network switch
+Packet switching
+Circuit switching
+Network packet
+Domain Name System
+Hypertext Transfer Protocol
+HTTPS
+Uniform Resource Locator
+Web browser
+Web server
+HTML
+Cascading Style Sheets
+JavaScript
+Cookie (World Wide Web)
+REST
+Application programming interface
+WebSocket
+File Transfer Protocol
+Secure Shell
+Simple Mail Transfer Protocol
+Email
+Ethernet
+Wi-Fi
+Bluetooth
+Local area network
+Wide area network
+Virtual private network
+Network topology
+Bandwidth (computing)
+Latency (engineering)
+Throughput
+Ping (networking utility)
+Traceroute
+Firewall (computing)
+Proxy server
+Network address translation
+Content delivery network
+Load balancing (computing)
+Transport Layer Security
+Public key infrastructure
+Digital certificate
+Encryption
+Symmetric-key algorithm
+Public-key cryptography
+Computer security
+Information security
+Authentication
+Authorization
+Password
+Two-factor authentication
+Biometrics
+Malware
+Computer virus
+Computer worm
+Trojan horse (computing)
+Ransomware
+Spyware
+Phishing
+Social engineering (security)
+Denial-of-service attack
+SQL injection
+Cross-site scripting
+Zero-day vulnerability
+Penetration test
+Vulnerability (computing)
+Sandbox (computer security)
+Antivirus software
+Intrusion detection system
+Blockchain
+Bitcoin
+Cryptocurrency
+Proof of work
+Distributed ledger
+Hash chain
+Merkle tree
+Tor (network)
+Dark web
+Open-source software
+Free software
+GNU General Public License
+MIT License
+Software license
+Copyleft
+Creative Commons
+
+# Computer science - software engineering and languages
+Software engineering
+Programming language
+List of programming languages
+Compiler
+Interpreter (computing)
+Just-in-time compilation
+Bytecode
+Assembler (computing)
+Linker (computing)
+Loader (computing)
+Preprocessor
+Lexical analysis
+Syntax (programming languages)
+Semantics (computer science)
+Compiler optimization
+Intermediate representation
+Runtime system
+Integrated development environment
+Text editor
+Vim (text editor)
+GNU Emacs
+Visual Studio Code
+Debugging
+Debugger
+Breakpoint
+Log file
+Profiling (computer programming)
+Unit testing
+Integration testing
+Regression testing
+Test-driven development
+Continuous integration
+Continuous delivery
+DevOps
+Version control
+Git
+GitHub
+Subversion
+Branching (version control)
+Merge (version control)
+Pull request
+Code review
+Refactoring
+Technical debt
+Design pattern
+Singleton pattern
+Factory method pattern
+Observer pattern
+Model-view-controller
+Software architecture
+Microservices
+Monolithic application
+API gateway
+Programming paradigm
+Imperative programming
+Declarative programming
+Procedural programming
+Object-oriented programming
+Functional programming
+Class (computer programming)
+Object (computer science)
+Inheritance (object-oriented programming)
+Polymorphism (computer science)
+Encapsulation (computer programming)
+Abstraction (computer science)
+Interface (computing)
+Method (computer programming)
+Constructor (object-oriented programming)
+Higher-order function
+Pure function
+Closure (computer programming)
+Lambda expression
+Currying
+Immutability
+Side effect (computer science)
+Monad (functional programming)
+Lazy evaluation
+Variable (computer science)
+Constant (computer programming)
+Data type
+Primitive data type
+Integer (computer science)
+Floating-point arithmetic
+String (computer science)
+Boolean data type
+Array data type
+Control flow
+Conditional (computer programming)
+For loop
+While loop
+Switch statement
+Goto
+Exception handling
+Assertion (software development)
+Function (computer programming)
+Parameter (computer programming)
+Scope (computer programming)
+Namespace
+Library (computing)
+Framework
+Software development kit
+Package manager
+Dependency hell
+Pseudocode
+Comment (computer programming)
+Documentation
+Code refactoring
+Clean code
+Spaghetti code
+Rubber duck debugging
+Hello, World! program
+Fizz buzz
+99 bottles of beer
+Off-by-one error
+Software bug
+Year 2000 problem
+Heartbleed
+C (programming language)
+C++
+C Sharp (programming language)
+Java (programming language)
+Python (programming language)
+JavaScript
+TypeScript
+Ruby (programming language)
+PHP
+Perl
+Go (programming language)
+Rust (programming language)
+Swift (programming language)
+Kotlin
+Scala (programming language)
+Haskell
+Lisp (programming language)
+Scheme (programming language)
+Clojure
+Erlang (programming language)
+Prolog
+Fortran
+COBOL
+Pascal (programming language)
+BASIC
+ALGOL
+Ada (programming language)
+Smalltalk
+MATLAB
+R (programming language)
+Julia (programming language)
+SQL
+Assembly language
+Shell script
+Structured Query Language
+Database
+Relational database
+Relational model
+Database normalization
+Primary key
+Foreign key
+Database index
+SQL join
+ACID
+Database transaction
+NoSQL
+MongoDB
+Redis
+PostgreSQL
+MySQL
+SQLite
+Data warehouse
+Extract, transform, load
+Query optimization
+Concurrency control
+CAP theorem
+Eventual consistency
+Sharding
+Replication (computing)
+# Computer science - artificial intelligence
+Artificial intelligence
+History of artificial intelligence
+Machine learning
+Deep learning
+Artificial neural network
+Perceptron
+Multilayer perceptron
+Backpropagation
+Activation function
+Sigmoid function
+Rectifier (neural networks)
+Softmax function
+Loss function
+Gradient descent
+Stochastic gradient descent
+Learning rate
+Overfitting
+Regularization (mathematics)
+Dropout (neural networks)
+Batch normalization
+Hyperparameter (machine learning)
+Training, validation, and test data sets
+Cross-validation (statistics)
+Supervised learning
+Unsupervised learning
+Semi-supervised learning
+Reinforcement learning
+Q-learning
+Markov decision process
+Multi-armed bandit
+Classification (machine learning)
+Regression analysis
+Clustering
+K-means clustering
+Hierarchical clustering
+DBSCAN
+K-nearest neighbors algorithm
+Naive Bayes classifier
+Decision tree learning
+Random forest
+Gradient boosting
+Support vector machine
+Linear discriminant analysis
+Principal component analysis
+Dimensionality reduction
+Feature engineering
+Feature selection
+Confusion matrix
+Precision and recall
+F-score
+Receiver operating characteristic
+Bias-variance tradeoff
+No free lunch theorem
+Curse of dimensionality
+Convolutional neural network
+Recurrent neural network
+Long short-term memory
+Transformer (deep learning architecture)
+Attention (machine learning)
+Autoencoder
+Generative adversarial network
+Diffusion model
+Large language model
+GPT-3
+ChatGPT
+BERT (language model)
+AlexNet
+ResNet
+ImageNet
+MNIST database
+Word embedding
+Word2vec
+Tokenization (lexical analysis)
+Natural language processing
+Speech recognition
+Speech synthesis
+Machine translation
+Optical character recognition
+Computer vision
+Image segmentation
+Object detection
+Facial recognition system
+Image recognition
+Pattern recognition
+Expert system
+Knowledge representation and reasoning
+Semantic network
+Ontology (information science)
+Inference engine
+Fuzzy logic
+Bayesian network
+Hidden Markov model
+Genetic algorithm
+Swarm intelligence
+Artificial general intelligence
+Technological singularity
+AI alignment
+AI safety
+Turing test
+Chinese room
+Symbol grounding problem
+Frame problem
+Moravec's paradox
+AI winter
+Deep Blue (chess computer)
+AlphaGo
+AlphaZero
+AlphaFold
+Watson (computer)
+Stockfish (chess)
+Self-driving car
+Robotics
+Robot
+Industrial robot
+Humanoid robot
+Boston Dynamics
+Three Laws of Robotics
+Uncanny valley
+Actuator
+Servomechanism
+Kinematics
+Inverse kinematics
+Simultaneous localization and mapping
+Path planning
+Computer graphics
+Rendering (computer graphics)
+Ray tracing (graphics)
+Rasterisation
+Shader
+Polygon mesh
+Texture mapping
+Anti-aliasing
+Z-buffering
+Global illumination
+Radiosity (computer graphics)
+Bezier curve
+3D modeling
+3D computer graphics
+Virtual reality
+Augmented reality
+Motion capture
+Procedural generation
+Perlin noise
+Game engine
+Physics engine
+Collision detection
+Frame rate
+Pixel
+Voxel
+Raster graphics
+Vector graphics
+Color depth
+RGB color model
+CMYK color model
+HSL and HSV
+Image file format
+JPEG
+Portable Network Graphics
+GIF
+Scalable Vector Graphics
+Digital image processing
+Image compression
+Codec
+MP3
+Digital signal processing
+Human-computer interaction
+User interface
+User experience design
+Usability
+Accessibility
+Information retrieval
+Search engine
+Web crawler
+Inverted index
+Recommender system
+Collaborative filtering
+Data mining
+Data science
+Bioinformatics
+Computational biology
+Computational chemistry
+Computational physics
+Scientific computing
+High-performance computing
+Numerical weather prediction
+
+# Computer science - people and history
+Alan Turing
+John von Neumann
+Claude Shannon
+Ada Lovelace
+Charles Babbage
+Analytical Engine
+Difference engine
+Grace Hopper
+Donald Knuth
+The Art of Computer Programming
+TeX
+Edsger W. Dijkstra
+Tony Hoare
+Niklaus Wirth
+Dennis Ritchie
+Ken Thompson
+Brian Kernighan
+Bjarne Stroustrup
+James Gosling
+Guido van Rossum
+Larry Wall
+Yukihiro Matsumoto
+Rasmus Lerdorf
+Brendan Eich
+Anders Hejlsberg
+Linus Torvalds
+Richard Stallman
+Tim Berners-Lee
+Vint Cerf
+Bob Kahn
+Douglas Engelbart
+Alan Kay
+Barbara Liskov
+Leslie Lamport
+Frances Allen
+Margaret Hamilton (software engineer)
+Katherine Johnson
+Jean Bartik
+ENIAC
+Colossus computer
+Z3 (computer)
+Atanasoff-Berry computer
+UNIVAC I
+IBM System/360
+PDP-11
+Altair 8800
+Apple II
+IBM Personal Computer
+Commodore 64
+Macintosh 128K
+Xerox Alto
+Bombe
+Enigma machine
+Bletchley Park
+Punched card
+Vacuum tube
+Transistor
+Integrated circuit
+Moore's law
+Marvin Minsky
+John McCarthy (computer scientist)
+Herbert A. Simon
+Allen Newell
+Seymour Papert
+Geoffrey Hinton
+Yann LeCun
+Yoshua Bengio
+Andrew Ng
+Fei-Fei Li
+Demis Hassabis
+Ilya Sutskever
+Judea Pearl
+Vladimir Vapnik
+Noam Chomsky
+Steve Jobs
+Steve Wozniak
+Bill Gates
+Paul Allen
+Gordon Moore
+Robert Noyce
+Jack Kilby
+Sergey Brin
+Larry Page
+Jeff Dean
+Sundar Pichai
+Satya Nadella
+Jeff Bezos
+Mark Zuckerberg
+Elon Musk
+Apple Inc.
+Microsoft
+Google
+IBM
+Intel
+NVIDIA
+AMD
+Bell Labs
+Xerox PARC
+DARPA
+MIT Computer Science and Artificial Intelligence Laboratory
+Silicon Valley
+Hacker culture
+Open source
+Stack Overflow
+Wikipedia
+Y2K
+Dot-com bubble
+# Astronomy - solar system
+Astronomy
+Astrophysics
+Solar System
+Sun
+Solar core
+Photosphere
+Chromosphere
+Corona
+Sunspot
+Solar flare
+Coronal mass ejection
+Solar wind
+Solar cycle
+Solar eclipse
+Lunar eclipse
+Mercury (planet)
+Venus
+Earth
+Moon
+Mars
+Jupiter
+Saturn
+Uranus
+Neptune
+Pluto
+Dwarf planet
+Ceres (dwarf planet)
+Eris (dwarf planet)
+Planet
+Terrestrial planet
+Gas giant
+Ice giant
+Planetary system
+Asteroid
+Asteroid belt
+Kuiper belt
+Oort cloud
+Comet
+Halley's Comet
+Comet Hale-Bopp
+Meteoroid
+Meteor shower
+Meteorite
+Perseids
+Impact crater
+Chicxulub crater
+Tunguska event
+Natural satellite
+Io (moon)
+Europa (moon)
+Ganymede (moon)
+Callisto (moon)
+Galilean moons
+Titan (moon)
+Enceladus
+Triton (moon)
+Phobos (moon)
+Deimos (moon)
+Rings of Saturn
+Great Red Spot
+Olympus Mons
+Valles Marineris
+Lunar mare
+Tycho (crater)
+Far side of the Moon
+Tidal locking
+Tide
+Orbital period
+Orbital eccentricity
+Orbital inclination
+Apsis
+Perihelion
+Aphelion
+Retrograde and prograde motion
+Axial tilt
+Precession of the equinoxes
+Equinox
+Solstice
+Season
+Sidereal time
+Solar time
+Astronomical unit
+Titius-Bode law
+Late Heavy Bombardment
+Nebular hypothesis
+Planetary differentiation
+Magnetosphere
+Van Allen radiation belt
+Aurora
+Zodiacal light
+Planetary habitability
+Circumstellar habitable zone
+Goldilocks zone
+Terraforming
+Panspermia
+Astrobiology
+
+# Astronomy - stars and stellar evolution
+Star
+Stellar classification
+Main sequence
+Hertzsprung-Russell diagram
+Stellar evolution
+Star formation
+Protostar
+Molecular cloud
+T Tauri star
+Red giant
+Red dwarf
+Blue giant
+Supergiant
+Hypergiant
+White dwarf
+Brown dwarf
+Neutron star
+Pulsar
+Magnetar
+Black hole
+Stellar black hole
+Supermassive black hole
+Sagittarius A*
+Messier 87
+Event Horizon Telescope
+Supernova
+Type Ia supernova
+Nova
+Gamma-ray burst
+Kilonova
+Planetary nebula
+Supernova remnant
+Crab Nebula
+Stellar nucleosynthesis
+Nucleosynthesis
+Big Bang nucleosynthesis
+Proton-proton chain
+CNO cycle
+Triple-alpha process
+Chandrasekhar limit
+Tolman-Oppenheimer-Volkoff limit
+Degenerate matter
+Electron degeneracy pressure
+Hydrostatic equilibrium
+Stellar atmosphere
+Luminosity
+Apparent magnitude
+Absolute magnitude
+Color index
+Effective temperature
+Stellar parallax
+Standard candle
+Cepheid variable
+Variable star
+RR Lyrae variable
+Binary star
+Eclipsing binary
+Star cluster
+Open cluster
+Globular cluster
+Pleiades
+Hyades (star cluster)
+Sirius
+Polaris
+Betelgeuse
+Rigel
+Vega
+Antares
+Aldebaran
+Arcturus
+Canopus
+Alpha Centauri
+Proxima Centauri
+Barnard's Star
+Algol
+Constellation
+Orion (constellation)
+Ursa Major
+Big Dipper
+Cassiopeia (constellation)
+Southern Cross
+Zodiac
+Celestial sphere
+Celestial equator
+Ecliptic
+Right ascension
+Declination
+Azimuth
+Altitude (astronomy)
+Star chart
+Messier object
+New General Catalogue
+Bayer designation
+Astronomical naming conventions
+
+# Astronomy - galaxies and cosmology
+Galaxy
+Milky Way
+Galactic Center
+Andromeda Galaxy
+Triangulum Galaxy
+Magellanic Clouds
+Whirlpool Galaxy
+Sombrero Galaxy
+Spiral galaxy
+Barred spiral galaxy
+Elliptical galaxy
+Irregular galaxy
+Dwarf galaxy
+Galaxy formation and evolution
+Galaxy merger
+Interacting galaxy
+Active galactic nucleus
+Quasar
+Blazar
+Radio galaxy
+Seyfert galaxy
+Accretion disk
+Relativistic jet
+Local Group
+Virgo Supercluster
+Laniakea Supercluster
+Galaxy cluster
+Galaxy filament
+Observable universe
+Large-scale structure of the universe
+Void (astronomy)
+Cosmology
+Physical cosmology
+Big Bang
+Cosmic inflation
+Cosmic microwave background
+Recombination (cosmology)
+Dark ages (cosmology)
+Reionization
+Timeline of the far future
+Chronology of the universe
+Age of the universe
+Hubble's law
+Hubble constant
+Redshift
+Doppler effect
+Expansion of the universe
+Accelerating expansion of the universe
+Dark energy
+Dark matter
+Weakly interacting massive particles
+MACHO
+Modified Newtonian dynamics
+Galaxy rotation curve
+Bullet Cluster
+Gravitational lens
+Einstein ring
+Cosmological constant
+Lambda-CDM model
+Friedmann equations
+Critical density (cosmology)
+Flatness problem
+Horizon problem
+Baryon acoustic oscillations
+Big Crunch
+Big Rip
+Heat death of the universe
+Multiverse
+Anthropic principle
+Fermi paradox
+Drake equation
+Search for extraterrestrial intelligence
+Wow! signal
+Arecibo message
+Golden Record
+Extraterrestrial life
+Exoplanet
+Hot Jupiter
+Super-Earth
+Transit (astronomy)
+Radial velocity
+Gravitational microlensing
+TRAPPIST-1
+Kepler-452b
+Proxima Centauri b
+Nebula
+Orion Nebula
+Eagle Nebula
+Pillars of Creation
+Horsehead Nebula
+Ring Nebula
+Emission nebula
+Reflection nebula
+Dark nebula
+Interstellar medium
+Cosmic dust
+Interstellar travel
+Generation ship
+Alcubierre drive
+Space colonization
+
+# Astronomy - instruments, space exploration, astronomers
+Telescope
+Optical telescope
+Refracting telescope
+Reflecting telescope
+Newtonian telescope
+Cassegrain reflector
+Radio telescope
+Very Large Array
+Arecibo Observatory
+Atacama Large Millimeter Array
+Very Large Telescope
+Keck Observatory
+Hubble Space Telescope
+James Webb Space Telescope
+Spitzer Space Telescope
+Chandra X-ray Observatory
+Kepler space telescope
+Gaia (spacecraft)
+Observatory
+Mount Wilson Observatory
+Palomar Observatory
+Adaptive optics
+Astronomical interferometer
+Charge-coupled device
+Spectrograph
+Astrophotography
+Light pollution
+Astronomical seeing
+Space exploration
+Spaceflight
+Rocket
+Multistage rocket
+Tsiolkovsky rocket equation
+Orbital mechanics
+Hohmann transfer orbit
+Gravity assist
+Lagrange point
+Geostationary orbit
+Low Earth orbit
+Escape velocity
+Delta-v
+Reentry
+Space station
+International Space Station
+Mir
+Skylab
+Sputnik 1
+Vostok 1
+Yuri Gagarin
+Valentina Tereshkova
+Alexei Leonov
+Apollo program
+Apollo 11
+Neil Armstrong
+Buzz Aldrin
+Apollo 13
+Space Race
+NASA
+Roscosmos
+European Space Agency
+SpaceX
+Falcon 9
+Falcon Heavy
+Starship (spacecraft)
+Saturn V
+Space Shuttle
+Soyuz (spacecraft)
+Voyager 1
+Voyager 2
+Pioneer 10
+New Horizons
+Cassini-Huygens
+Galileo (spacecraft)
+Juno (spacecraft)
+Mars rover
+Curiosity (rover)
+Perseverance (rover)
+Opportunity (rover)
+Ingenuity (helicopter)
+Viking program
+Rosetta (spacecraft)
+OSIRIS-REx
+Parker Solar Probe
+Space probe
+Satellite
+Global Positioning System
+Space debris
+Kessler syndrome
+Astronaut
+Cosmonaut
+Extravehicular activity
+Spacesuit
+Weightlessness
+Nicolaus Copernicus
+Tycho Brahe
+Johannes Kepler
+Galileo Galilei
+Giovanni Domenico Cassini
+Christiaan Huygens
+Edmond Halley
+William Herschel
+Caroline Herschel
+Charles Messier
+Percival Lowell
+Edwin Hubble
+Henrietta Swan Leavitt
+Annie Jump Cannon
+Cecilia Payne-Gaposchkin
+Vera Rubin
+Jocelyn Bell Burnell
+Arthur Eddington
+Georges Lemaitre
+Fred Hoyle
+Fritz Zwicky
+Harlow Shapley
+Carl Sagan
+Cosmos: A Personal Voyage
+Neil deGrasse Tyson
+Jill Tarter
+Konstantin Tsiolkovsky
+Robert H. Goddard
+Wernher von Braun
+Sergei Korolev
+Hermann Oberth
+Katherine Johnson
+Ancient Greek astronomy
+Antikythera mechanism
+Stonehenge
+Heliocentrism
+Geocentric model
+Copernican Revolution
+De revolutionibus orbium coelestium
+Almagest
+Astrolabe
+Sundial
+Armillary sphere
+Sextant
+Calendar
+Gregorian calendar
+Julian calendar
+Leap year
+Time zone
+Julian day
+# Chemistry - general and physical
+Chemistry
+Physical chemistry
+Analytical chemistry
+Inorganic chemistry
+Organic chemistry
+Biochemistry
+Atom
+Atomic theory
+Atomic number
+Mass number
+Atomic mass
+Relative atomic mass
+Isotope
+Ion
+Cation
+Anion
+Electron shell
+Electron configuration
+Atomic orbital
+Valence electron
+Octet rule
+Aufbau principle
+Hund's rule of maximum multiplicity
+Periodic table
+Periodic trends
+Chemical element
+Group (periodic table)
+Period (periodic table)
+Alkali metal
+Alkaline earth metal
+Transition metal
+Post-transition metal
+Metalloid
+Halogen
+Noble gas
+Lanthanide
+Actinide
+Rare-earth element
+Metal
+Nonmetal
+Hydrogen
+Helium
+Lithium
+Carbon
+Nitrogen
+Oxygen
+Fluorine
+Sodium
+Magnesium
+Aluminium
+Silicon
+Phosphorus
+Sulfur
+Chlorine
+Potassium
+Calcium
+Titanium
+Chromium
+Manganese
+Iron
+Cobalt
+Nickel
+Copper
+Zinc
+Silver
+Tin
+Iodine
+Platinum
+Gold
+Mercury (element)
+Lead
+Uranium
+Plutonium
+Radium
+Neon
+Argon
+Molecule
+Chemical compound
+Chemical formula
+Molecular formula
+Empirical formula
+Structural formula
+Chemical bond
+Covalent bond
+Ionic bond
+Metallic bonding
+Hydrogen bond
+Van der Waals force
+London dispersion force
+Dipole
+Electronegativity
+Polarity (chemistry)
+Lewis structure
+VSEPR theory
+Molecular geometry
+Hybridisation (chemistry)
+Sigma bond
+Pi bond
+Resonance (chemistry)
+Aromaticity
+Intermolecular force
+Mole (unit)
+Avogadro constant
+Molar mass
+Stoichiometry
+Chemical equation
+Limiting reagent
+Percent yield
+Empirical formula mass
+Chemical reaction
+Reaction mechanism
+Rate equation
+Reaction rate
+Chemical kinetics
+Activation energy
+Arrhenius equation
+Catalysis
+Catalyst
+Enzyme
+Transition state
+Collision theory
+Chemical equilibrium
+Equilibrium constant
+Le Chatelier's principle
+Reaction quotient
+Chemical thermodynamics
+Enthalpy of formation
+Hess's law
+Calorimeter
+Exothermic process
+Endothermic process
+Standard state
+Spontaneous process
+Acid
+Base (chemistry)
+Acid-base reaction
+Bronsted-Lowry acid-base theory
+Lewis acids and bases
+PH
+Acid dissociation constant
+Strong acid
+Weak base
+Buffer solution
+Henderson-Hasselbalch equation
+Titration
+Indicator (chemistry)
+Neutralization (chemistry)
+Salt (chemistry)
+Redox
+Oxidation state
+Oxidizing agent
+Reducing agent
+Electrochemistry
+Electrochemical cell
+Galvanic cell
+Electrolytic cell
+Electrode
+Anode
+Cathode
+Half-reaction
+Standard electrode potential
+Nernst equation
+Electrolysis
+Corrosion
+Battery (electricity)
+Fuel cell
+Solution (chemistry)
+Solvent
+Solute
+Solubility
+Concentration
+Molarity
+Molality
+Dilution (equation)
+Colligative properties
+Osmotic pressure
+Boiling-point elevation
+Freezing-point depression
+Raoult's law
+Henry's law
+Colloid
+Suspension (chemistry)
+Emulsion
+Surfactant
+Soap
+Detergent
+Micelle
+Mixture
+Homogeneous and heterogeneous mixtures
+Separation process
+Distillation
+Fractional distillation
+Filtration
+Evaporation
+Recrystallization (chemistry)
+Chromatography
+Gas chromatography
+High-performance liquid chromatography
+Thin-layer chromatography
+Electrophoresis
+Centrifugation
+Spectroscopy
+Infrared spectroscopy
+Ultraviolet-visible spectroscopy
+Nuclear magnetic resonance spectroscopy
+Mass spectrometry
+X-ray crystallography
+Flame test
+Laboratory glassware
+Beaker (glassware)
+Erlenmeyer flask
+Test tube
+Bunsen burner
+Fume hood
+Pipette
+Burette
+Volumetric flask
+Desiccator
+Material safety data sheet
+
+# Chemistry - organic, materials, biochemistry
+Hydrocarbon
+Alkane
+Alkene
+Alkyne
+Aromatic compound
+Benzene
+Toluene
+Cyclohexane
+Methane
+Ethanol
+Methanol
+Acetone
+Acetic acid
+Formaldehyde
+Functional group
+Alcohol (chemistry)
+Aldehyde
+Ketone
+Carboxylic acid
+Ester
+Ether
+Amine
+Amide
+Nitrile
+Thiol
+Phenol
+Alkyl halide
+Isomer
+Structural isomer
+Stereoisomerism
+Chirality (chemistry)
+Enantiomer
+Diastereomer
+Racemic mixture
+Optical rotation
+Conformational isomerism
+Nucleophile
+Electrophile
+Leaving group
+SN1 reaction
+SN2 reaction
+Elimination reaction
+Addition reaction
+Substitution reaction
+Condensation reaction
+Hydrolysis
+Polymerization
+Free-radical reaction
+Grignard reagent
+Diels-Alder reaction
+Friedel-Crafts reaction
+Aldol reaction
+Wittig reaction
+Esterification
+Saponification
+Fermentation
+Combustion
+Oxidation of alcohols
+Retrosynthetic analysis
+Total synthesis
+Organic synthesis
+IUPAC nomenclature of organic chemistry
+Polymer
+Monomer
+Plastic
+Polyethylene
+Polypropylene
+Polystyrene
+Polyvinyl chloride
+Polytetrafluoroethylene
+Nylon
+Kevlar
+Rubber
+Vulcanization
+Epoxy
+Silicone
+Cellulose
+Starch
+Lignin
+Petroleum
+Crude oil refining
+Natural gas
+Coal
+Fossil fuel
+Biofuel
+Ethanol fuel
+Hydrogen fuel
+Explosive
+TNT
+Nitroglycerin
+Gunpowder
+Dynamite
+Ammonia
+Haber process
+Sulfuric acid
+Contact process
+Sodium hydroxide
+Chlor-alkali process
+Portland cement
+Concrete
+Steel
+Stainless steel
+Cast iron
+Bronze
+Brass
+Solder
+Smelting
+Blast furnace
+Electrolytic refining
+Hall-Heroult process
+Alloy
+Amalgam (chemistry)
+Ceramic
+Porcelain
+Glass
+Silica
+Quartz
+Zeolite
+Coordination complex
+Ligand
+Chelation
+Crystal field theory
+Organometallic chemistry
+Ferrocene
+Heme
+Chlorophyll
+Hemoglobin
+Vitamin
+Vitamin C
+Amino acid
+Peptide bond
+Protein
+Protein folding
+Enzyme kinetics
+Michaelis-Menten kinetics
+Denaturation (biochemistry)
+Carbohydrate
+Glucose
+Fructose
+Sucrose
+Lactose
+Glycogen
+Lipid
+Fatty acid
+Triglyceride
+Phospholipid
+Cholesterol
+Steroid
+Nucleic acid
+Nucleotide
+DNA
+RNA
+Adenosine triphosphate
+Coenzyme
+NADH
+Metabolism
+Glycolysis
+Citric acid cycle
+Oxidative phosphorylation
+Photosynthesis
+Calvin cycle
+Cellular respiration
+Antibiotic
+Aspirin
+Penicillin
+Caffeine
+Nicotine
+Ethylene glycol
+Pharmacology
+Drug discovery
+Pesticide
+Fertilizer
+Green chemistry
+Chemical safety
+Toxicology
+Environmental chemistry
+Ozone depletion
+Acid rain
+Chlorofluorocarbon
+Water treatment
+Desalination
+Water purification
+
+# Chemistry - people and history
+Dmitri Mendeleev
+Antoine Lavoisier
+John Dalton
+Amedeo Avogadro
+Jons Jacob Berzelius
+Robert Boyle
+Joseph Priestley
+Henry Cavendish
+Humphry Davy
+Michael Faraday
+Friedrich Wohler
+August Kekule
+Svante Arrhenius
+Wilhelm Ostwald
+Jacobus Henricus van 't Hoff
+Marie Curie
+Fritz Haber
+Carl Bosch
+Alfred Nobel
+Linus Pauling
+Gilbert N. Lewis
+Glenn T. Seaborg
+Robert Burns Woodward
+Dorothy Hodgkin
+Rosalind Franklin
+Frederick Sanger
+Ahmed Zewail
+Marie-Anne Paulze Lavoisier
+Alchemy
+Philosopher's stone
+Phlogiston theory
+History of chemistry
+Nobel Prize in Chemistry
+Periodic table history
+Chemical nomenclature
+CAS Registry Number
+Chemical database
+# Technology - engineering disciplines and machines
+Engineering
+Mechanical engineering
+Electrical engineering
+Civil engineering
+Chemical engineering
+Aerospace engineering
+Biomedical engineering
+Nuclear engineering
+Environmental engineering
+Industrial engineering
+Systems engineering
+Materials engineering
+Software engineering
+Genetic engineering
+Engineering design process
+Prototype
+Reverse engineering
+Failure analysis
+Safety factor
+Tolerance (engineering)
+Standardization
+ISO 9000
+Blueprint
+Technical drawing
+Computer-aided design
+Computer-aided manufacturing
+Finite element method
+Machine
+Simple machine
+Lever
+Pulley
+Gear
+Gear train
+Worm drive
+Cam (mechanism)
+Crankshaft
+Camshaft
+Piston
+Cylinder (engine)
+Bearing (mechanical)
+Ball bearing
+Lubrication
+Clutch
+Transmission (mechanical device)
+Differential (mechanical device)
+Flywheel
+Governor (device)
+Ratchet (device)
+Spring (device)
+Screw thread
+Bolt (fastener)
+Nut (hardware)
+Rivet
+Weld
+Soldering
+Brazing
+Machining
+Lathe
+Milling (machining)
+Drill
+Computer numerical control
+3D printing
+Additive manufacturing
+Injection moulding
+Casting
+Forging
+Extrusion
+Sheet metal
+Assembly line
+Mass production
+Interchangeable parts
+Manufacturing
+Automation
+Industrial robot
+Programmable logic controller
+Supervisory control and data acquisition
+Quality control
+Lean manufacturing
+Kanban
+Just-in-time manufacturing
+Supply chain
+Logistics
+Heat engine
+Steam engine
+Watt steam engine
+Steam turbine
+Internal combustion engine
+Four-stroke engine
+Two-stroke engine
+Diesel engine
+Wankel engine
+Jet engine
+Turbofan
+Turbojet
+Turboprop
+Ramjet
+Scramjet
+Rocket engine
+Ion thruster
+Gas turbine
+Electric motor
+Induction motor
+Stepper motor
+Servomotor
+Brushless DC electric motor
+Electric generator
+Turbine
+Water turbine
+Wind turbine
+Hydroelectricity
+Dam
+Hoover Dam
+Three Gorges Dam
+Nuclear power plant
+Thermal power station
+Solar panel
+Photovoltaics
+Concentrated solar power
+Geothermal energy
+Tidal power
+Wave power
+Biomass
+Renewable energy
+Energy storage
+Lithium-ion battery
+Lead-acid battery
+Capacitor
+Supercapacitor
+Flywheel energy storage
+Pumped-storage hydroelectricity
+Fuel cell
+Hydrogen economy
+Electric vehicle
+Hybrid vehicle
+Regenerative braking
+Electrical grid
+Power transmission
+High-voltage direct current
+Transformer
+Circuit breaker
+Fuse (electrical)
+Grounding (electricity)
+Three-phase electric power
+Power factor
+Smart grid
+Blackout
+
+# Technology - electronics, communication, computing hardware
+Electronics
+Analogue electronics
+Digital electronics
+Electronic circuit
+Printed circuit board
+Breadboard
+Resistor
+Capacitor
+Inductor
+Diode
+Zener diode
+Light-emitting diode
+Photodiode
+Transistor
+Bipolar junction transistor
+Field-effect transistor
+MOSFET
+Thyristor
+Vacuum tube
+Cathode-ray tube
+Operational amplifier
+Amplifier
+Oscillator
+Crystal oscillator
+Rectifier
+Voltage regulator
+Power supply
+Switched-mode power supply
+Inverter (electrical)
+Analog-to-digital converter
+Digital-to-analog converter
+Microcontroller
+Arduino
+Raspberry Pi
+Sensor
+Thermistor
+Strain gauge
+Accelerometer
+Gyroscope
+Magnetometer
+Photoresistor
+Hall effect sensor
+Actuator
+Relay
+Solenoid
+Antenna (radio)
+Radio receiver
+Transmitter
+Modulation
+Amplitude modulation
+Frequency modulation
+Phase-shift keying
+Radio frequency
+Radar
+Doppler radar
+Lidar
+Sonar
+Global Positioning System
+Satellite navigation
+Telecommunication
+Telegraphy
+Morse code
+Telephone
+Mobile phone
+Smartphone
+Cellular network
+5G
+Communications satellite
+Optical fiber
+Submarine communications cable
+Broadband
+Modem
+Television
+Cathode-ray tube television
+Liquid-crystal display
+OLED
+Plasma display
+Projector
+Camera
+Digital camera
+Charge-coupled device
+CMOS sensor
+Photographic film
+Lens (optics)
+Aperture
+Shutter speed
+Exposure (photography)
+Microphone
+Loudspeaker
+Headphones
+Sound recording and reproduction
+Phonograph
+Magnetic tape
+Compact disc
+DVD
+Blu-ray
+USB
+HDMI
+Ethernet
+Barcode
+QR code
+RFID
+Near-field communication
+Touchscreen
+Keyboard (computing)
+Computer mouse
+Printer (computing)
+Inkjet printing
+Laser printing
+Scanner
+Electronic paper
+Semiconductor device
+Wafer (electronics)
+Photolithography
+Nanolithography
+Clean room
+Moore's law
+Dennard scaling
+Overclocking
+Heat sink
+Thermal paste
+Cooling
+
+# Technology - structures, transport, invention
+Structural engineering
+Bridge
+Beam bridge
+Arch bridge
+Truss bridge
+Suspension bridge
+Cable-stayed bridge
+Golden Gate Bridge
+Brooklyn Bridge
+Millau Viaduct
+Skyscraper
+Burj Khalifa
+Empire State Building
+Eiffel Tower
+Tunnel
+Channel Tunnel
+Aqueduct (water supply)
+Canal
+Panama Canal
+Suez Canal
+Lock (water navigation)
+Dam
+Levee
+Foundation (engineering)
+Reinforced concrete
+Prestressed concrete
+Steel frame
+Load-bearing wall
+Cantilever
+Arch
+Dome
+Vault (architecture)
+Truss
+Column
+Beam (structure)
+Buckling
+Earthquake engineering
+Base isolation
+Wind load
+Surveying
+Theodolite
+Total station
+Geodesy
+Cartography
+Map projection
+Mercator projection
+Geographic information system
+Transport
+Wheel
+Axle
+Automobile
+Ford Model T
+Assembly line
+Internal combustion engine
+Electric car
+Tesla, Inc.
+Motorcycle
+Bicycle
+Train
+Steam locomotive
+Diesel locomotive
+Electric locomotive
+High-speed rail
+Shinkansen
+Maglev
+Rail transport
+Ship
+Steamship
+Container ship
+Submarine
+Hovercraft
+Sailing
+Buoyancy
+Aircraft
+Wright Flyer
+Airplane
+Helicopter
+Rotorcraft
+Airship
+Hot air balloon
+Glider (aircraft)
+Airfoil
+Angle of attack
+Stall (fluid dynamics)
+Thrust
+Drag (physics)
+Lift-to-drag ratio
+Autopilot
+Flight recorder
+Air traffic control
+Jet Age
+Concorde
+Boeing 747
+Rocket
+Spacecraft
+Invention
+Timeline of historic inventions
+Patent
+Intellectual property
+Innovation
+Industrial Revolution
+Second Industrial Revolution
+Digital Revolution
+Technological revolution
+Printing press
+Johannes Gutenberg
+Movable type
+Paper
+Wheel and axle
+Plough
+Compass
+Clock
+Pendulum clock
+Mechanical watch
+Quartz clock
+Atomic clock
+Eyeglasses
+Microscope
+Telescope
+Thermometer
+Barometer
+Steam engine
+James Watt
+Spinning jenny
+Cotton gin
+Eli Whitney
+Sewing machine
+Telegraph
+Samuel Morse
+Telephone
+Alexander Graham Bell
+Phonograph
+Thomas Edison
+Incandescent light bulb
+Nikola Tesla
+War of the currents
+Radio
+Guglielmo Marconi
+Alexander Popov
+Television
+Vladimir K. Zworykin
+John Logie Baird
+Photography
+Louis Daguerre
+Motion picture camera
+Refrigerator
+Air conditioning
+Willis Carrier
+Vacuum cleaner
+Washing machine
+Microwave oven
+Elevator
+Escalator
+Zipper
+Velcro
+Ballpoint pen
+Post-it note
+Bar code
+Credit card
+ATM
+Duct tape
+Nylon
+Teflon
+Kevlar
+Superglue
+Penicillin
+X-ray machine
+Pacemaker
+Artificial heart
+Prosthesis
+Hearing aid
+Cochlear implant
+Dialysis
+Ventilator
+Defibrillator
+Vaccine
+Anesthesia
+Insulin
+Contact lens
+LASIK
+Stethoscope
+Thermal imaging
+Night vision
+Laser cutting
+Fiber laser
+Welding
+Metal detector
+Geiger counter
+Seismograph
+Weather balloon
+Wind tunnel
+Flight simulator
+Wearable technology
+Smartwatch
+Drone
+Unmanned aerial vehicle
+Exoskeleton
+Bionics
+Biomimetics
+Nanotechnology
+Nanorobotics
+Biotechnology
+Synthetic biology
+Tissue engineering
+Bioprinting
+Cryogenics
+Cryonics
+Superconducting magnet
+Particle accelerator
+Fusion power
+Solar sail
+Space elevator
+# Biology - cell and molecular
+Biology
+Molecular biology
+Cell biology
+Cell (biology)
+Cell theory
+Cell membrane
+Phospholipid bilayer
+Cytoplasm
+Cytosol
+Organelle
+Cell nucleus
+Nucleolus
+Ribosome
+Endoplasmic reticulum
+Golgi apparatus
+Lysosome
+Peroxisome
+Vacuole
+Mitochondrion
+Chloroplast
+Plastid
+Cytoskeleton
+Microtubule
+Actin
+Centriole
+Cilium
+Flagellum
+Cell wall
+Plasmodesma
+Tight junction
+Prokaryote
+Eukaryote
+Archaea
+Bacteria
+Endosymbiotic theory
+Cell division
+Cell cycle
+Mitosis
+Meiosis
+Cytokinesis
+Binary fission
+Apoptosis
+Necrosis
+Stem cell
+Cell differentiation
+Cell signaling
+Signal transduction
+Receptor (biochemistry)
+Second messenger system
+Membrane transport
+Passive transport
+Active transport
+Diffusion
+Osmosis
+Facilitated diffusion
+Sodium-potassium pump
+Endocytosis
+Exocytosis
+Phagocytosis
+Homeostasis
+Metabolism
+Anabolism
+Catabolism
+Enzyme
+Substrate (chemistry)
+Active site
+Enzyme inhibitor
+Cofactor (biochemistry)
+Adenosine triphosphate
+Glycolysis
+Citric acid cycle
+Electron transport chain
+Oxidative phosphorylation
+Chemiosmosis
+Fermentation
+Photosynthesis
+Light-dependent reactions
+Calvin cycle
+Chlorophyll
+Stoma
+Transpiration
+Cellular respiration
+Protein
+Amino acid
+Peptide
+Protein structure
+Protein folding
+Enzyme kinetics
+Nucleic acid
+DNA
+RNA
+Messenger RNA
+Transfer RNA
+Ribosomal RNA
+Nucleotide
+Base pair
+Complementary DNA
+Nucleic acid double helix
+DNA replication
+DNA polymerase
+Helicase
+Okazaki fragment
+Telomere
+Telomerase
+Transcription (biology)
+RNA polymerase
+RNA splicing
+Translation (biology)
+Genetic code
+Codon
+Start codon
+Stop codon
+Central dogma of molecular biology
+Reverse transcriptase
+Gene expression
+Operon
+Lac operon
+Transcription factor
+Epigenetics
+DNA methylation
+Histone
+Chromatin
+Chromosome
+Karyotype
+Genome
+Human genome
+Human Genome Project
+Gene
+Allele
+Locus (genetics)
+Mutation
+Point mutation
+Frameshift mutation
+Silent mutation
+Mutagen
+DNA repair
+Recombinant DNA
+Plasmid
+Restriction enzyme
+DNA ligase
+Cloning
+Polymerase chain reaction
+DNA sequencing
+Sanger sequencing
+Next-generation sequencing
+Gel electrophoresis
+CRISPR
+CRISPR gene editing
+Gene therapy
+Genetically modified organism
+Transgene
+Model organism
+Escherichia coli
+Drosophila melanogaster
+Caenorhabditis elegans
+Saccharomyces cerevisiae
+Arabidopsis thaliana
+Zebrafish
+Laboratory mouse
+HeLa
+
+# Biology - genetics, evolution, ecology
+Genetics
+Mendelian inheritance
+Gregor Mendel
+Punnett square
+Dominance (genetics)
+Recessive
+Genotype
+Phenotype
+Homozygous
+Heterozygous
+Law of segregation
+Law of independent assortment
+Genetic linkage
+Crossing over
+Sex linkage
+X chromosome
+Y chromosome
+Sex determination
+Pedigree chart
+Genetic disorder
+Sickle cell disease
+Cystic fibrosis
+Down syndrome
+Huntington's disease
+Color blindness
+Hemophilia
+Polygenic trait
+Quantitative genetics
+Heritability
+Population genetics
+Hardy-Weinberg principle
+Gene pool
+Allele frequency
+Genetic drift
+Founder effect
+Bottleneck effect
+Gene flow
+Inbreeding
+Evolution
+Natural selection
+Charles Darwin
+On the Origin of Species
+Alfred Russel Wallace
+Jean-Baptiste Lamarck
+Lamarckism
+Modern synthesis (20th century)
+Descent with modification
+Common descent
+Last universal common ancestor
+Adaptation
+Fitness (biology)
+Sexual selection
+Artificial selection
+Selective breeding
+Directional selection
+Stabilizing selection
+Disruptive selection
+Speciation
+Allopatric speciation
+Sympatric speciation
+Reproductive isolation
+Hybrid (biology)
+Species
+Species concept
+Convergent evolution
+Divergent evolution
+Coevolution
+Homology (biology)
+Analogy (biology)
+Vestigiality
+Atavism
+Molecular clock
+Phylogenetics
+Phylogenetic tree
+Cladistics
+Clade
+Taxonomy (biology)
+Binomial nomenclature
+Carl Linnaeus
+Domain (biology)
+Kingdom (biology)
+Phylum
+Class (biology)
+Order (biology)
+Family (biology)
+Genus
+Three-domain system
+Tree of life (biology)
+Fossil
+Paleontology
+Fossil record
+Transitional fossil
+Archaeopteryx
+Lucy (Australopithecus)
+Trilobite
+Ammonoidea
+Dinosaur
+Tyrannosaurus
+Velociraptor
+Triceratops
+Stegosaurus
+Brachiosaurus
+Pterosaur
+Mosasaur
+Mammoth
+Saber-toothed cat
+Extinction
+Extinction event
+Cretaceous-Paleogene extinction event
+Permian-Triassic extinction event
+Cambrian explosion
+Great Oxidation Event
+Abiogenesis
+Miller-Urey experiment
+RNA world
+Panspermia
+Endosymbiosis
+Human evolution
+Homo sapiens
+Homo erectus
+Homo habilis
+Neanderthal
+Denisovan
+Australopithecus
+Hominidae
+Primate
+Bipedalism
+Encephalization quotient
+Ecology
+Ecosystem
+Biome
+Tundra
+Taiga
+Temperate deciduous forest
+Tropical rainforest
+Savanna
+Desert
+Grassland
+Wetland
+Coral reef
+Estuary
+Habitat
+Ecological niche
+Population ecology
+Carrying capacity
+Exponential growth
+Logistic function
+Predation
+Competition (biology)
+Symbiosis
+Mutualism (biology)
+Commensalism
+Parasitism
+Herbivore
+Carnivore
+Omnivore
+Decomposer
+Detritivore
+Producer (ecology)
+Consumer (food chain)
+Food chain
+Food web
+Trophic level
+Energy pyramid
+Ecological succession
+Keystone species
+Invasive species
+Biodiversity
+Endemism
+Endangered species
+Conservation biology
+Habitat destruction
+Deforestation
+Overfishing
+Pollution
+Eutrophication
+Bioaccumulation
+Biomagnification
+Carbon cycle
+Nitrogen cycle
+Phosphorus cycle
+Water cycle
+Nitrogen fixation
+Biogeochemical cycle
+Climate change
+Global warming
+Greenhouse gas
+Carbon footprint
+Carbon sequestration
+Sustainability
+Ecological footprint
+Rewilding
+Biosphere
+Gaia hypothesis
+
+# Biology - organisms, physiology, medicine
+Virus
+Bacteriophage
+Viral replication
+Retrovirus
+Influenza
+HIV
+SARS-CoV-2
+COVID-19 pandemic
+Vaccine
+Vaccination
+Herd immunity
+Edward Jenner
+Louis Pasteur
+Pasteurization
+Robert Koch
+Koch's postulates
+Germ theory of disease
+Antibiotic
+Penicillin
+Alexander Fleming
+Antibiotic resistance
+Antiseptic
+Sterilization (microbiology)
+Microbiology
+Microorganism
+Bacterium
+Gram-positive bacteria
+Gram stain
+Antibiotic sensitivity
+Fungus
+Yeast
+Mold
+Mushroom
+Mycology
+Lichen
+Protist
+Amoeba
+Paramecium
+Algae
+Plankton
+Diatom
+Plant
+Botany
+Photosynthesis
+Vascular plant
+Xylem
+Phloem
+Root
+Stem (botany)
+Leaf
+Flower
+Pollination
+Pollen
+Seed
+Fruit
+Germination
+Angiosperm
+Gymnosperm
+Fern
+Moss
+Tree
+Bark (botany)
+Dendrochronology
+Plant hormone
+Auxin
+Phototropism
+Photoperiodism
+Animal
+Zoology
+Invertebrate
+Vertebrate
+Arthropod
+Insect
+Metamorphosis
+Arachnid
+Crustacean
+Mollusc
+Cephalopod
+Octopus
+Annelid
+Cnidaria
+Jellyfish
+Echinoderm
+Sponge
+Fish
+Shark
+Amphibian
+Reptile
+Bird
+Feather
+Bird migration
+Mammal
+Marsupial
+Monotreme
+Placenta
+Whale
+Bat
+Elephant
+Honey bee
+Ant
+Butterfly
+Anatomy
+Physiology
+Human body
+Organ (biology)
+Tissue (biology)
+Epithelium
+Connective tissue
+Muscle tissue
+Nervous tissue
+Skeleton
+Human skeleton
+Bone
+Cartilage
+Joint
+Ligament
+Tendon
+Muscle
+Skeletal muscle
+Smooth muscle
+Cardiac muscle
+Muscle contraction
+Sarcomere
+Myosin
+Circulatory system
+Heart
+Cardiac cycle
+Blood
+Red blood cell
+White blood cell
+Platelet
+Hemoglobin
+Blood type
+Blood pressure
+Artery
+Vein
+Capillary
+Blood vessel
+Lymphatic system
+Immune system
+Innate immune system
+Adaptive immune system
+Antibody
+Antigen
+T cell
+B cell
+Macrophage
+Inflammation
+Allergy
+Autoimmune disease
+Respiratory system
+Lung
+Alveolus
+Breathing
+Gas exchange
+Digestive system
+Stomach
+Small intestine
+Large intestine
+Liver
+Pancreas
+Gallbladder
+Bile
+Digestion
+Enzyme
+Nutrition
+Vitamin
+Mineral (nutrient)
+Excretory system
+Kidney
+Nephron
+Urine
+Endocrine system
+Hormone
+Pituitary gland
+Thyroid
+Adrenal gland
+Insulin
+Adrenaline
+Cortisol
+Testosterone
+Estrogen
+Nervous system
+Central nervous system
+Peripheral nervous system
+Brain
+Human brain
+Cerebral cortex
+Cerebellum
+Brainstem
+Hippocampus
+Amygdala
+Hypothalamus
+Neuron
+Axon
+Dendrite
+Synapse
+Neurotransmitter
+Dopamine
+Serotonin
+Acetylcholine
+Action potential
+Resting potential
+Myelin
+Reflex arc
+Sensory neuron
+Motor neuron
+Sense
+Vision
+Human eye
+Retina
+Rod cell
+Cone cell
+Hearing
+Ear
+Cochlea
+Olfaction
+Taste
+Somatosensory system
+Pain
+Proprioception
+Reproduction
+Sexual reproduction
+Asexual reproduction
+Gamete
+Sperm
+Egg cell
+Fertilisation
+Zygote
+Embryo
+Embryonic development
+Fetus
+Pregnancy
+Childbirth
+Developmental biology
+Morphogenesis
+Hox gene
+Regeneration (biology)
+Aging
+Senescence
+Circadian rhythm
+Sleep
+Rapid eye movement sleep
+Medicine
+Disease
+Pathogen
+Epidemiology
+Pandemic
+Epidemic
+Public health
+Cancer
+Tumor
+Oncogene
+Metastasis
+Chemotherapy
+Radiation therapy
+Diabetes
+Cardiovascular disease
+Stroke
+Alzheimer's disease
+Parkinson's disease
+Tuberculosis
+Malaria
+Cholera
+Smallpox
+Diagnosis
+Medical imaging
+X-ray
+Computed tomography
+Magnetic resonance imaging
+Ultrasound
+Electrocardiography
+Electroencephalography
+Surgery
+Anesthesia
+Antisepsis
+Organ transplantation
+Blood transfusion
+Clinical trial
+Evidence-based medicine
+Pharmacology
+Drug
+Placebo effect
+Hippocrates
+Hippocratic Oath
+Galen
+Andreas Vesalius
+William Harvey
+Ignaz Semmelweis
+Joseph Lister
+Florence Nightingale
+Santiago Ramon y Cajal
+Ivan Pavlov
+Gregor Mendel
+James Watson
+Francis Crick
+Rosalind Franklin
+Maurice Wilkins
+Barbara McClintock
+Lynn Margulis
+Jane Goodall
+E. O. Wilson
+Richard Dawkins
+The Selfish Gene
+Stephen Jay Gould
+Craig Venter
+Jennifer Doudna
+Emmanuelle Charpentier
+Nikolai Vavilov
+Ilya Mechnikov
+Nobel Prize in Physiology or Medicine
+# Earth science - geology
+Earth science
+Geology
+Structure of the Earth
+Earth's crust
+Mantle (geology)
+Earth's outer core
+Earth's inner core
+Lithosphere
+Asthenosphere
+Plate tectonics
+Continental drift
+Alfred Wegener
+Seafloor spreading
+Subduction
+Divergent boundary
+Convergent boundary
+Transform fault
+San Andreas Fault
+Mid-Atlantic Ridge
+Ring of Fire
+Pangaea
+Supercontinent
+Orogeny
+Mountain formation
+Rift valley
+Earthquake
+Seismology
+Seismic wave
+P-wave
+S-wave
+Surface wave
+Epicenter
+Hypocenter
+Richter magnitude scale
+Moment magnitude scale
+Mercalli intensity scale
+Seismometer
+Tsunami
+Volcano
+Types of volcanic eruptions
+Shield volcano
+Stratovolcano
+Caldera
+Magma
+Lava
+Pyroclastic flow
+Volcanic ash
+Mount Vesuvius
+Mount St. Helens
+Krakatoa
+Yellowstone Caldera
+Geyser
+Hot spring
+Hotspot (geology)
+Mineral
+Mohs scale of mineral hardness
+Crystal habit
+Silicate minerals
+Quartz
+Feldspar
+Mica
+Calcite
+Halite
+Pyrite
+Gypsum
+Diamond
+Graphite
+Ore
+Mining
+Rock (geology)
+Rock cycle
+Igneous rock
+Granite
+Basalt
+Obsidian
+Pumice
+Sedimentary rock
+Sandstone
+Limestone
+Shale
+Conglomerate (geology)
+Metamorphic rock
+Marble
+Slate
+Gneiss
+Schist
+Weathering
+Erosion
+Sediment
+Sedimentation
+Stratigraphy
+Law of superposition
+Unconformity
+Geologic time scale
+Precambrian
+Paleozoic
+Mesozoic
+Cenozoic
+Cambrian
+Jurassic
+Cretaceous
+Quaternary
+Holocene
+Anthropocene
+Radiometric dating
+Uranium-lead dating
+Potassium-argon dating
+Radiocarbon dating
+Index fossil
+Petroleum geology
+Coal formation
+Groundwater
+Aquifer
+Karst
+Cave
+Stalactite
+Speleology
+Glacier
+Glaciation
+Ice age
+Last Glacial Maximum
+Moraine
+Fjord
+Permafrost
+Soil
+Soil horizon
+Pedology
+Desertification
+Landslide
+Sinkhole
+Geomorphology
+River
+Meander
+Delta (river)
+Floodplain
+Canyon
+Grand Canyon
+Watershed
+Continental shelf
+Mid-ocean ridge
+Abyssal plain
+Oceanic trench
+Mariana Trench
+Geophysics
+Gravimetry
+Magnetostratigraphy
+Earth's magnetic field
+Geomagnetic reversal
+Geodynamo
+Geochemistry
+Isotope geochemistry
+
+# Earth science - atmosphere, oceans, climate
+Atmosphere of Earth
+Troposphere
+Stratosphere
+Mesosphere
+Thermosphere
+Exosphere
+Ionosphere
+Ozone layer
+Ozone depletion
+Atmospheric pressure
+Air mass
+Weather
+Meteorology
+Climate
+Climatology
+Weather forecasting
+Numerical weather prediction
+Weather station
+Weather balloon
+Weather satellite
+Wind
+Jet stream
+Trade winds
+Monsoon
+Sea breeze
+Coriolis effect
+Hadley cell
+Atmospheric circulation
+Pressure system
+Cyclone
+Anticyclone
+Weather front
+Cold front
+Warm front
+Cloud
+Cumulus cloud
+Cumulonimbus cloud
+Stratus cloud
+Cirrus cloud
+Fog
+Precipitation
+Rain
+Snow
+Hail
+Sleet
+Drizzle
+Freezing rain
+Dew
+Frost
+Humidity
+Relative humidity
+Dew point
+Water cycle
+Evapotranspiration
+Thunderstorm
+Lightning
+Thunder
+Tornado
+Fujita scale
+Tropical cyclone
+Hurricane
+Typhoon
+Saffir-Simpson scale
+Storm surge
+Blizzard
+Drought
+Flood
+Heat wave
+El Nino
+La Nina
+El Nino-Southern Oscillation
+North Atlantic Oscillation
+Monsoon of South Asia
+Koppen climate classification
+Microclimate
+Urban heat island
+Greenhouse effect
+Greenhouse gas
+Carbon dioxide in Earth's atmosphere
+Methane
+Global warming
+Climate change
+Intergovernmental Panel on Climate Change
+Keeling Curve
+Ice core
+Paleoclimatology
+Milankovitch cycles
+Albedo
+Radiative forcing
+Climate model
+Sea level rise
+Ocean acidification
+Coral bleaching
+Kyoto Protocol
+Paris Agreement
+Carbon neutrality
+Renewable energy
+Oceanography
+Ocean
+Pacific Ocean
+Atlantic Ocean
+Indian Ocean
+Arctic Ocean
+Southern Ocean
+Seawater
+Salinity
+Thermocline
+Ocean current
+Gulf Stream
+Thermohaline circulation
+Upwelling
+Tide
+Tidal range
+Ocean wave
+Rogue wave
+Sea ice
+Iceberg
+Marine biology
+Photic zone
+Abyssal zone
+Hydrothermal vent
+Coral reef
+Great Barrier Reef
+Estuary
+Mangrove
+Kelp forest
+Whale fall
+Plankton
+Bioluminescence
+Ocean exploration
+Bathyscaphe
+Submersible
+Deep-sea exploration
+Echo sounding
+Hydrography
+
+# Science - method, philosophy, institutions, thought experiments
+Science
+Natural science
+Formal science
+Social science
+Interdisciplinarity
+Scientific method
+Observation
+Hypothesis
+Experiment
+Controlled experiment
+Variable and attribute (research)
+Independent and dependent variables
+Empirical evidence
+Data
+Measurement
+Reproducibility
+Replication crisis
+Peer review
+Scientific literature
+Scientific journal
+Preprint
+ArXiv
+Citation
+Impact factor
+Open access
+Scientific consensus
+Falsifiability
+Karl Popper
+Thomas Kuhn
+The Structure of Scientific Revolutions
+Paradigm shift
+Occam's razor
+Parsimony
+Inductive reasoning
+Deductive reasoning
+Abductive reasoning
+Logical fallacy
+Confirmation bias
+Cognitive bias
+Dunning-Kruger effect
+Anchoring effect
+Availability heuristic
+Sunk cost fallacy
+Survivorship bias
+Hawthorne effect
+Observer-expectancy effect
+Publication bias
+Pseudoscience
+Demarcation problem
+Philosophy of science
+Epistemology
+Ontology
+Reductionism
+Emergence
+Determinism
+Causality
+Correlation does not imply causation
+Naturalism (philosophy)
+Materialism
+Empiricism
+Rationalism
+Positivism
+Instrumentalism
+Scientific realism
+Thought experiment
+Schrodinger's cat
+Maxwell's demon
+Laplace's demon
+Zeno's paradoxes
+Achilles and the tortoise
+Ship of Theseus
+Trolley problem
+Chinese room
+Brain in a vat
+Twin paradox
+Olbers' paradox
+Fermi paradox
+Simpson's paradox
+Banach-Tarski paradox
+Hilbert's paradox of the Grand Hotel
+Monty Hall problem
+Birthday problem
+Two envelopes problem
+Braess's paradox
+Sorites paradox
+Liar paradox
+Barber paradox
+Unexpected hanging paradox
+Newcomb's paradox
+Prisoner's dilemma
+Tragedy of the commons
+Infinite monkey theorem
+Butterfly effect
+Boltzmann brain
+Bootstrap paradox
+Grandfather paradox
+Nobel Prize
+Nobel Prize in Physics
+Nobel Prize in Chemistry
+Fields Medal
+Turing Award
+Royal Society
+National Academy of Sciences
+Max Planck Society
+Russian Academy of Sciences
+CERN
+NASA
+Massachusetts Institute of Technology
+California Institute of Technology
+Stanford University
+University of Cambridge
+University of Oxford
+Cavendish Laboratory
+Los Alamos National Laboratory
+Bell Labs
+Scientific Revolution
+Age of Enlightenment
+History of science
+Alchemy
+Natural philosophy
+Aristotle
+Plato
+Archimedes
+Ibn Sina
+Roger Bacon
+Francis Bacon
+Rene Descartes
+Leonardo da Vinci
+Alexander von Humboldt
+Encyclopedia
+Encyclopedie
+Scientific American
+Nature (journal)
+Science (journal)
+Popular science
+Science communication
+Science education
+STEM
+Citizen science
+Laboratory
+Field research
+Clinical research
+Ethics
+Research ethics
+Animal testing
+Informed consent
+Institutional review board
+
+# Science - cognitive, psychology, linguistics
+Psychology
+Cognitive science
+Cognitive psychology
+Behaviorism
+Classical conditioning
+Ivan Pavlov
+Operant conditioning
+B. F. Skinner
+Reinforcement
+Learning
+Memory
+Working memory
+Long-term memory
+Short-term memory
+Forgetting curve
+Spaced repetition
+Attention
+Perception
+Gestalt psychology
+Optical illusion
+Cognitive load
+Decision-making
+Heuristic
+Prospect theory
+Daniel Kahneman
+Amos Tversky
+Behavioral economics
+Intelligence
+Intelligence quotient
+Flynn effect
+Multiple intelligences
+Creativity
+Problem solving
+Consciousness
+Hard problem of consciousness
+Qualia
+Free will
+Neuroscience
+Cognitive neuroscience
+Neuroplasticity
+Functional magnetic resonance imaging
+Electroencephalography
+Split-brain
+Phineas Gage
+Mirror neuron
+Reward system
+Placebo effect
+Sleep
+Dream
+Circadian rhythm
+Stress (biology)
+Fight-or-flight response
+Emotion
+Motivation
+Maslow's hierarchy of needs
+Developmental psychology
+Jean Piaget
+Theory of mind
+Attachment theory
+Nature versus nurture
+Twin study
+Social psychology
+Conformity
+Asch conformity experiments
+Milgram experiment
+Stanford prison experiment
+Bystander effect
+Groupthink
+Cognitive dissonance
+Sigmund Freud
+Carl Jung
+Psychoanalysis
+Mental disorder
+Depression (mood)
+Anxiety disorder
+Schizophrenia
+Autism
+Attention deficit hyperactivity disorder
+Psychotherapy
+Cognitive behavioral therapy
+Linguistics
+Language
+Phonetics
+Phonology
+Morphology (linguistics)
+Syntax
+Semantics
+Pragmatics
+Universal grammar
+Noam Chomsky
+Language acquisition
+Sapir-Whorf hypothesis
+Historical linguistics
+Proto-Indo-European language
+Language family
+Writing system
+Alphabet
+Rosetta Stone
+Computational linguistics
+Corpus linguistics
+Anthropology
+Archaeology
+Radiocarbon dating
+Stratigraphy (archaeology)
+Cognitive archaeology
+Paleoanthropology
+Ethnography
+Demography
+Population growth
+Statistics
+Economics
+Game theory
+Econometrics
+Supply and demand
+Gross domestic product
+Inflation
+Compound interest
+Moore's law
+Metcalfe's law
+Amdahl's law
+Zipf's law
+Benford's law
+Pareto principle
+Hofstadter's law
+Murphy's law
+Occam's razor
+Hanlon's razor
+Godwin's law
+Sturgeon's law
+Peter principle
+Parkinson's law
+Goodhart's law
+Betteridge's law of headlines
+Streisand effect
+Network effect
+Diminishing returns
+Opportunity cost
+Externality
