@@ -56,6 +56,84 @@ SQUID
 UNIVAC I
 """.split("\n")
 
+# Company builders. Household names, but famous for founding a business rather
+# than for any scientific or engineering result. Gordon Moore and Robert Noyce
+# co-founded Intel and so belong here by job description, but are kept: Moore's
+# law is vocabulary, and Noyce co-invented the integrated circuit alongside Jack
+# Kilby, who is in the list.
+TECH_FOUNDER = """
+Bill Gates
+Elon Musk
+Jeff Bezos
+Larry Page
+Mark Zuckerberg
+Paul Allen
+Satya Nadella
+Sergey Brin
+Steve Jobs
+Steve Wozniak
+Sundar Pichai
+""".split("\n")
+
+# People whose work is famous under some other name. The test is whether the
+# person's name is itself vocabulary a student says out loud -- Doppler, Joule,
+# Coulomb, Kekule, Banach, Cayley all survive on that basis, as does anyone
+# broadly recognisable. A Nobel alone was not enough; there are far more
+# laureates than there are names that turn up in a syllabus.
+MINOR_FIGURE = """
+Ahmed Zewail
+Alain Aspect
+Aleksandr Popov (physicist)
+Alexander Prokhorov
+Allen Newell
+Anders Hejlsberg
+Annie Jump Cannon
+Anton Zeilinger
+Arno Allan Penzias
+Arthur Ashkin
+Barry Barish
+Caroline Herschel
+Cecilia Payne-Gaposchkin
+Donna Strickland
+Frances Allen
+Gérard Mourou
+Harlow Shapley
+Hermann Oberth
+Igor Kurchatov
+James Joseph Sylvester
+Jean Bartik
+Jill Tarter
+John Clauser
+Kenneth G. Wilson
+Konstantin Novoselov
+Larry Wall
+Lisa Randall
+Marie-Anne Paulze Lavoisier
+Niklaus Wirth
+Nikolai Vavilov
+Nikolay Basov
+Percival Lowell
+Philip W. Anderson
+Pyotr Kapitsa
+Rainer Weiss
+Rasmus Lerdorf
+Robert Burns Woodward
+Robert Kahn (computer scientist)
+Robert Woodrow Wilson
+Seymour Papert
+Sheldon Glashow
+Shin'ichirō Tomonaga
+Tsung-Dao Lee
+Vitaly Ginzburg
+Vladimir K. Zworykin
+Vladimir Vapnik
+Walter Brattain
+Wilhelm Ostwald
+Yukihiro Matsumoto
+Zhores Alferov
+Élie Metchnikoff
+""".split("\n")
+
 # Famous, but not science: internet-culture aphorisms and pure economics that
 # rode in on the "named laws" block. Kept apart from OBSCURE because these are
 # out of scope rather than too obscure -- their pageviews are all healthy.
@@ -287,6 +365,8 @@ def main():
     offtopic = {t.strip() for t in OFF_TOPIC if t.strip()}
     latin = {t.strip() for t in LATIN_NAME if t.strip()}
     acronym = {t.strip() for t in ACRONYM_ONLY if t.strip()}
+    minor = {t.strip() for t in MINOR_FIGURE if t.strip()}
+    founder = {t.strip() for t in TECH_FOUNDER if t.strip()}
 
     kept, reasons = [], {}
     for t in titles:
@@ -300,6 +380,10 @@ def main():
             reasons[t] = "latin name"
         elif t in acronym:
             reasons[t] = "acronym only"
+        elif t in founder:
+            reasons[t] = "tech founder"
+        elif t in minor:
+            reasons[t] = "minor figure"
         elif t in obscure:
             reasons[t] = "too specialist"
         else:
@@ -311,10 +395,10 @@ def main():
         f.write("\n")
 
     json.dump(reasons, open(sys.argv[3], "w", encoding="utf-8"), ensure_ascii=False)
-    unmatched = (obscure | offtopic | latin | acronym) - set(reasons)
+    unmatched = (obscure | offtopic | latin | acronym | minor | founder) - set(reasons)
     print(f"kept {len(kept)} of {len(titles)}; removed {len(reasons)}")
     for k in ("roundup page", "under 3 letters", "not science", "latin name",
-              "acronym only", "too specialist"):
+              "acronym only", "tech founder", "minor figure", "too specialist"):
         print(f"  {k}: {sum(1 for v in reasons.values() if v == k)}")
     if unmatched:
         print(f"  WARNING {len(unmatched)} cut entries matched nothing:")

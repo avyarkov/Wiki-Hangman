@@ -1,10 +1,10 @@
-5326 candidates, 5079 kept
+5326 candidates, 5017 kept
 
  views/60d  langs  letters  status           title
 ----------  -----  -------  ---------------  ----------------------------------------
    5378207    129        6  kept             ChatGPT
-   2163214    101        7  kept             Jeff Bezos
-   1969914    162        8  kept             Elon Musk
+   2163214    101        7  tech founder     Jeff Bezos
+   1969914    162        8  tech founder     Elon Musk
    1827141    323        7  kept             Wikipedia
    1309485    190        4  kept             Google
     820858     83        6  kept             QR code
@@ -13,7 +13,7 @@
     560131    235        9  kept             Albert Einstein
     532295     53        7  kept             Dark web
     521614    111       14  kept             Chernobyl disaster
-    517389    173        7  kept             Steve Jobs
+    517389    173        7  tech founder     Steve Jobs
     516951    104        6  kept             SpaceX
     491671    319        5  kept             Earth
     471085     63        8  kept             HTTP cookie
@@ -29,10 +29,10 @@
     336058    166        8  kept             Microsoft
     333433    185        8  kept             Black hole
     321185     53        4  kept             JSON
-    314055    179        8  kept             Bill Gates
+    314055    179        8  tech founder     Bill Gates
     312000    234        5  kept             Human
     306892    197        7  kept             Marie Curie
-    302243    143       10  kept             Mark Zuckerberg
+    302243    143       10  tech founder     Mark Zuckerberg
     279889     37       12  kept             El Niño–Southern Oscillation
     276350    242       10  kept             Leonardo da Vinci
     272932    153        8  kept             World Wide Web
@@ -57,7 +57,7 @@
     211623    175       11  kept             Neil Armstrong
     209261    246        7  kept             Jupiter
     207754     83       15  kept             Attention deficit hyperactivity disorder
-    207521     92        7  kept             Larry Page
+    207521     92        7  tech founder     Larry Page
     207171    181        8  kept             Dinosaur
     206597    118        7  kept             Stonehenge
     205075     69       11  kept             Dunning–Kruger effect
@@ -71,11 +71,11 @@
     188479    118       10  kept             Climate change
     187746     69       10  kept             Large language model
     186825    261        4  kept             Bird
-    183133     88        8  kept             Sergey Brin
+    183133     88        8  tech founder     Sergey Brin
     183053    141       13  kept             Android (operating system)
     182709    257        5  kept             Venus
     182551    115       11  kept             Richard Feynman
-    181901     65       10  kept             Sundar Pichai
+    181901     65       10  tech founder     Sundar Pichai
     179967     71       12  kept             Antikythera mechanism
     177921    222        5  kept             Plato
     177436     87       10  kept             Wernher von Braun
@@ -159,7 +159,7 @@
     122063     85        4  kept             ASCII
     121628     78        7  kept             Ring of Fire
     121242    249        8  kept             Pacific Ocean
-    121205     79        6  kept             Paul Allen
+    121205     79        6  tech founder     Paul Allen
     120272     58        8  kept             Proxy server
     119951    144       11  kept             Quantum mechanics
     118744    241        4  kept             Gold
@@ -167,7 +167,7 @@
     118340    142       11  kept             Age of Enlightenment
     118186    107        3  kept             Wi-Fi
     117673    134       11  kept             Alexander Graham Bell
-    116464     56        8  kept             Satya Nadella
+    116464     56        8  tech founder     Satya Nadella
     116187     56       10  not science      Streisand effect
     116176    168        8  kept             Suez Canal
     116088     45       11  kept             Quantum computing
@@ -180,7 +180,7 @@
     114384    139       10  kept             Natural science
     114355     68       11  kept             Katherine Johnson
     114205    123       11  kept             Linus Torvalds
-    113508     87       11  kept             Steve Wozniak
+    113508     87       11  tech founder     Steve Wozniak
     113196     93       10  kept             Golden ratio
     113048     93       11  kept             Human evolution
     112998    249        8  kept             Atlantic Ocean
@@ -3278,7 +3278,7 @@
       9980     53       12  kept             X-ray crystallography
       9978     96        6  kept             Mycology
       9977     25        9  kept             Truss bridge
-      9973     27       11  kept             Anders Hejlsberg
+      9973     27       11  minor figure     Anders Hejlsberg
       9970     51        8  kept             Accelerometer
       9958     19       12  kept             Nucleic acid double helix
       9957     22       15  kept             Brouwer fixed-point theorem
@@ -3293,7 +3293,7 @@
       9898     55        9  kept             Somatosensory system
       9897     62       13  kept             CAS Registry Number
       9886     29        9  kept             Penetration test
-      9882     34        7  kept             Lisa Randall
+      9882     34        7  minor figure     Lisa Randall
       9882     53        9  kept             Stratus cloud
       9879     80       11  kept             Aerodynamics
       9879     55        8  kept             Antiseptic
@@ -3755,7 +3755,7 @@
       7768     87        8  kept             Bark (botany)
       7762     30        6  kept             Rotorcraft
       7761     23       13  kept             Projection (linear algebra)
-      7756     51        9  kept             Hermann Oberth
+      7756     51        9  minor figure     Hermann Oberth
       7752     77        9  kept             Declination
       7746     81        7  kept             Mixture
       7742     47        9  kept             Processor register
@@ -3901,7 +3901,7 @@
       7179     56       12  kept             Surjective function
       7176     36       14  kept             Encapsulation (computer programming)
       7175     23        7  kept             Join (SQL)
-      7168     56       10  kept             Percival Lowell
+      7168     56       10  minor figure     Percival Lowell
       7168     79        9  kept             Sofya Kovalevskaya
       7167     34        7  kept             Planar graph
       7166     47       12  kept             Projective geometry
@@ -3999,7 +3999,7 @@
       6794     39       10  kept             Morphogenesis
       6793     18        9  kept             Hoare logic
       6793     14       12  kept             Percolation theory
-      6786     56       11  kept             Igor Kurchatov
+      6786     56       11  minor figure     Igor Kurchatov
       6785     34        7  kept             Traceroute
       6784     21        9  kept             Net-zero emissions
       6781     62       11  kept             Foundation (engineering)
@@ -4068,7 +4068,7 @@
       6565     48        8  kept             Antiderivative
       6562     27       10  kept             Linear particle accelerator
       6557     22       12  kept             Branch predictor
-      6556     55        7  kept             Nikolai Vavilov
+      6556     55        7  minor figure     Nikolai Vavilov
       6556     48       17  kept             Zeroth law of thermodynamics
       6550     23       11  kept             Uniform convergence
       6548     51        9  kept             Bottom quark
@@ -4153,7 +4153,7 @@
       6232     91        7  kept             Hearing
       6228     60        9  kept             Catabolism
       6211     44        9  kept             Reverberation
-      6208     57       13  kept             Cecilia Payne-Gaposchkin
+      6208     57       13  minor figure     Cecilia Payne-Gaposchkin
       6192     33        6  kept             Overtone
       6189     65       10  kept             Radionuclide
       6189     55       11  kept             Translation (biology)
@@ -4163,9 +4163,9 @@
       6158     25       10  kept             Impulse response
       6150     38       10  kept             Glacial period
       6144     52       12  kept             Logical disjunction
-      6143     54       11  kept             Niklaus Wirth
+      6143     54       11  minor figure     Niklaus Wirth
       6142      8       13  kept             Maximum subarray problem
-      6138     82       11  kept             Donna Strickland
+      6138     82       11  minor figure     Donna Strickland
       6133     25       12  kept             Linear differential equation
       6128     32       10  kept             Relational model
       6123     18       13  kept             Tests of general relativity
@@ -4190,7 +4190,7 @@
       6043     30        9  kept             Strain gauge
       6042     33        9  kept             Prestressed concrete
       6042     68        9  kept             Variable star
-      6039     65       10  kept             Caroline Herschel
+      6039     65       10  minor figure     Caroline Herschel
       6032     25       15  kept             Ant colony optimization algorithms
       6025     18       11  kept             Instruction cycle
       6024     49       11  kept             Supernova remnant
@@ -4216,7 +4216,7 @@
       5949     38       11  kept             Complete graph
       5949      8       12  kept             Reservoir sampling
       5942     36       10  kept             Work function
-      5941     69        9  kept             Ahmed Zewail
+      5941     69        9  minor figure     Ahmed Zewail
       5932     65       16  kept             Peter Gustav Lejeune Dirichlet
       5931     40       10  kept             Transcription factor
       5924     21       13  kept             Old quantum theory
@@ -4230,7 +4230,7 @@
       5863     39       12  kept             Integer (computer science)
       5863     25       10  kept             Rational root theorem
       5858     53        9  kept             Mineral (nutrient)
-      5853     73       10  kept             Tsung-Dao Lee
+      5853     73       10  minor figure     Tsung-Dao Lee
       5852     21        8  kept             Stellar parallax
       5840     41       10  kept             Symmetric matrix
       5832     42        8  kept             Stopwatch
@@ -4344,7 +4344,7 @@
       5451     26       14  kept             Bandwidth (computing)
       5451     24       10  kept             Heine–Borel theorem
       5449     46       10  kept             Nanoparticle
-      5437     39       15  kept             Robert Kahn (computer scientist)
+      5437     39       15  minor figure     Robert Kahn (computer scientist)
       5433     39        7  kept             Machining
       5421      7       10  kept             Laser printing
       5419     34       13  kept             Abstraction (computer science)
@@ -4539,7 +4539,7 @@
       4627     17       11  too specialist   Bias of an estimator
       4613     10        9  kept             Governor (device)
       4612     50       13  kept             Directory (computing)
-      4608     82       11  kept             Élie Metchnikoff
+      4608     82       11  minor figure     Élie Metchnikoff
       4606     19       11  kept             Path (computing)
       4604     13        8  kept             Random seed
       4602     31       10  kept             Incircle and excircles
@@ -4600,9 +4600,9 @@
       4422     60        9  kept             Dark nebula
       4416     14       12  too specialist   Small-world network
       4416     30        7  kept             Stop codon
-      4415     69       10  kept             Konstantin Novoselov
+      4415     69       10  minor figure     Konstantin Novoselov
       4411     21       13  kept             Computational complexity
-      4397     64        7  kept             Rainer Weiss
+      4397     64        7  minor figure     Rainer Weiss
       4396     21       15  kept             Callback (computer programming)
       4396     51       15  kept             Computational chemistry
       4388     48       11  kept             Restriction enzyme
@@ -4615,14 +4615,14 @@
       4370     39       13  kept             Molecular orbital theory
       4364     26       13  kept             Computable function
       4357     27        9  kept             Lift-to-drag ratio
-      4353     37       10  kept             Seymour Papert
-      4345     60        9  kept             Alain Aspect
+      4353     37       10  minor figure     Seymour Papert
+      4345     60        9  minor figure     Alain Aspect
       4345     15       14  kept             Evolutionary game theory
       4345     32       11  kept             Newtonian telescope
       4345     49        9  kept             Ribosomal RNA
       4341     52       10  kept             Locus (genetics)
       4332     43       12  kept             Translation (geometry)
-      4331     57       10  kept             Anton Zeilinger
+      4331     57       10  minor figure     Anton Zeilinger
       4331     31       13  kept             Linker (computing)
       4329     32        9  kept             Optical rotation
       4328     43       11  kept             Effective temperature
@@ -4659,7 +4659,7 @@
       4226     58       10  kept             Herd immunity
       4216     21       11  kept             Kepler conjecture
       4212     24        9  kept             Foreign key
-      4211     44        5  kept             Larry Wall
+      4211     44        5  minor figure     Larry Wall
       4206     42       14  kept             Spherical geometry
       4188     16        9  kept             Factor of safety
       4179      8       10  too specialist   Dennard scaling
@@ -4670,20 +4670,20 @@
       4170      9       12  kept             Relation (mathematics)
       4170     40       11  kept             Wilson's theorem
       4169     52        7  kept             Octet rule
-      4169     31       11  kept             Yukihiro Matsumoto
+      4169     31       11  minor figure     Yukihiro Matsumoto
       4166     15       10  kept             Reference counting
       4166     26       10  kept             Wittig reaction
       4159     51       10  kept             Emission nebula
       4158     32       13  kept             Okazaki fragments
       4157     17       11  kept             Data deduplication
       4154     38        6  kept             Pi bond
-      4152     75       11  kept             Shin'ichirō Tomonaga
+      4152     75       11  minor figure     Shin'ichirō Tomonaga
       4151     20       11  too specialist   Servomechanism
       4146     18       11  kept             Circular dichroism
       4141      8        6  too specialist   Hash chain
       4139     19       12  kept             Longest common subsequence
       4134     40        9  kept             Nuclear engineering
-      4131     53       11  kept             John Clauser
+      4131     53       11  minor figure     John Clauser
       4130     15        7  too specialist   Inference engine
       4118     21       10  kept             Fault tolerance
       4110     23       14  kept             Atanasoff–Berry computer
@@ -4704,7 +4704,7 @@
       4061     55       11  kept             Similarity (geometry)
       4055     46        6  kept             Rod cell
       4052     19       13  kept             Collaborative filtering
-      4035     82        9  kept             Pyotr Kapitsa
+      4035     82        9  minor figure     Pyotr Kapitsa
       4032     65        9  kept             Friedrich Wöhler
       4030     33        9  kept             Photic zone
       4029     42       11  kept             Active transport
@@ -4772,12 +4772,12 @@
       3789     31       10  kept             Additive color
       3787     32        7  kept             Shellsort
       3779     21        8  kept             Code review
-      3771     60       10  kept             Annie Jump Cannon
+      3771     60       10  minor figure     Annie Jump Cannon
       3771     50        9  kept             Arthur Cayley
       3767     15       11  kept             Immutable object
       3761     16       12  kept             Scale-free network
       3759     22        9  too specialist   Z-buffering
-      3754     68       10  kept             Sheldon Glashow
+      3754     68       10  minor figure     Sheldon Glashow
       3752     30       10  kept             North Atlantic oscillation
       3750     35       11  kept             Vertex (graph theory)
       3749     19       11  kept             Permutation group
@@ -4838,7 +4838,7 @@
       3554     44       13  kept             Limit of a sequence
       3552     43       10  kept             Chromosomal crossover
       3551     44        9  kept             Scalar (physics)
-      3541     34        5  kept             Allen Newell
+      3541     34        5  minor figure     Allen Newell
       3540     18       11  kept             Adjacency list
       3526     54        8  kept             Number line
       3520     54       10  kept             Circular sector
@@ -4886,7 +4886,7 @@
       3400     18       14  kept             Superconducting magnet
       3400     44       13  kept             Thermodynamic cycle
       3399     27        3  kept             Goto
-      3397     84       11  kept             Wilhelm Ostwald
+      3397     84       11  minor figure     Wilhelm Ostwald
       3396     31        9  kept             Diastereomer
       3396     42        7  kept             Sample space
       3391     20       10  kept             Global illumination
@@ -4911,7 +4911,7 @@
       3290     41        9  kept             Weather satellite
       3288     43       11  kept             Relative atomic mass
       3283     46       13  kept             Object (computer science)
-      3281     79       11  kept             Robert Woodrow Wilson
+      3281     79       11  minor figure     Robert Woodrow Wilson
       3278     38       15  kept             Absorption (electromagnetic radiation)
       3277     20        9  kept             Memory hierarchy
       3272     28        5  kept             P wave
@@ -4928,21 +4928,21 @@
       3211     34       16  kept             Vulnerability (computer security)
       3207     37        7  kept             Fracture
       3206     26       12  kept             Absorption spectroscopy
-      3204     32       13  kept             Marie-Anne Paulze Lavoisier
+      3204     32       13  minor figure     Marie-Anne Paulze Lavoisier
       3200     19        8  kept             Double-ended queue
       3190     23       12  too specialist   Field electron emission
       3184     16       12  kept             Producer–consumer problem
       3178     45       11  kept             Green chemistry
       3177     91       15  kept             Jacobus Henricus van 't Hoff
-      3176     76        9  kept             Walter Brattain
+      3176     76        9  minor figure     Walter Brattain
       3174     41        8  kept             Usability
       3158     18        8  too specialist   Ladder paradox
       3158     52        9  kept             Sedimentation
       3156     34       10  kept             Enzyme kinetics
       3156     29       10  kept             Phosphorus cycle
       3151      7       13  too specialist   Perfect hash function
-      3149     42       10  kept             Rasmus Lerdorf
-      3147     67       11  kept             Kenneth G. Wilson
+      3149     42       10  minor figure     Rasmus Lerdorf
+      3147     67       11  minor figure     Kenneth G. Wilson
       3133     26       11  too specialist   Wiedemann–Franz law
       3129     21       11  kept             Acid strength
       3128     23       10  kept             Channel capacity
@@ -4958,7 +4958,7 @@
       3090     68       11  kept             Photochemistry
       3084     46        5  kept             Operon
       3081     28       10  kept             P (complexity)
-      3079     65       11  kept             Robert Burns Woodward
+      3079     65       11  minor figure     Robert Burns Woodward
       3065      6        9  too specialist   Rate limiting
       3063     63        8  kept             Centriole
       3063     28        7  kept             Diesel cycle
@@ -4974,7 +4974,7 @@
       3030     29       12  kept             Decision problem
       3021     28       11  kept             Catalan's conjecture
       3017     44       13  kept             Event (probability theory)
-      3016     68       12  kept             Philip W. Anderson
+      3016     68       12  minor figure     Philip W. Anderson
       3013     47        5  kept             Burette
       3013     21       11  kept             Stirling number
       3012     20       10  too specialist   Present value
@@ -5027,11 +5027,11 @@
       2729     20       10  too specialist   Science education
       2705     28        7  kept             Molality
       2702     26       11  kept             Congruence relation
-      2697     40       13  kept             Vladimir K. Zworykin
-      2691     78       10  kept             Arno Allan Penzias
+      2697     40       13  minor figure     Vladimir K. Zworykin
+      2691     78       10  minor figure     Arno Allan Penzias
       2687     43       17  kept             General Conference on Weights and Measures
       2686     35       11  kept             Scientific literature
-      2682     78       12  kept             Vitaly Ginzburg
+      2682     78       12  minor figure     Vitaly Ginzburg
       2678     15        7  too specialist   Limit cycle
       2675     41        9  kept             Coevolution
       2663     30        7  kept             Chemiosmosis
@@ -5056,7 +5056,7 @@
       2574     54       15  kept             Neutralization (chemistry)
       2570     19       13  kept             Cooperative game theory
       2561     15       10  kept             Primitive data type
-      2552     17       10  kept             Vladimir Vapnik
+      2552     17       10  minor figure     Vladimir Vapnik
       2545     34       10  kept             Mössbauer effect
       2544     18       13  too specialist   Ligand field theory
       2541     20       10  kept             Free electron model
@@ -5066,7 +5066,7 @@
       2504     23       10  kept             Grain boundary
       2504     29        8  kept             Point mutation
       2501     12        5  kept             Error bar
-      2501     44       13  kept             James Joseph Sylvester
+      2501     44       13  minor figure     James Joseph Sylvester
       2500     35        6  too specialist   Varicap
       2493     21       10  too specialist   Neutron activation
       2484     17       10  too specialist   Strategy (game theory)
@@ -5076,7 +5076,7 @@
       2472     18       10  kept             Scientific control
       2470     11       14  too specialist   Symbol grounding problem
       2466     43       10  kept             Condensation reaction
-      2464     59        7  kept             Barry Barish
+      2464     59        7  minor figure     Barry Barish
       2462     19       10  kept             Switch statement
       2460     17       14  kept             Pythagorean trigonometric identity
       2457     36       17  kept             Reversible process (thermodynamics)
@@ -5100,7 +5100,7 @@
       2373     21        8  kept             Start codon
       2372     12        9  too specialist   Motion planning
       2370     25        9  kept             Tight junction
-      2364     47       10  kept             Harlow Shapley
+      2364     47       10  minor figure     Harlow Shapley
       2362     15        9  too specialist   Dark photon
       2360     17       13  too specialist   Replication (computing)
       2359     50       12  kept             Mechanical equilibrium
@@ -5135,7 +5135,7 @@
       2212     44        7  kept             Pedology
       2210     18       11  kept             Range of a function
       2204     31       10  kept             Circuit switching
-      2199     66        9  kept             Arthur Ashkin
+      2199     66        9  minor figure     Arthur Ashkin
       2190     13       13  too specialist   Initial value problem
       2183     32       14  too specialist   Displacement current density
       2172     33       11  kept             Divergent evolution
@@ -5165,14 +5165,14 @@
       2051     31        7  kept             Midpoint
       2037     27       12  kept             Frequency (statistics)
       2036     20       15  kept             Malthusian growth model
-      2032     28        7  kept             Jill Tarter
+      2032     28        7  minor figure     Jill Tarter
       2032     14       10  too specialist   Secret sharing
       2026     48       10  kept             Circumscribed circle
       2026     27       10  kept             Passive transport
       2020     35        7  kept             Active site
       2016     28       11  kept             Resting potential
       2016     10       13  too specialist   Vacuum expectation value
-      2011     31        9  kept             Jean Bartik
+      2011     31        9  minor figure     Jean Bartik
       2005     41        7  kept             Helicase
       2004     23       11  kept             Non-inertial reference frame
       2002     14        8  too specialist   Suffix array
@@ -5210,8 +5210,8 @@
       1831     25       11  kept             Exothermic process
       1830     11       12  too specialist   Deep inelastic scattering
       1815     36       14  kept             Chemical thermodynamics
-      1811     77       12  kept             Alexander Prokhorov
-      1801     78       10  kept             Zhores Alferov
+      1811     77       12  minor figure     Alexander Prokhorov
+      1801     78       10  minor figure     Zhores Alferov
       1800     27        9  kept             Potential well
       1798     37       11  kept             Reaction mechanism
       1793     19       13  too specialist   Auger electron spectroscopy
@@ -5221,7 +5221,7 @@
       1762     20        8  too specialist   Nodal analysis
       1756     10       15  too specialist   Mathematical modelling of infectious diseases
       1756     35        6  kept             Rotamer
-      1754     45        8  kept             Frances Allen
+      1754     45        8  minor figure     Frances Allen
       1743     40        9  kept             Inverse element
       1738     16       12  too specialist   Recursive definition
       1727     10        9  too specialist   Frame problem
@@ -5233,7 +5233,7 @@
       1669     25       10  kept             Set (abstract data type)
       1656      6       14  too specialist   Change-making problem
       1645     24       11  kept             Structural isomer
-      1634     59        7  kept             Gérard Mourou
+      1634     59        7  minor figure     Gérard Mourou
       1627     40        9  kept             Electrophile
       1623      8       10  too specialist   Photomultiplier
       1620     35        8  kept             Plasmodesma
@@ -5273,7 +5273,7 @@
       1411     17       12  kept             Stabilizing selection
       1395     26       13  kept             Consumer (food chain)
       1395     28        6  too specialist   Preprocessor
-      1391     54       16  kept             Aleksandr Popov (physicist)
+      1391     54       16  minor figure     Aleksandr Popov (physicist)
       1391     19       10  too specialist   Heterojunction
       1386     21       11  kept             Quantitative genetics
       1349     36       10  kept             Stellar atmosphere
@@ -5302,7 +5302,7 @@
       1006     34       10  too specialist   Spring scale
       1000     16       13  kept             Disruptive selection
        997     11       13  too specialist   Query optimization
-       981     75       10  kept             Nikolay Basov
+       981     75       10  minor figure     Nikolay Basov
        969      6       13  too specialist   Cognitive archaeology
        952     12       12  too specialist   Interpolation search
        950     15       14  too specialist   Branching (version control)
