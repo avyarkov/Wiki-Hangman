@@ -436,7 +436,7 @@
       return null;
     }
   }
-  const PLAYER_ID = getPlayerId();
+  let PLAYER_ID = getPlayerId();
 
   function logCompletion(won){
     if(!supabaseClient) return;
@@ -655,6 +655,20 @@
     letter = letter.toUpperCase();
     if(guessed.has(letter)) return;
     guessed.add(letter);
+
+    // Debug mode: if the player types "DEBUG" as their guessed letters,
+    // it will generate a new debug player_id and store it in localStorage.
+    // This is useful for testing and development purposes.
+    if([...guessed].join('') === 'DEBUG'){
+      try{
+        const debugId = '00000000-0000-0000-0000-' + crypto.randomUUID().split('-')[4];
+        localStorage.setItem('wikihangman_player_id', debugId);
+        PLAYER_ID = debugId;
+        console.log('Debug player_id set:', debugId);
+      }catch(err){
+        console.error('Debug player_id switch failed:', err);
+      }
+    }
 
     const key = document.querySelector('.key[data-letter="'+letter+'"]');
     const isInTitle = displayChars.some(c => c.isLetter && c.char.toUpperCase() === letter);
