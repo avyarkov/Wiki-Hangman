@@ -410,7 +410,7 @@
   // insert-only RLS policy in supabase/schema.sql. Never put the service_role
   // key here. Logging is best-effort: any failure here (CDN blocked, project
   // unreachable, misconfigured keys) must never break or delay the game.
-  const SUPABASE_URL = 'https://ewfltjzvnedahskueowd.supabase.c';
+  const SUPABASE_URL = 'https://ewfltjzvnedahskueowd.supabase.co';
   const SUPABASE_ANON_KEY = 'sb_publishable_G9begkrV6U6Im70unGrmUQ_YBreFENH';
   let supabaseClient = null;
   try{
@@ -421,10 +421,28 @@
     console.error('Supabase client unavailable, completion logging disabled:', err);
   }
 
+  // Anonymous per-browser id so completions can be grouped by player. Persisted
+  // in localStorage; falls back to null (unattributed) if storage/crypto is
+  // unavailable -- never blocks the game either way.
+  function getPlayerId(){
+    try{
+      let id = localStorage.getItem('wikihangman_player_id');
+      if(!id){
+        id = crypto.randomUUID();
+        localStorage.setItem('wikihangman_player_id', id);
+      }
+      return id;
+    }catch(err){
+      return null;
+    }
+  }
+  const PLAYER_ID = getPlayerId();
+
   function logCompletion(won){
     if(!supabaseClient) return;
     try{
       supabaseClient.from('completions').insert({
+        player_id: PLAYER_ID,
         difficulty: currentDifficulty,
         title: title,
         won: won,
