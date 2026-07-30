@@ -408,24 +408,36 @@
 
   // Anon public key -- safe to expose client-side, it's restricted by the
   // insert-only RLS policy in supabase/schema.sql. Never put the service_role
-  // key here. Logging silently no-ops until these are filled in.
-  const SUPABASE_URL = 'https://ewfltjzvnedahskueowd.supabase.co';
+  // key here. Logging is best-effort: any failure here (CDN blocked, project
+  // unreachable, misconfigured keys) must never break or delay the game.
+  const SUPABASE_URL = 'https://ewfltjzvnedahskueowd.supabase.c';
   const SUPABASE_ANON_KEY = 'sb_publishable_G9begkrV6U6Im70unGrmUQ_YBreFENH';
-  const supabaseClient = SUPABASE_URL.includes('YOUR-PROJECT')
-    ? null
-    : supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  let supabaseClient = null;
+  try{
+    if(typeof supabase !== 'undefined'){
+      supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    }
+  }catch(err){
+    console.error('Supabase client unavailable, completion logging disabled:', err);
+  }
 
   function logCompletion(won){
     if(!supabaseClient) return;
-    supabaseClient.from('completions').insert({
-      difficulty: currentDifficulty,
-      title: title,
-      won: won,
-      letters_used: guessed.size,
-      strikes: strikes
-    }).then(({ error }) => {
-      if(error) console.error('completion logging failed:', error.message);
-    });
+    try{
+      supabaseClient.from('completions').insert({
+        difficulty: currentDifficulty,
+        title: title,
+        won: won,
+        letters_used: guessed.size,
+        strikes: strikes
+      }).then(({ error }) => {
+        if(error) console.error('completion logging failed:', error.message);
+      }).catch(err => {
+        console.error('completion logging failed:', err);
+      });
+    }catch(err){
+      console.error('completion logging failed:', err);
+    }
   }
 
   let title = "";
@@ -660,7 +672,6 @@
   }
 
   function showEnd(won){
-    logCompletion(won);
     document.querySelectorAll('.key').forEach(k => k.disabled = true);
     stampBadgeEl.textContent = won ? 'VICTORY' : 'DEFEAT';
     stampBadgeEl.classList.toggle('lose', !won);
@@ -670,6 +681,7 @@
       : 'Out of strikes. The mystery was unsolved.';
     endstateEl.classList.add('show');
     setTimeout(() => endstateEl.scrollIntoView({behavior:'smooth', block:'nearest'}), 100);
+    logCompletion(won);
   }
 
   startBtn.addEventListener('click', startGame);
