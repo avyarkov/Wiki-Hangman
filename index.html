@@ -314,6 +314,13 @@
     color: var(--ink-soft);
     min-width: calc(17ch + 9px);
   }
+  /* keeps the three buttons on one line -- they wrap to the next line as a
+     group rather than splitting up on narrow screens */
+  .rate-btns{
+    display:flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+  }
   .rate-btn{
     font-family:'Courier New', monospace;
     font-size: 13px;
@@ -440,9 +447,11 @@
         </div>
         <div class="rating" id="rating">
           <span class="rating-label" id="ratingLabel">Rate this topic</span>
-          <button class="rate-btn" data-rating="good">Good</button>
-          <button class="rate-btn" data-rating="ok">Ok</button>
-          <button class="rate-btn" data-rating="bad">Bad</button>
+          <span class="rate-btns">
+            <button class="rate-btn" data-rating="good">Good</button>
+            <button class="rate-btn" data-rating="ok">Ok</button>
+            <button class="rate-btn" data-rating="bad">Bad</button>
+          </span>
         </div>
       </div>
     </div>
