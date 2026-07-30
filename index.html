@@ -446,7 +446,7 @@
         difficulty: currentDifficulty,
         title: title,
         won: won,
-        letters_used: guessed.size,
+        letters_guessed: [...guessed].join(''),
         strikes: strikes
       }).then(({ error }) => {
         if(error) console.error('completion logging failed:', error.message);

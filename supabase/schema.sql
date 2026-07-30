@@ -7,8 +7,8 @@ create table if not exists completions (
   difficulty text not null check (difficulty in ('easy', 'medium', 'hard', 'culture', 'science')),
   title text not null,
   won boolean not null,
-  letters_used int not null check (letters_used between 0 and 26),
-  strikes int not null check (strikes between 0 and 6)
+  strikes int not null check (strikes between 0 and 6),
+  letters_guessed text not null
 );
 
 -- RLS is default-deny once enabled. The policy below only allows INSERT from the
@@ -32,3 +32,10 @@ grant insert on completions to anon;
 -- by an earlier version of this file; no-ops if already applied.
 alter table completions add column if not exists player_id uuid;
 create index if not exists completions_player_id_idx on completions (player_id);
+
+-- Migration: replaces the letters_used count with the actual guess sequence,
+-- stored as a plain string of letters in guess order (e.g. 'EART').
+-- Left nullable/unconstrained here (unlike the column definition above) so this
+-- doesn't fail against any rows already logged under the old column.
+alter table completions drop column if exists letters_used;
+alter table completions add column if not exists letters_guessed text;
