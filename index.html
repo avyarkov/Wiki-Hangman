@@ -17,6 +17,8 @@
     --stamp-bg: #f6e2dd;
     --ok: #3c5a3c;
     --ok-bg: #e5f0de;
+    --warn: #8a6a1f;
+    --warn-bg: #f5ecd2;
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
@@ -295,6 +297,53 @@
   }
   .action:hover{ background: var(--ink-soft); }
 
+  .rating{
+    display:flex;
+    align-items:center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px dashed var(--line);
+  }
+  .rating-label{
+    font-family:'Courier New', monospace;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .rate-btn{
+    font-family:'Courier New', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background: var(--paper);
+    border: 1px solid var(--ink);
+    color: var(--ink);
+    padding: 7px 14px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  .rate-btn[data-rating="good"]{ border-color: var(--ok); color: var(--ok); }
+  .rate-btn[data-rating="ok"]{ border-color: var(--warn); color: var(--warn); }
+  .rate-btn[data-rating="bad"]{ border-color: var(--stamp); color: var(--stamp); }
+  .rate-btn[data-rating="good"]:hover:not(:disabled){ background: var(--ok-bg); }
+  .rate-btn[data-rating="ok"]:hover:not(:disabled){ background: var(--warn-bg); }
+  .rate-btn[data-rating="bad"]:hover:not(:disabled){ background: var(--stamp-bg); }
+  .rate-btn:disabled{
+    cursor: default;
+    opacity: 0.35;
+  }
+  .rate-btn.chosen{
+    opacity: 1;
+    font-weight: 700;
+  }
+  .rate-btn.chosen[data-rating="good"]{ background: var(--ok-bg); }
+  .rate-btn.chosen[data-rating="ok"]{ background: var(--warn-bg); }
+  .rate-btn.chosen[data-rating="bad"]{ background: var(--stamp-bg); }
+
   .credits{
     margin-top: 18px;
     font-size: 15px;
@@ -388,6 +437,12 @@
           <a class="action" id="wikiLink" href="#" target="_blank" rel="noopener">Read on Wikipedia ↗</a>
           <button class="action" id="menuBtn">Start Menu ↗</button>
         </div>
+        <div class="rating" id="rating">
+          <span class="rating-label" id="ratingLabel">Rate this topic</span>
+          <button class="rate-btn" data-rating="good">Good</button>
+          <button class="rate-btn" data-rating="ok">Ok</button>
+          <button class="rate-btn" data-rating="bad">Bad</button>
+        </div>
       </div>
     </div>
   </div>
@@ -460,6 +515,24 @@
     }
   }
 
+  function logRating(rating, topic, difficulty){
+    if(!supabaseClient) return;
+    try{
+      supabaseClient.from('ratings').insert({
+        player_id: PLAYER_ID,
+        topic: topic,
+        difficulty: difficulty,
+        rating: rating
+      }).then(({ error }) => {
+        if(error) console.error('rating logging failed:', error.message);
+      }).catch(err => {
+        console.error('rating logging failed:', err);
+      });
+    }catch(err){
+      console.error('rating logging failed:', err);
+    }
+  }
+
   let title = "";
   let extract = "";
   let displayChars = []; // array of {char, isLetter, revealed}
@@ -487,6 +560,8 @@
   const wikiLinkEl = document.getElementById('wikiLink');
   const nextBtn = document.getElementById('nextBtn');
   const menuBtn = document.getElementById('menuBtn');
+  const ratingLabelEl = document.getElementById('ratingLabel');
+  const rateBtns = document.querySelectorAll('.rate-btn');
 
   for(let i=0;i<MAX_STRIKES;i++){
     const m = document.createElement('div');
@@ -608,7 +683,16 @@
     });
     updateStrikeMarks();
     endstateEl.classList.remove('show');
+    resetRating();
     render();
+  }
+
+  function resetRating(){
+    ratingLabelEl.textContent = 'Rate this topic';
+    rateBtns.forEach(b => {
+      b.disabled = false;
+      b.classList.remove('chosen');
+    });
   }
 
   function renderMasked(container, chars){
@@ -719,6 +803,18 @@
     setTimeout(() => endstateEl.scrollIntoView({behavior:'smooth', block:'nearest'}), 100);
     logCompletion(won);
   }
+
+  rateBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const rating = btn.dataset.rating;
+      logRating(rating, title, currentDifficulty);
+      ratingLabelEl.textContent = 'Thanks for rating';
+      rateBtns.forEach(b => {
+        b.disabled = true;
+        b.classList.toggle('chosen', b === btn);
+      });
+    });
+  });
 
   startBtn.addEventListener('click', startGame);
   nextBtn.addEventListener('click', playAgain);

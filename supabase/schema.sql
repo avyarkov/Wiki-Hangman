@@ -28,3 +28,23 @@ create policy "Allow anonymous inserts"
 -- (Data API > Security): that setting controls the base table grant, which
 -- Postgres checks before RLS policies even apply. Harmless no-op otherwise.
 grant insert on completions to anon;
+
+
+create table if not exists ratings (
+  id bigint generated always as identity primary key,
+  created_at timestamptz not null default now(),
+  player_id uuid,
+  topic text not null,
+  difficulty text not null check (difficulty in ('easy', 'medium', 'hard', 'culture', 'science')),
+  rating text not null check (rating in ('good', 'ok', 'bad'))
+);
+
+alter table ratings enable row level security;
+
+create policy "Allow anonymous inserts"
+  on ratings
+  for insert
+  to anon
+  with check (true);
+
+grant insert on ratings to anon;
