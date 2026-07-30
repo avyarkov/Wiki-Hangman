@@ -8,7 +8,8 @@ create table if not exists completions (
   title text not null,
   won boolean not null,
   strikes int not null check (strikes between 0 and 6),
-  letters_guessed text not null
+  letters_guessed text not null,
+  duration_seconds int not null
 );
 
 -- RLS is default-deny once enabled. The policy below only allows INSERT from the

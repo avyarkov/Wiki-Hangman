@@ -447,7 +447,8 @@
         title: title,
         won: won,
         letters_guessed: [...guessed].join(''),
-        strikes: strikes
+        strikes: strikes,
+        duration_seconds: Math.round((Date.now() - puzzleStartedAt) / 1000)
       }).then(({ error }) => {
         if(error) console.error('completion logging failed:', error.message);
       }).catch(err => {
@@ -464,6 +465,7 @@
   let extractChars = []; // array of {char, isLetter, revealed}
   let guessed = new Set();
   let strikes = 0;
+  let puzzleStartedAt = 0;
   let solved = false;
   let lost = false;
   let listsCache = {};
@@ -594,6 +596,7 @@
   function setupPuzzle(){
     guessed = new Set();
     strikes = 0;
+    puzzleStartedAt = Date.now();
     solved = false;
     lost = false;
     displayChars = buildChars(title);
