@@ -394,6 +394,7 @@
 
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 (function(){
   const MAX_STRIKES = 6;
@@ -404,6 +405,29 @@
     culture: 'list-art.json',
     science: 'list-science.json'
   };
+
+  // Anon public key -- safe to expose client-side, it's restricted by the
+  // insert-only RLS policy in supabase/schema.sql. Never put the service_role
+  // key here. Logging silently no-ops until these are filled in.
+  const SUPABASE_URL = 'https://ewfltjzvnedahskueowd.supabase.co';
+  const SUPABASE_ANON_KEY = 'sb_publishable_G9begkrV6U6Im70unGrmUQ_YBreFENH';
+  const supabaseClient = SUPABASE_URL.includes('YOUR-PROJECT')
+    ? null
+    : supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  function logCompletion(won){
+    if(!supabaseClient) return;
+    supabaseClient.from('completions').insert({
+      difficulty: currentDifficulty,
+      title: title,
+      won: won,
+      letters_used: guessed.size,
+      strikes: strikes
+    }).then(({ error }) => {
+      if(error) console.error('completion logging failed:', error.message);
+    });
+  }
+
   let title = "";
   let extract = "";
   let displayChars = []; // array of {char, isLetter, revealed}
@@ -636,6 +660,7 @@
   }
 
   function showEnd(won){
+    logCompletion(won);
     document.querySelectorAll('.key').forEach(k => k.disabled = true);
     stampBadgeEl.textContent = won ? 'VICTORY' : 'DEFEAT';
     stampBadgeEl.classList.toggle('lose', !won);
