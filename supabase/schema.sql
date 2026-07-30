@@ -36,7 +36,8 @@ create table if not exists ratings (
   player_id uuid,
   topic text not null,
   difficulty text not null check (difficulty in ('easy', 'medium', 'hard', 'culture', 'science')),
-  rating text not null check (rating in ('good', 'ok', 'bad'))
+  rating text not null check (rating in ('good', 'ok', 'bad')),
+  origin text not null
 );
 
 alter table ratings enable row level security;

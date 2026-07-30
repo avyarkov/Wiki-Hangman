@@ -523,7 +523,8 @@
         player_id: PLAYER_ID,
         topic: topic,
         difficulty: difficulty,
-        rating: rating
+        rating: rating,
+        origin: window.location.origin
       }).then(({ error }) => {
         if(error) console.error('rating logging failed:', error.message);
       }).catch(err => {
