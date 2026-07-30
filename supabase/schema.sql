@@ -26,16 +26,3 @@ create policy "Allow anonymous inserts"
 -- (Data API > Security): that setting controls the base table grant, which
 -- Postgres checks before RLS policies even apply. Harmless no-op otherwise.
 grant insert on completions to anon;
-
--- Migration: adds a per-browser player id (see PLAYER_ID in index.html) so
--- completions can be grouped by player. Safe to re-run against a table created
--- by an earlier version of this file; no-ops if already applied.
-alter table completions add column if not exists player_id uuid;
-create index if not exists completions_player_id_idx on completions (player_id);
-
--- Migration: replaces the letters_used count with the actual guess sequence,
--- stored as a plain string of letters in guess order (e.g. 'EART').
--- Left nullable/unconstrained here (unlike the column definition above) so this
--- doesn't fail against any rows already logged under the old column.
-alter table completions drop column if exists letters_used;
-alter table completions add column if not exists letters_guessed text;
