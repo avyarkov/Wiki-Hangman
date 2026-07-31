@@ -10,6 +10,7 @@ create table if not exists completions (
   strikes int not null check (strikes between 0 and 6),
   letters_guessed text not null,
   duration_seconds int not null,
+  thumbnail text not null,
   origin text not null
 );
 

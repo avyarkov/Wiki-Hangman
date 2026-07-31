@@ -200,6 +200,71 @@
     opacity: 1;
   }
 
+  .thumb-box{
+    position: relative;
+    width: 100%;
+    /* 330px matches the width wikipedia serves thumbnails at; the percentage
+       width lets it shrink to fit narrow phone screens */
+    max-width: 330px;
+    aspect-ratio: 1 / 1;
+    margin-top: 28px;
+    border: 1px dashed var(--line);
+    background: var(--paper-dark);
+    border-radius: 3px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+  }
+  .thumb-btn{
+    font-family:'Courier New', monospace;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background: var(--paper);
+    border: 1px solid var(--ink);
+    color: var(--ink);
+    max-width: calc(100% - 24px);
+    padding: 9px 14px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .thumb-btn:hover{
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .thumb-img{
+    display:none;
+    /* fits odd aspect ratios inside the square without cropping or stretching */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  .thumb-missing{
+    display:none;
+    font-family:'Courier New', monospace;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    text-align:center;
+    line-height: 1.8;
+  }
+  .thumb-face{
+    display:block;
+    font-size: 30px;
+    letter-spacing: 0;
+    margin-bottom: 4px;
+  }
+  .thumb-box.revealed{
+    background: var(--paper);
+    border-style: solid;
+  }
+  .thumb-box.revealed .thumb-btn{ display:none; }
+  .thumb-box.revealed .thumb-img[src]{ display:block; }
+  .thumb-box.revealed.no-thumb .thumb-missing{ display:block; }
+
   .startscreen{
     margin-top: 26px;
     padding: 18px 20px;
@@ -236,6 +301,25 @@
     font-size: 15px;
     color: var(--ink-soft);
     line-height: 1;
+  }
+
+  .toggle-option{
+    display:flex;
+    align-items:flex-start;
+    gap: 8px;
+    cursor:pointer;
+    margin: 0 0 20px;
+  }
+  .toggle-option input{
+    accent-color: var(--ink);
+    cursor:pointer;
+    margin: 3px 0 0;
+    flex: none;
+  }
+  .toggle-desc{
+    font-size: 15px;
+    color: var(--ink-soft);
+    line-height: 1.5;
   }
 
   .endstate{
@@ -412,6 +496,11 @@
         </label>
       </div>
 
+      <label class="toggle-option">
+        <input type="checkbox" id="thumbnailToggle">
+        <span class="toggle-desc">Enable thumbnail reveal. Fun for some articles, a giveaway for others.</span>
+      </label>
+
       <div class="actions">
         <button class="action" id="startBtn">Start game ↗</button>
       </div>
@@ -422,6 +511,15 @@
     <div id="loading" style="display:none;">fetching a random article from wikipedia…</div>
 
     <div id="game" style="display:none;">
+      <div class="thumb-box" id="thumbBox" style="display:none;">
+        <button class="thumb-btn" id="thumbBtn">Press to reveal thumbnail</button>
+        <img class="thumb-img" id="thumbImg" alt="">
+        <span class="thumb-missing" id="thumbMissing">
+          <span class="thumb-face">:(</span>
+          This page does not have a thumbnail
+        </span>
+      </div>
+
       <div class="word-block" id="wordBlock"></div>
       <div class="extract" id="extractBlock"></div>
 
@@ -503,6 +601,14 @@
   }
   let PLAYER_ID = getPlayerId();
 
+  // reported per completion; the 'revealed' class is set by the reveal button
+  // and cleared for each new puzzle, so it doubles as the reveal state
+  function thumbnailState(){
+    if(!thumbnailEnabled) return 'not enabled';
+    if(!thumbBoxEl.classList.contains('revealed')) return 'not revealed';
+    return thumbnailUrl ? 'revealed' : 'revealed, no image';
+  }
+
   function logCompletion(won){
     if(!supabaseClient) return;
     try{
@@ -514,6 +620,7 @@
         letters_guessed: [...guessed].join(''),
         strikes: strikes,
         duration_seconds: Math.round((Date.now() - puzzleStartedAt) / 1000),
+        thumbnail: thumbnailState(),
         origin: window.location.origin
       }).then(({ error }) => {
         if(error) console.error('completion logging failed:', error.message);
@@ -545,6 +652,8 @@
   }
 
   let title = "";
+  let thumbnailUrl = "";
+  let thumbnailEnabled = false;
   let extract = "";
   let displayChars = []; // array of {char, isLetter, revealed}
   let extractChars = []; // array of {char, isLetter, revealed}
@@ -573,6 +682,10 @@
   const menuBtn = document.getElementById('menuBtn');
   const ratingLabelEl = document.getElementById('ratingLabel');
   const rateBtns = document.querySelectorAll('.rate-btn');
+  const thumbnailToggleEl = document.getElementById('thumbnailToggle');
+  const thumbBoxEl = document.getElementById('thumbBox');
+  const thumbBtnEl = document.getElementById('thumbBtn');
+  const thumbImgEl = document.getElementById('thumbImg');
 
   for(let i=0;i<MAX_STRIKES;i++){
     const m = document.createElement('div');
@@ -622,6 +735,7 @@
 
   function startGame(){
     const difficulty = document.querySelector('input[name="difficulty"]:checked').value;
+    thumbnailEnabled = thumbnailToggleEl.checked;
     startScreenEl.style.display = 'none';
     launchGame(difficulty);
   }
@@ -662,6 +776,7 @@
 
       title = data.title;
       extract = data.extract || '';
+      thumbnailUrl = data.thumbnail && data.thumbnail.source ? data.thumbnail.source : '';
       wikiLinkEl.href = data.content_urls && data.content_urls.desktop ? data.content_urls.desktop.page : ('https://en.wikipedia.org/wiki/' + encodeURIComponent(title.replace(/ /g,'_')));
 
       setupPuzzle();
@@ -695,7 +810,22 @@
     updateStrikeMarks();
     endstateEl.classList.remove('show');
     resetRating();
+    resetThumbnail();
     render();
+  }
+
+  function resetThumbnail(){
+    thumbBoxEl.classList.remove('revealed');
+    thumbBoxEl.classList.toggle('no-thumb', !thumbnailUrl);
+    thumbBoxEl.style.display = thumbnailEnabled ? 'flex' : 'none';
+    // setting src now preloads the image so the reveal is instant. removeAttribute
+    // (rather than src='') keeps the img[src] rule from matching and avoids a
+    // bogus request to the page url.
+    if(thumbnailEnabled && thumbnailUrl){
+      thumbImgEl.src = thumbnailUrl;
+    } else {
+      thumbImgEl.removeAttribute('src');
+    }
   }
 
   function resetRating(){
@@ -814,6 +944,8 @@
     setTimeout(() => endstateEl.scrollIntoView({behavior:'smooth', block:'nearest'}), 100);
     logCompletion(won);
   }
+
+  thumbBtnEl.addEventListener('click', () => thumbBoxEl.classList.add('revealed'));
 
   rateBtns.forEach(btn => {
     btn.addEventListener('click', () => {
